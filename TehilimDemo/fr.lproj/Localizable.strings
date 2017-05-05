@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  TehilimDemo
+
+  Created by Mendy Barouk on 27/04/2017.
+  Copyright © 2017 Mendy Barouk. All rights reserved.
+*/
+
+"tehilim_title" = "Téhilim Arizal";
+"yehi_ratzon" = "Yehi Ratson";
+"day_of_month" = "Téhilim du ";
+"my_chapters" = "Mes Chapitres";
+"day_of_week" = "Téhilim du ";
+"all_psalm" = "Tous les Téhilim";
+"no_tachanun" = "Téhilim 20";
+"elul" = "Téhilim du mois d'Élul";
+"choose_chapter" = "Choisir un Chapitre";
+"choose_book" = "Choisir un Livre";
+"choose_day_of_week" = "Choisir un jour de la semaine";
+"choose_day_of_month" = "Choisir un jour du mois";
+"general_amendment" = "Tikoun Haklali";
+"lyartseyt" = "Téhilim du Yahrtzeit";
+"virtues" = "Segoulot";
+"random_chapter" = "Chapitre Aléatoir";
+"daily" = "Quotidien";
+"everything" = "Parcourir";

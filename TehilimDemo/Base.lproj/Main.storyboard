@@ -1,26 +1,532 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="x28-tF-a2S">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--תהילים אריז״ל-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController autoresizesArchivedViewToFullSize="NO" automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="TehilimDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ac4-Y1-hBX">
+                                <rect key="frame" x="12" y="112" width="351" height="444"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="viL-WY-wDd" customClass="MyButton" customModule="TehilimDemo" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="20" width="311" height="41"/>
+                                        <color key="backgroundColor" red="0.18821030859999999" green="0.1882497072" blue="0.18820786480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="יהי רצון"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="yehi_ratzon"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fc-A9-ZzT" customClass="MyButton" customModule="TehilimDemo" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="77" width="311" height="41"/>
+                                        <color key="backgroundColor" red="0.18821030859999999" green="0.1882497072" blue="0.18820786480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="תהילים ליום בחודש"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="day_of_month"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="choiceOfButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w6n-kB-gtN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K10-i0-bts" customClass="MyButton" customModule="TehilimDemo" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="134" width="311" height="41"/>
+                                        <color key="backgroundColor" red="0.18821030859999999" green="0.1882497072" blue="0.18820786480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="הפרקים שלי"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="my_chapters"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DbX-UM-cpo" customClass="MyButton" customModule="TehilimDemo" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="191" width="311" height="41"/>
+                                        <color key="backgroundColor" red="0.18821030859999999" green="0.1882497072" blue="0.18820786480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="תהילים ליום בשבוע"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="day_of_week"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="choiceOfButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TIv-0M-46W"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAt-QV-enB" customClass="MyButton" customModule="TehilimDemo" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="248" width="311" height="41"/>
+                                        <color key="backgroundColor" red="0.18821030859999999" green="0.1882497072" blue="0.18820786480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="כל התהילים"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="all_psalm"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="choiceOfButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J7p-2Z-GM8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U2Y-Is-2or" customClass="MyButton" customModule="TehilimDemo" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="305" width="311" height="41"/>
+                                        <color key="backgroundColor" red="0.18821030859999999" green="0.1882497072" blue="0.18820786480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="תהילים ליום ללא תחנון"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="no_tachanun"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="choiceOfButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BKa-HL-UN9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EC9-vp-Qn8" customClass="MyButton" customModule="TehilimDemo" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="362" width="311" height="41"/>
+                                        <color key="backgroundColor" red="0.18821030859999999" green="0.1882497072" blue="0.18820786480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="ג׳ תהילים אלול"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="elul"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="choiceOfButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ycn-aq-DqX"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="viL-WY-wDd" secondAttribute="trailing" constant="20" id="5SF-PM-UGh"/>
+                                    <constraint firstItem="DbX-UM-cpo" firstAttribute="top" secondItem="K10-i0-bts" secondAttribute="bottom" constant="16" id="9Yc-tE-rDm"/>
+                                    <constraint firstItem="DbX-UM-cpo" firstAttribute="leading" secondItem="ac4-Y1-hBX" secondAttribute="leading" constant="20" id="ABd-3W-jtl"/>
+                                    <constraint firstItem="viL-WY-wDd" firstAttribute="centerX" secondItem="ac4-Y1-hBX" secondAttribute="centerX" id="AGR-NO-K2Z"/>
+                                    <constraint firstItem="viL-WY-wDd" firstAttribute="top" secondItem="ac4-Y1-hBX" secondAttribute="top" constant="20" id="BGA-3z-yFB"/>
+                                    <constraint firstAttribute="trailing" secondItem="3fc-A9-ZzT" secondAttribute="trailing" constant="20" id="DD8-IY-Pey"/>
+                                    <constraint firstItem="K10-i0-bts" firstAttribute="leading" secondItem="ac4-Y1-hBX" secondAttribute="leading" constant="20" id="DPt-Vo-c4L"/>
+                                    <constraint firstItem="U2Y-Is-2or" firstAttribute="leading" secondItem="ac4-Y1-hBX" secondAttribute="leading" constant="20" id="EXL-W4-Gpl"/>
+                                    <constraint firstAttribute="trailing" secondItem="K10-i0-bts" secondAttribute="trailing" constant="20" id="Gar-aZ-mDh"/>
+                                    <constraint firstAttribute="trailing" secondItem="DbX-UM-cpo" secondAttribute="trailing" constant="20" id="IHw-SM-Y5q"/>
+                                    <constraint firstAttribute="trailing" secondItem="qAt-QV-enB" secondAttribute="trailing" constant="20" id="IpS-Od-Tt5"/>
+                                    <constraint firstItem="3fc-A9-ZzT" firstAttribute="leading" secondItem="ac4-Y1-hBX" secondAttribute="leading" constant="20" id="KZa-SA-iBr"/>
+                                    <constraint firstItem="EC9-vp-Qn8" firstAttribute="leading" secondItem="ac4-Y1-hBX" secondAttribute="leading" constant="20" id="Mb6-nM-5fk"/>
+                                    <constraint firstItem="EC9-vp-Qn8" firstAttribute="top" secondItem="U2Y-Is-2or" secondAttribute="bottom" constant="16" id="P5y-72-Dha"/>
+                                    <constraint firstItem="qAt-QV-enB" firstAttribute="top" secondItem="DbX-UM-cpo" secondAttribute="bottom" constant="16" id="bv3-bW-gRU"/>
+                                    <constraint firstItem="U2Y-Is-2or" firstAttribute="top" secondItem="qAt-QV-enB" secondAttribute="bottom" constant="16" id="f1y-PO-KDp"/>
+                                    <constraint firstItem="3fc-A9-ZzT" firstAttribute="top" secondItem="viL-WY-wDd" secondAttribute="bottom" constant="16" id="fEb-AS-ZWV"/>
+                                    <constraint firstAttribute="trailing" secondItem="EC9-vp-Qn8" secondAttribute="trailing" constant="20" id="kuD-ZF-Nys"/>
+                                    <constraint firstItem="qAt-QV-enB" firstAttribute="leading" secondItem="ac4-Y1-hBX" secondAttribute="leading" constant="20" id="s79-DQ-Hx8"/>
+                                    <constraint firstAttribute="trailing" secondItem="U2Y-Is-2or" secondAttribute="trailing" constant="20" id="slr-Uc-pgG"/>
+                                    <constraint firstItem="K10-i0-bts" firstAttribute="top" secondItem="3fc-A9-ZzT" secondAttribute="bottom" constant="16" id="tDL-Lk-NYB"/>
+                                    <constraint firstAttribute="bottom" secondItem="EC9-vp-Qn8" secondAttribute="bottom" constant="44" id="tJP-R9-dOl"/>
+                                    <constraint firstItem="viL-WY-wDd" firstAttribute="leading" secondItem="ac4-Y1-hBX" secondAttribute="leading" constant="20" id="ttG-VZ-8EJ"/>
+                                </constraints>
+                            </scrollView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ogP-6O-jJK">
+                                <rect key="frame" x="12" y="72" width="351" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="CTn-4a-pv6"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="qCL-2z-Dm9" kind="embed" id="i0u-fk-WmA"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ogP-6O-jJK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="6DW-m1-pwf"/>
+                            <constraint firstItem="ac4-Y1-hBX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-4" id="Aul-py-3vZ"/>
+                            <constraint firstItem="ogP-6O-jJK" firstAttribute="leading" secondItem="ac4-Y1-hBX" secondAttribute="leading" id="HUI-ba-5LZ"/>
+                            <constraint firstItem="ogP-6O-jJK" firstAttribute="trailing" secondItem="ac4-Y1-hBX" secondAttribute="trailing" id="PF7-BF-HL1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ac4-Y1-hBX" secondAttribute="bottom" constant="62" id="Uzm-bc-Rvp"/>
+                            <constraint firstItem="ac4-Y1-hBX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fpi-uH-ebc"/>
+                            <constraint firstItem="ac4-Y1-hBX" firstAttribute="top" secondItem="ogP-6O-jJK" secondAttribute="bottom" id="jby-fL-3fx"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="תהילים אריז״ל" id="csh-Uv-pKX"/>
+                    <connections>
+                        <outlet property="dayOfMonth" destination="3fc-A9-ZzT" id="6wr-IH-fzX"/>
+                        <outlet property="dayOfWeek" destination="DbX-UM-cpo" id="ma9-12-Tt3"/>
+                        <outlet property="ellulButton" destination="EC9-vp-Qn8" id="SLd-eX-jmP"/>
+                        <outlet property="tahanouneButton" destination="U2Y-Is-2or" id="uDV-Jd-QEM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2736.8000000000002" y="36.431784107946029"/>
+        </scene>
+        <!--Tehilim View Controller-->
+        <scene sceneID="mzb-uN-OMW">
+            <objects>
+                <viewController storyboardIdentifier="TehilimViewController" automaticallyAdjustsScrollViewInsets="NO" hidesBottomBarWhenPushed="YES" id="dIo-fn-5PG" customClass="TehilimViewController" customModule="TehilimDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="N8O-Fw-NNX"/>
+                        <viewControllerLayoutGuide type="bottom" id="FKO-ff-lL6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="r7h-hu-rLm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Jgb-bG-g7N">
+                                <rect key="frame" x="-0.5" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="91p-xk-Rv4">
+                                    <size key="itemSize" width="375" height="647"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="BUf-mC-trI" customClass="TehilimCollectionViewCell" customModule="TehilimDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="6" translatesAutoresizingMaskIntoConstraints="NO" id="OQV-Pn-67D">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gSQ-ub-1H9">
+                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="646"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="gSQ-ub-1H9" secondAttribute="trailing" id="8P0-Ga-nva"/>
+                                                        <constraint firstItem="gSQ-ub-1H9" firstAttribute="centerY" secondItem="OQV-Pn-67D" secondAttribute="centerY" id="HCQ-8F-aFB"/>
+                                                        <constraint firstItem="gSQ-ub-1H9" firstAttribute="top" secondItem="OQV-Pn-67D" secondAttribute="top" id="JbH-q3-BMP"/>
+                                                        <constraint firstItem="gSQ-ub-1H9" firstAttribute="centerX" secondItem="OQV-Pn-67D" secondAttribute="centerX" id="MZX-Bw-RfA"/>
+                                                        <constraint firstItem="gSQ-ub-1H9" firstAttribute="leading" secondItem="OQV-Pn-67D" secondAttribute="leading" id="c1G-mp-BaK"/>
+                                                        <constraint firstAttribute="bottom" secondItem="gSQ-ub-1H9" secondAttribute="bottom" id="eAo-xg-jiU"/>
+                                                    </constraints>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="dIo-fn-5PG" id="tpw-3o-Pck"/>
+                                                    </connections>
+                                                </scrollView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="OQV-Pn-67D" secondAttribute="trailing" id="DAu-qr-0Jf"/>
+                                            <constraint firstItem="OQV-Pn-67D" firstAttribute="top" secondItem="BUf-mC-trI" secondAttribute="top" id="Fqy-Wt-g2M"/>
+                                            <constraint firstAttribute="bottom" secondItem="OQV-Pn-67D" secondAttribute="bottom" id="ZyM-5S-BT8"/>
+                                            <constraint firstItem="OQV-Pn-67D" firstAttribute="leading" secondItem="BUf-mC-trI" secondAttribute="leading" id="fJ7-9h-Zns"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="gSQ-ub-1H9" id="Hvh-mr-asw"/>
+                                            <outlet property="scrollView" destination="OQV-Pn-67D" id="AK4-EQ-gQS"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Jgb-bG-g7N" secondAttribute="trailing" id="KYr-lI-Cs8"/>
+                            <constraint firstItem="FKO-ff-lL6" firstAttribute="top" secondItem="Jgb-bG-g7N" secondAttribute="bottom" id="YsS-RM-OsR"/>
+                            <constraint firstItem="Jgb-bG-g7N" firstAttribute="leading" secondItem="r7h-hu-rLm" secondAttribute="leading" id="kBY-uN-lhj"/>
+                            <constraint firstItem="Jgb-bG-g7N" firstAttribute="top" secondItem="N8O-Fw-NNX" secondAttribute="bottom" id="rsj-DM-Fw0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="Jgb-bG-g7N" id="eV2-RH-oHc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FYX-hG-F2R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4101.6000000000004" y="393.55322338830587"/>
+        </scene>
+        <!--תהילים אריז״ל-->
+        <scene sceneID="zTr-aq-Wdd">
+            <objects>
+                <viewController id="X3t-fu-CX1" customClass="BrowseViewController" customModule="TehilimDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pQQ-wV-NAq"/>
+                        <viewControllerLayoutGuide type="bottom" id="aUY-Pv-Vhc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Abm-6E-aae">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XEj-x4-aqQ">
+                                <rect key="frame" x="12" y="112" width="351" height="444"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQG-Hw-mg4" customClass="MyButton" customModule="TehilimDemo" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="184" width="311" height="41"/>
+                                        <color key="backgroundColor" red="0.18821030859999999" green="0.1882497072" blue="0.18820786480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="התיקון הכללי"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="general_amendment"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQn-rB-e9e" customClass="MyButton" customModule="TehilimDemo" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="70" width="311" height="41"/>
+                                        <color key="backgroundColor" red="0.18821030859999999" green="0.1882497072" blue="0.18820786480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="בחר יום בשבוע"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="choose_day_of_week"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="tag">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="chooseChapter:" destination="X3t-fu-CX1" eventType="touchUpInside" id="tHM-9V-4dP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quR-K4-8of" customClass="MyButton" customModule="TehilimDemo" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="-44" width="311" height="41"/>
+                                        <color key="backgroundColor" red="0.18821030859999999" green="0.1882497072" blue="0.18820786480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="בחר פרק"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="choose_chapter"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="tag">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="chooseChapter:" destination="X3t-fu-CX1" eventType="touchUpInside" id="Z6U-UF-Rk7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="084-9D-BhG" customClass="MyButton" customModule="TehilimDemo" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="241" width="311" height="41"/>
+                                        <color key="backgroundColor" red="0.18821030859999999" green="0.1882497072" blue="0.18820786480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="תהילים ליארצייט"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="lyartseyt"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="anm-nq-xQo" customClass="MyButton" customModule="TehilimDemo" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="127" width="311" height="41"/>
+                                        <color key="backgroundColor" red="0.18821030859999999" green="0.1882497072" blue="0.18820786480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="בחר יום בחודש"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="choose_day_of_month"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="tag">
+                                                <integer key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="chooseChapter:" destination="X3t-fu-CX1" eventType="touchUpInside" id="7qK-bX-WDR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJV-IT-efa" customClass="MyButton" customModule="TehilimDemo" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="13" width="311" height="41"/>
+                                        <color key="backgroundColor" red="0.18821030859999999" green="0.1882497072" blue="0.18820786480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="בחר ספר-תהילים"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="choose_book"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="tag">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="chooseChapter:" destination="X3t-fu-CX1" eventType="touchUpInside" id="JGT-Ih-ru4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jab-lt-OrM" customClass="MyButton" customModule="TehilimDemo" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="298" width="311" height="41"/>
+                                        <color key="backgroundColor" red="0.18821030859999999" green="0.1882497072" blue="0.18820786480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="סגולות"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="virtues"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52e-Wc-M2y" customClass="MyButton" customModule="TehilimDemo" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="355" width="311" height="41"/>
+                                        <color key="backgroundColor" red="0.18821030859999999" green="0.1882497072" blue="0.18820786480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="פרק אקראי"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="random_chapter"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="084-9D-BhG" firstAttribute="top" secondItem="HQG-Hw-mg4" secondAttribute="bottom" constant="16" id="1jx-GE-opB"/>
+                                    <constraint firstAttribute="bottom" secondItem="52e-Wc-M2y" secondAttribute="bottom" constant="-20" id="1uM-Qb-3sw"/>
+                                    <constraint firstItem="KJV-IT-efa" firstAttribute="leading" secondItem="XEj-x4-aqQ" secondAttribute="leading" constant="20" id="2If-w3-e8z"/>
+                                    <constraint firstItem="quR-K4-8of" firstAttribute="centerX" secondItem="XEj-x4-aqQ" secondAttribute="centerX" id="52s-Km-AZZ"/>
+                                    <constraint firstItem="084-9D-BhG" firstAttribute="leading" secondItem="XEj-x4-aqQ" secondAttribute="leading" constant="20" id="5Nc-LH-DXj"/>
+                                    <constraint firstItem="Jab-lt-OrM" firstAttribute="top" secondItem="084-9D-BhG" secondAttribute="bottom" constant="16" id="Afj-oO-m2p"/>
+                                    <constraint firstAttribute="trailing" secondItem="GQn-rB-e9e" secondAttribute="trailing" constant="20" id="Gjf-kS-NKB"/>
+                                    <constraint firstItem="anm-nq-xQo" firstAttribute="leading" secondItem="XEj-x4-aqQ" secondAttribute="leading" constant="20" id="H6i-Ae-4eE"/>
+                                    <constraint firstAttribute="trailing" secondItem="HQG-Hw-mg4" secondAttribute="trailing" constant="20" id="JDp-ba-wie"/>
+                                    <constraint firstAttribute="trailing" secondItem="Jab-lt-OrM" secondAttribute="trailing" constant="20" id="NOa-Xk-ci6"/>
+                                    <constraint firstItem="52e-Wc-M2y" firstAttribute="leading" secondItem="XEj-x4-aqQ" secondAttribute="leading" constant="20" id="OfM-cs-5Mn"/>
+                                    <constraint firstAttribute="trailing" secondItem="anm-nq-xQo" secondAttribute="trailing" constant="20" id="Re4-RJ-2Oh"/>
+                                    <constraint firstItem="GQn-rB-e9e" firstAttribute="leading" secondItem="XEj-x4-aqQ" secondAttribute="leading" constant="20" id="TFm-Qs-nWp"/>
+                                    <constraint firstAttribute="trailing" secondItem="52e-Wc-M2y" secondAttribute="trailing" constant="20" id="Tro-Jq-01f"/>
+                                    <constraint firstItem="Jab-lt-OrM" firstAttribute="leading" secondItem="XEj-x4-aqQ" secondAttribute="leading" constant="20" id="Wpv-wS-9x9"/>
+                                    <constraint firstItem="KJV-IT-efa" firstAttribute="top" secondItem="quR-K4-8of" secondAttribute="bottom" constant="16" id="aAb-2P-fvV"/>
+                                    <constraint firstItem="quR-K4-8of" firstAttribute="top" secondItem="XEj-x4-aqQ" secondAttribute="top" constant="-44" id="aHL-3r-GHh"/>
+                                    <constraint firstAttribute="trailing" secondItem="084-9D-BhG" secondAttribute="trailing" constant="20" id="bkV-Py-YVg"/>
+                                    <constraint firstItem="HQG-Hw-mg4" firstAttribute="top" secondItem="anm-nq-xQo" secondAttribute="bottom" constant="16" id="cjA-iS-x8I"/>
+                                    <constraint firstItem="quR-K4-8of" firstAttribute="leading" secondItem="XEj-x4-aqQ" secondAttribute="leading" constant="20" id="ekh-vb-jeb"/>
+                                    <constraint firstItem="anm-nq-xQo" firstAttribute="top" secondItem="GQn-rB-e9e" secondAttribute="bottom" constant="16" id="jZT-oh-TT7"/>
+                                    <constraint firstItem="52e-Wc-M2y" firstAttribute="top" secondItem="Jab-lt-OrM" secondAttribute="bottom" constant="16" id="kfD-nD-Hzr"/>
+                                    <constraint firstAttribute="trailing" secondItem="KJV-IT-efa" secondAttribute="trailing" constant="20" id="lPX-9j-FZ0"/>
+                                    <constraint firstItem="HQG-Hw-mg4" firstAttribute="leading" secondItem="XEj-x4-aqQ" secondAttribute="leading" constant="20" id="lmo-5c-mKe"/>
+                                    <constraint firstItem="GQn-rB-e9e" firstAttribute="top" secondItem="KJV-IT-efa" secondAttribute="bottom" constant="16" id="mg8-Ln-Rdy"/>
+                                    <constraint firstAttribute="trailing" secondItem="quR-K4-8of" secondAttribute="trailing" constant="20" id="xgZ-ei-YoT"/>
+                                </constraints>
+                            </scrollView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U9a-ua-f5e">
+                                <rect key="frame" x="12" y="72" width="351" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="dEu-lc-WfU"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="qCL-2z-Dm9" kind="embed" id="5Ca-v0-5eq"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XEj-x4-aqQ" firstAttribute="leading" secondItem="Abm-6E-aae" secondAttribute="leadingMargin" constant="-4" id="27f-cR-ZcV"/>
+                            <constraint firstItem="XEj-x4-aqQ" firstAttribute="centerX" secondItem="Abm-6E-aae" secondAttribute="centerX" id="Hmn-El-VYf"/>
+                            <constraint firstItem="U9a-ua-f5e" firstAttribute="leading" secondItem="XEj-x4-aqQ" secondAttribute="leading" id="IGS-kF-7q1"/>
+                            <constraint firstItem="aUY-Pv-Vhc" firstAttribute="top" secondItem="XEj-x4-aqQ" secondAttribute="bottom" constant="62" id="P1I-uO-ae7"/>
+                            <constraint firstItem="U9a-ua-f5e" firstAttribute="trailing" secondItem="XEj-x4-aqQ" secondAttribute="trailing" id="dt9-xi-kD9"/>
+                            <constraint firstItem="U9a-ua-f5e" firstAttribute="top" secondItem="pQQ-wV-NAq" secondAttribute="bottom" constant="8" id="eJe-hr-33a"/>
+                            <constraint firstItem="XEj-x4-aqQ" firstAttribute="top" secondItem="U9a-ua-f5e" secondAttribute="bottom" id="kiw-dK-ac6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="תהילים אריז״ל" id="6dk-pN-rpP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zcs-Se-9Xb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2736.8000000000002" y="765.96701649175418"/>
+        </scene>
+        <!--יומי-->
+        <scene sceneID="Pk4-eN-9tY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hbw-9z-WKd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="יומי" id="4fB-OE-Vsh">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-10"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="zjZ-2T-MWr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.83527369279999997" green="0.96236947250000004" blue="0.63688470180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="A14-EF-TGX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vo2-JN-gDD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1896.8" y="37.331334332833585"/>
+        </scene>
+        <!--My Tab Bar Controller-->
+        <scene sceneID="dpx-kZ-T05">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="x28-tF-a2S" customClass="MyTabBarController" customModule="TehilimDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" id="WdS-eT-mGm">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.83527369279999997" green="0.96236947250000004" blue="0.63688470180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.83527369279999997" green="0.96236947250000004" blue="0.63688470180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="hbw-9z-WKd" kind="relationship" relationship="viewControllers" id="jZ1-2V-bjt"/>
+                        <segue destination="wUk-bV-cP5" kind="relationship" relationship="viewControllers" id="7eC-dR-lNA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MXQ-gz-sdI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="834" y="382"/>
+        </scene>
+        <!--הכל-->
+        <scene sceneID="kfD-GI-hFk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wUk-bV-cP5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="הכל" id="neW-8T-you">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-10"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="mFl-eU-jL4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="X3t-fu-CX1" kind="relationship" relationship="rootViewController" id="7XK-Kb-ZeV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ZG-4s-v5u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1897" y="766"/>
+        </scene>
+        <!--Date View Controller-->
+        <scene sceneID="G1m-Mc-UgB">
+            <objects>
+                <viewController id="qCL-2z-Dm9" customClass="DateViewController" customModule="TehilimDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JPx-Lc-hpV"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ksh-ba-1ql"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="R4z-1w-18w">
+                        <rect key="frame" x="0.0" y="0.0" width="351" height="40"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3R-yz-JuC">
+                                <rect key="frame" x="159" y="10.5" width="34.5" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.83529411764705885" green="0.96078431372549022" blue="0.63529411764705879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="d3R-yz-JuC" firstAttribute="centerY" secondItem="R4z-1w-18w" secondAttribute="centerY" id="ccE-4L-OVK"/>
+                            <constraint firstItem="d3R-yz-JuC" firstAttribute="centerX" secondItem="R4z-1w-18w" secondAttribute="centerX" id="gMU-ft-0u8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="d3R-yz-JuC" id="X36-vV-cZX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7tL-oz-tQK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3394" y="394"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="5Ca-v0-5eq"/>
+    </inferredMetricsTieBreakers>
 </document>

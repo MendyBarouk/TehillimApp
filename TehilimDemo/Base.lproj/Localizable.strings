@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  TehilimDemo
+
+  Created by Mendy Barouk on 27/04/2017.
+  Copyright © 2017 Mendy Barouk. All rights reserved.
+*/
+
+"tehilim_title" = "Tehilim Arizal";
+"yehi_ratzon" = "Yehi Rotzon";
+"day_of_month" = "Tehillim for ";
+"my_chapters" = "My Chapters";
+"day_of_week" = "Tehillim for ";
+"all_psalm" = "All Tehillim";
+"no_tachanun" = "Tehilim 20";
+"elul" = "Elul";
+"choose_chapter" = "Select a Chapter";
+"choose_book" = "Select a Book";
+"choose_day_of_week" = "Select Day Of Week";
+"choose_day_of_month" = "Select Day Of Month";
+"general_amendment" = "Tikkun Haklali";
+"lyartseyt" = "Yahrtzeit Tehillim";
+"virtues" = "Segulot";
+"random_chapter" = "Random Chapter";
+"daily" = "Daily";
+"everything" = "Browse";

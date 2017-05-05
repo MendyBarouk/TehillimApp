@@ -7,14 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9609268D1EAFA4D200237DE3 /* TehilimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9609268C1EAFA4D200237DE3 /* TehilimViewController.swift */; };
+		96322D701EB5D7DB009C839C /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96322D6F1EB5D7DB009C839C /* BrowseViewController.swift */; };
+		964178B21EB2227400ACEF04 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964178B11EB2227400ACEF04 /* DateViewController.swift */; };
+		964178B71EB223C900ACEF04 /* LocalizableUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964178B61EB223C900ACEF04 /* LocalizableUtils.swift */; };
+		964178B81EB2240A00ACEF04 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 964178BA1EB2240A00ACEF04 /* Localizable.strings */; };
+		966B317D1EB9ECA900BD81E3 /* tehilim in Resources */ = {isa = PBXBuildFile; fileRef = 966B317C1EB9ECA900BD81E3 /* tehilim */; };
 		96899C9F1E93BDF1003754CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96899C9E1E93BDF1003754CF /* AppDelegate.swift */; };
 		96899CA11E93BDF1003754CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96899CA01E93BDF1003754CF /* ViewController.swift */; };
 		96899CA41E93BDF1003754CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96899CA21E93BDF1003754CF /* Main.storyboard */; };
 		96899CA61E93BDF1003754CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96899CA51E93BDF1003754CF /* Assets.xcassets */; };
 		96899CA91E93BDF1003754CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96899CA71E93BDF1003754CF /* LaunchScreen.storyboard */; };
+		96BC8C0A1EBC529500E92DAB /* TehilimCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BC8C091EBC529500E92DAB /* TehilimCollectionViewCell.swift */; };
+		96C10D501EB09218005086DF /* Tehilim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C10D4F1EB09218005086DF /* Tehilim.swift */; };
+		96C10D521EB09DF3005086DF /* myDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C10D511EB09DF3005086DF /* myDate.swift */; };
+		96C10D551EB0A1C1005086DF /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C10D541EB0A1C1005086DF /* MyButton.swift */; };
+		96C10D571EB0A746005086DF /* tehilim.json in Resources */ = {isa = PBXBuildFile; fileRef = 96C10D561EB0A746005086DF /* tehilim.json */; };
+		96D2AC011EB237100013B621 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D2AC001EB237100013B621 /* MyTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9609268C1EAFA4D200237DE3 /* TehilimViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TehilimViewController.swift; sourceTree = "<group>"; };
+		96322D6F1EB5D7DB009C839C /* BrowseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
+		964178B11EB2227400ACEF04 /* DateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
+		964178B61EB223C900ACEF04 /* LocalizableUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizableUtils.swift; sourceTree = "<group>"; };
+		964178B91EB2240A00ACEF04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		964178BB1EB2241700ACEF04 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
+		964178BC1EB2241F00ACEF04 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		966B317C1EB9ECA900BD81E3 /* tehilim */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tehilim; sourceTree = "<group>"; };
 		96899C9B1E93BDF1003754CF /* TehilimDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TehilimDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96899C9E1E93BDF1003754CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96899CA01E93BDF1003754CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +42,12 @@
 		96899CA51E93BDF1003754CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96899CA81E93BDF1003754CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96899CAA1E93BDF1003754CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96BC8C091EBC529500E92DAB /* TehilimCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TehilimCollectionViewCell.swift; path = View/TehilimCollectionViewCell.swift; sourceTree = "<group>"; };
+		96C10D4F1EB09218005086DF /* Tehilim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Tehilim.swift; path = Model/Tehilim.swift; sourceTree = "<group>"; };
+		96C10D511EB09DF3005086DF /* myDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = myDate.swift; path = Model/myDate.swift; sourceTree = "<group>"; };
+		96C10D541EB0A1C1005086DF /* MyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyButton.swift; path = View/MyButton.swift; sourceTree = "<group>"; };
+		96C10D561EB0A746005086DF /* tehilim.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tehilim.json; sourceTree = "<group>"; };
+		96D2AC001EB237100013B621 /* MyTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyTabBarController.swift; path = View/MyTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +61,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9609268B1EAFA4B300237DE3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				96899CA01E93BDF1003754CF /* ViewController.swift */,
+				96322D6F1EB5D7DB009C839C /* BrowseViewController.swift */,
+				9609268C1EAFA4D200237DE3 /* TehilimViewController.swift */,
+				964178B01EB2226500ACEF04 /* children */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		964178B01EB2226500ACEF04 /* children */ = {
+			isa = PBXGroup;
+			children = (
+				964178B11EB2227400ACEF04 /* DateViewController.swift */,
+			);
+			name = children;
+			sourceTree = "<group>";
+		};
+		964178B31EB223A300ACEF04 /* strings */ = {
+			isa = PBXGroup;
+			children = (
+				964178BA1EB2240A00ACEF04 /* Localizable.strings */,
+				964178B61EB223C900ACEF04 /* LocalizableUtils.swift */,
+			);
+			name = strings;
+			sourceTree = "<group>";
+		};
 		96899C921E93BDF1003754CF = {
 			isa = PBXGroup;
 			children = (
@@ -55,13 +109,37 @@
 			isa = PBXGroup;
 			children = (
 				96899C9E1E93BDF1003754CF /* AppDelegate.swift */,
-				96899CA01E93BDF1003754CF /* ViewController.swift */,
+				964178B31EB223A300ACEF04 /* strings */,
+				96C10D531EB0A19B005086DF /* View */,
+				96C10D4E1EB091F2005086DF /* Model */,
+				9609268B1EAFA4B300237DE3 /* Controller */,
+				966B317C1EB9ECA900BD81E3 /* tehilim */,
 				96899CA21E93BDF1003754CF /* Main.storyboard */,
 				96899CA51E93BDF1003754CF /* Assets.xcassets */,
 				96899CA71E93BDF1003754CF /* LaunchScreen.storyboard */,
+				96C10D561EB0A746005086DF /* tehilim.json */,
 				96899CAA1E93BDF1003754CF /* Info.plist */,
 			);
 			path = TehilimDemo;
+			sourceTree = "<group>";
+		};
+		96C10D4E1EB091F2005086DF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				96C10D4F1EB09218005086DF /* Tehilim.swift */,
+				96C10D511EB09DF3005086DF /* myDate.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		96C10D531EB0A19B005086DF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				96C10D541EB0A1C1005086DF /* MyButton.swift */,
+				96D2AC001EB237100013B621 /* MyTabBarController.swift */,
+				96BC8C091EBC529500E92DAB /* TehilimCollectionViewCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +174,7 @@
 				TargetAttributes = {
 					96899C9A1E93BDF1003754CF = {
 						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 4WDRL2HN7M;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -107,6 +186,8 @@
 			knownRegions = (
 				en,
 				Base,
+				he,
+				fr,
 			);
 			mainGroup = 96899C921E93BDF1003754CF;
 			productRefGroup = 96899C9C1E93BDF1003754CF /* Products */;
@@ -123,7 +204,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				964178B81EB2240A00ACEF04 /* Localizable.strings in Resources */,
+				96C10D571EB0A746005086DF /* tehilim.json in Resources */,
 				96899CA91E93BDF1003754CF /* LaunchScreen.storyboard in Resources */,
+				966B317D1EB9ECA900BD81E3 /* tehilim in Resources */,
 				96899CA61E93BDF1003754CF /* Assets.xcassets in Resources */,
 				96899CA41E93BDF1003754CF /* Main.storyboard in Resources */,
 			);
@@ -136,14 +220,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96C10D501EB09218005086DF /* Tehilim.swift in Sources */,
+				96BC8C0A1EBC529500E92DAB /* TehilimCollectionViewCell.swift in Sources */,
+				9609268D1EAFA4D200237DE3 /* TehilimViewController.swift in Sources */,
+				96D2AC011EB237100013B621 /* MyTabBarController.swift in Sources */,
+				964178B21EB2227400ACEF04 /* DateViewController.swift in Sources */,
+				96322D701EB5D7DB009C839C /* BrowseViewController.swift in Sources */,
 				96899CA11E93BDF1003754CF /* ViewController.swift in Sources */,
+				964178B71EB223C900ACEF04 /* LocalizableUtils.swift in Sources */,
 				96899C9F1E93BDF1003754CF /* AppDelegate.swift in Sources */,
+				96C10D521EB09DF3005086DF /* myDate.swift in Sources */,
+				96C10D551EB0A1C1005086DF /* MyButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		964178BA1EB2240A00ACEF04 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				964178B91EB2240A00ACEF04 /* Base */,
+				964178BB1EB2241700ACEF04 /* he */,
+				964178BC1EB2241F00ACEF04 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		96899CA21E93BDF1003754CF /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -167,6 +270,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -218,6 +322,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -262,10 +367,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4WDRL2HN7M;
 				INFOPLIST_FILE = TehilimDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mendibarouk.TehilimDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -274,10 +382,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4WDRL2HN7M;
 				INFOPLIST_FILE = TehilimDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mendibarouk.TehilimDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -301,6 +412,7 @@
 				96899CAF1E93BDF1003754CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  TehilimDemo
+
+  Created by Mendy Barouk on 27/04/2017.
+  Copyright © 2017 Mendy Barouk. All rights reserved.
+*/
+
+"tehilim_title" = "תהילים אריז״ל";
+"yehi_ratzon" = "יהי רצון";
+"day_of_month" = "תהילים ל";
+"my_chapters" = "הפרקים שלי";
+"day_of_week" = "תהילים ל";
+"all_psalm" = "כל התהילים";
+"no_tachanun" = "פרק כ׳";
+"elul" = "ג׳ תהילים אלול";
+"choose_chapter" = "בחר פרק";
+"choose_book" = "בחר ספר-תהילים";
+"choose_day_of_week" = "בחר יום בשבוע";
+"choose_day_of_month" = "בחר יום בחודש";
+"general_amendment" = "התיקון הכללי";
+"lyartseyt" = "תהילים ליארצייט";
+"virtues" = "סגולות";
+"random_chapter" = "פרק אקראי";
+"daily" = "יומי";
+"everything" = "הכל";
