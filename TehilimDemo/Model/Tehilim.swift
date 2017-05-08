@@ -16,18 +16,23 @@ class Tehilim: NSObject {
 
     
     private override init() {
-        chaptersArray = Tehilim.getNamesOfAllTehilim() ?? []
+        chaptersArray = Tehilim.getNamesOfTehilimDirectory() ?? []
         super.init()
     }
     
-    private static func getNamesOfAllTehilim() -> [String]? {
+    private static func getNamesOfTehilimDirectory() -> [String]? {
         guard let path = Bundle.main.resourcePath else { return nil }
         
         let tehilimPath = path + "/tehilim"
         let fileManager = FileManager.default
         
         do {
-            let imageNames = try fileManager.contentsOfDirectory(atPath: tehilimPath)
+            var imageNames: [String] = try fileManager.contentsOfDirectory(atPath: tehilimPath)
+            
+            imageNames.sort {
+                return $0.localizedStandardCompare($1) == .orderedAscending
+            }
+            
             print(imageNames)
             print(imageNames.count)
             return imageNames
@@ -39,20 +44,24 @@ class Tehilim: NSObject {
     }
     
     func getAllNamesOfTehilim() -> [String]{
-        return getTehilim(from: 0, to: 173)
+        return getTehilim(from: 0, to: 214)
+    }
+    
+    func getYehiRatzon(befor: Bool) -> [String] {
+        return befor ? getTehilim(from: 215, to: 215) : getTehilim(from: 216, to: 216)
     }
     
     func getNamesTehilimBy(weekday: Int) -> [String] {
         var start: Int
         var end: Int
         switch weekday {
-        case 1: start = 0; end = 28
-        case 2: start = 28; end = 55
-        case 3: start = 55; end = 81
-        case 4: start = 81; end = 105
-        case 5: start = 105; end = 126
-        case 6: start = 126; end = 148
-        case 7: start = 148; end = 172
+        case 1: start = 0; end = 36
+        case 2: start = 37; end = 66
+        case 3: start = 67; end = 99
+        case 4: start = 100; end = 128
+        case 5: start = 129; end = 153
+        case 6: start = 154; end = 178
+        case 7: start = 179; end = 214
         default:
             return []
         }

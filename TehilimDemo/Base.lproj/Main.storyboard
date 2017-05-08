@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="x28-tF-a2S">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="x28-tF-a2S">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ac4-Y1-hBX">
-                                <rect key="frame" x="12" y="112" width="351" height="444"/>
+                                <rect key="frame" x="12" y="112" width="351" height="386"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="viL-WY-wDd" customClass="MyButton" customModule="TehilimDemo" customModuleProvider="target">
                                         <rect key="frame" x="20" y="20" width="311" height="41"/>
@@ -34,6 +34,9 @@
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="yehi_ratzon"/>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="yehiRatzonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5sG-ux-ybH"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fc-A9-ZzT" customClass="MyButton" customModule="TehilimDemo" customModuleProvider="target">
                                         <rect key="frame" x="20" y="77" width="311" height="41"/>
@@ -168,7 +171,7 @@
                             <constraint firstItem="ac4-Y1-hBX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-4" id="Aul-py-3vZ"/>
                             <constraint firstItem="ogP-6O-jJK" firstAttribute="leading" secondItem="ac4-Y1-hBX" secondAttribute="leading" id="HUI-ba-5LZ"/>
                             <constraint firstItem="ogP-6O-jJK" firstAttribute="trailing" secondItem="ac4-Y1-hBX" secondAttribute="trailing" id="PF7-BF-HL1"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ac4-Y1-hBX" secondAttribute="bottom" constant="62" id="Uzm-bc-Rvp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ac4-Y1-hBX" secondAttribute="bottom" constant="120" id="Uzm-bc-Rvp"/>
                             <constraint firstItem="ac4-Y1-hBX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fpi-uH-ebc"/>
                             <constraint firstItem="ac4-Y1-hBX" firstAttribute="top" secondItem="ogP-6O-jJK" secondAttribute="bottom" id="jby-fL-3fx"/>
                         </constraints>
@@ -278,7 +281,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XEj-x4-aqQ">
-                                <rect key="frame" x="12" y="112" width="351" height="444"/>
+                                <rect key="frame" x="12" y="112" width="351" height="386"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQG-Hw-mg4" customClass="MyButton" customModule="TehilimDemo" customModuleProvider="target">
                                         <rect key="frame" x="20" y="184" width="311" height="41"/>
@@ -376,6 +379,9 @@
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="virtues"/>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="segulotAction:" destination="X3t-fu-CX1" eventType="touchUpInside" id="wiH-k2-BuU"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52e-Wc-M2y" customClass="MyButton" customModule="TehilimDemo" customModuleProvider="target">
                                         <rect key="frame" x="20" y="355" width="311" height="41"/>
@@ -435,7 +441,7 @@
                             <constraint firstItem="XEj-x4-aqQ" firstAttribute="leading" secondItem="Abm-6E-aae" secondAttribute="leadingMargin" constant="-4" id="27f-cR-ZcV"/>
                             <constraint firstItem="XEj-x4-aqQ" firstAttribute="centerX" secondItem="Abm-6E-aae" secondAttribute="centerX" id="Hmn-El-VYf"/>
                             <constraint firstItem="U9a-ua-f5e" firstAttribute="leading" secondItem="XEj-x4-aqQ" secondAttribute="leading" id="IGS-kF-7q1"/>
-                            <constraint firstItem="aUY-Pv-Vhc" firstAttribute="top" secondItem="XEj-x4-aqQ" secondAttribute="bottom" constant="62" id="P1I-uO-ae7"/>
+                            <constraint firstItem="aUY-Pv-Vhc" firstAttribute="top" secondItem="XEj-x4-aqQ" secondAttribute="bottom" constant="120" id="P1I-uO-ae7"/>
                             <constraint firstItem="U9a-ua-f5e" firstAttribute="trailing" secondItem="XEj-x4-aqQ" secondAttribute="trailing" id="dt9-xi-kD9"/>
                             <constraint firstItem="U9a-ua-f5e" firstAttribute="top" secondItem="pQQ-wV-NAq" secondAttribute="bottom" constant="8" id="eJe-hr-33a"/>
                             <constraint firstItem="XEj-x4-aqQ" firstAttribute="top" secondItem="U9a-ua-f5e" secondAttribute="bottom" id="kiw-dK-ac6"/>

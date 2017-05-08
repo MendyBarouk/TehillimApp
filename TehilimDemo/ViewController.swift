@@ -34,6 +34,33 @@ class ViewController: UIViewController {
 
     }
     
+    @IBAction func yehiRatzonAction(_ sender: UIButton) {
+        let sheet = UIAlertController(title: "Yehi Ratzon", message: "Please choose the yehi ratzon", preferredStyle: .actionSheet)
+        
+        func handler(_ action: UIAlertAction){
+            guard let title = action.title else {
+                return
+            }
+            switch title {
+            case "yehi_ratzon_befor".localizedString:
+                let nextVC = TehilimViewController.viewController(with: tehilim.getYehiRatzon(befor: true), andTitle: "Yehi Ratzon")
+                self.navigationController?.pushViewController(nextVC, animated: true)
+            case "yehi_ratzon_after".localizedString:
+                let nextVC = TehilimViewController.viewController(with: tehilim.getYehiRatzon(befor: false), andTitle: "Yehi Ratzon")
+                self.navigationController?.pushViewController(nextVC, animated: true)
+            default:
+                return
+            }
+        }
+        sheet.addAction(UIAlertAction(title: "yehi_ratzon_befor".localizedString, style: .default, handler: handler))
+        sheet.addAction(UIAlertAction(title: "yehi_ratzon_after".localizedString, style: .default, handler: handler))
+        sheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        
+        present(sheet, animated: true, completion: nil)
+        
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tehilim = Tehilim.tehilimManager

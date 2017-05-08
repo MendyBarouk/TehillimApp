@@ -12,7 +12,6 @@
 		964178B21EB2227400ACEF04 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964178B11EB2227400ACEF04 /* DateViewController.swift */; };
 		964178B71EB223C900ACEF04 /* LocalizableUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964178B61EB223C900ACEF04 /* LocalizableUtils.swift */; };
 		964178B81EB2240A00ACEF04 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 964178BA1EB2240A00ACEF04 /* Localizable.strings */; };
-		966B317D1EB9ECA900BD81E3 /* tehilim in Resources */ = {isa = PBXBuildFile; fileRef = 966B317C1EB9ECA900BD81E3 /* tehilim */; };
 		96899C9F1E93BDF1003754CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96899C9E1E93BDF1003754CF /* AppDelegate.swift */; };
 		96899CA11E93BDF1003754CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96899CA01E93BDF1003754CF /* ViewController.swift */; };
 		96899CA41E93BDF1003754CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96899CA21E93BDF1003754CF /* Main.storyboard */; };
@@ -34,7 +33,6 @@
 		964178B91EB2240A00ACEF04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		964178BB1EB2241700ACEF04 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
 		964178BC1EB2241F00ACEF04 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
-		966B317C1EB9ECA900BD81E3 /* tehilim */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tehilim; sourceTree = "<group>"; };
 		96899C9B1E93BDF1003754CF /* TehilimDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TehilimDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96899C9E1E93BDF1003754CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96899CA01E93BDF1003754CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -113,7 +111,6 @@
 				96C10D531EB0A19B005086DF /* View */,
 				96C10D4E1EB091F2005086DF /* Model */,
 				9609268B1EAFA4B300237DE3 /* Controller */,
-				966B317C1EB9ECA900BD81E3 /* tehilim */,
 				96899CA21E93BDF1003754CF /* Main.storyboard */,
 				96899CA51E93BDF1003754CF /* Assets.xcassets */,
 				96899CA71E93BDF1003754CF /* LaunchScreen.storyboard */,
@@ -207,7 +204,6 @@
 				964178B81EB2240A00ACEF04 /* Localizable.strings in Resources */,
 				96C10D571EB0A746005086DF /* tehilim.json in Resources */,
 				96899CA91E93BDF1003754CF /* LaunchScreen.storyboard in Resources */,
-				966B317D1EB9ECA900BD81E3 /* tehilim in Resources */,
 				96899CA61E93BDF1003754CF /* Assets.xcassets in Resources */,
 				96899CA41E93BDF1003754CF /* Main.storyboard in Resources */,
 			);

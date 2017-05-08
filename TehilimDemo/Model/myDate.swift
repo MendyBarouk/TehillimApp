@@ -21,8 +21,11 @@ class MyDate: NSObject {
     let weekday: Int
     
     override init() {
-        let date = Date()
-        let formatter = DateFormatter()
+        //let dateStrDemo = "2017-08-23"
+        //let dateFormaterDemo = DateFormatter()
+        //dateFormaterDemo.dateFormat = "yyyy-MM-dd"
+        let date = Date()//dateFormaterDemo.date(from: dateStrDemo)! //Date()
+        let formatter = DateFormatter()//dateFormaterDemo//DateFormatter()
         formatter.dateStyle = .full
         formatter.calendar = Calendar(identifier: .hebrew)
         if Locale.current.languageCode == "he" || Locale.current.languageCode == "fr" {

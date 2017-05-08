@@ -37,8 +37,7 @@ class BrowseViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
                 self.navigationController?.pushViewController(nextVC, animated: true)
             }
         case 3:
-            let array = ["sunday".localizedString, "monday".localizedString, "tuesday".localizedString, "wednesday".localizedString, "thursday".localizedString,"friday".localizedString,"saturday".localizedString
-]
+            let array = ["sunday".localizedString, "monday".localizedString, "tuesday".localizedString, "wednesday".localizedString, "thursday".localizedString,"friday".localizedString,"saturday".localizedString]
             choose(array: array, white: 3, title: "choose_weekday".localizedString) {
                 let selected = array.index(of: self.valueForRow(row: self.pickerView.selectedRow(inComponent: 0)))! + 1
                 
@@ -70,6 +69,10 @@ class BrowseViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
     
+    @IBAction func segulotAction(_ sender: UIButton) {
+        let sheet = UIAlertController(title: "Segulot", message: nil, preferredStyle: .actionSheet)
+        
+    }
     
     func choose(array: Array<String>, white tag: Int, title: String, doneAction: @escaping ()->Void) {
         let vc = UIViewController()
