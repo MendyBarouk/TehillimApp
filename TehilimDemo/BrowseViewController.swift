@@ -12,34 +12,44 @@ class BrowseViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
 
     var tehilim: Tehilim!
     var pickerView: UIPickerView!
-    var pickerViewData: Array<Int>!
+    var pickerViewData: Array<String>!
     var pickerViewRows: Int!
     var pickerViewMiddle: Int!
     
     
     @IBAction func chooseChapter(_ sender: UIButton) {
+        
         switch sender.tag {
         case 1:
-            choose(array: Array(1...150), white: 1, title: "Select Chapter") {
-                let selected = self.valueForRow(row: self.pickerView.selectedRow(inComponent: 0))
-                let nextVC = TehilimViewController.viewController(with: self.tehilim.getNamesTehilimBy(perek: selected), andTitle: "chapter \(selected)")
+            choose(array: Array(1...150).map {
+                String($0)
+            }, white: 1, title: "choose_chapter".localizedString) {
+                let selected = Int(self.valueForRow(row: self.pickerView.selectedRow(inComponent: 0)))!
+                let nextVC = TehilimViewController.viewController(with: self.tehilim.getNamesTehilimBy(perek: selected), andTitle: "chapter".localizedString + " \(selected)")
                 self.navigationController?.pushViewController(nextVC, animated: true)
             }
         case 2:
-            choose(array: Array(1...5), white: 2, title: "Select a Book") {
-                let selected = self.valueForRow(row: self.pickerView.selectedRow(inComponent: 0))
-                let nextVC = TehilimViewController.viewController(with: self.tehilim.getNamesTehilimBy(sefer: selected), andTitle: "Book \(selected)")
+            choose(array: Array(1...5).map {
+                String($0)
+            }, white: 2, title: "choose_book".localizedString) {
+                let selected = Int(self.valueForRow(row: self.pickerView.selectedRow(inComponent: 0)))!
+                let nextVC = TehilimViewController.viewController(with: self.tehilim.getNamesTehilimBy(sefer: selected), andTitle: "book".localizedString + " \(selected)")
                 self.navigationController?.pushViewController(nextVC, animated: true)
             }
         case 3:
-            choose(array: Array(1...7), white: 3, title: "Select day") {
-                let selected = self.valueForRow(row: self.pickerView.selectedRow(inComponent: 0))
-                let nextVC = TehilimViewController.viewController(with: self.tehilim.getNamesTehilimBy(weekday: selected), andTitle: "day \(selected)")
+            let array = ["sunday".localizedString, "monday".localizedString, "tuesday".localizedString, "wednesday".localizedString, "thursday".localizedString,"friday".localizedString,"saturday".localizedString
+]
+            choose(array: array, white: 3, title: "choose_weekday".localizedString) {
+                let selected = array.index(of: self.valueForRow(row: self.pickerView.selectedRow(inComponent: 0)))! + 1
+                
+                let nextVC = TehilimViewController.viewController(with: self.tehilim.getNamesTehilimBy(weekday: selected), andTitle: array[selected - 1])
                 self.navigationController?.pushViewController(nextVC, animated: true)
             }
         case 4:
-            choose(array: Array(1...30), white: 3, title: "Select day") {
-                let selected = self.valueForRow(row: self.pickerView.selectedRow(inComponent: 0))
+            choose(array: Array(1...30).map {
+                String($0)
+            }, white: 3, title: "choose_monthday".localizedString) {
+                let selected = Int(self.valueForRow(row: self.pickerView.selectedRow(inComponent: 0)))!
                 let nextVC = TehilimViewController.viewController(with: self.tehilim.getNamesTehilimBy(dayOfMonth: selected), andTitle: "day \(selected)")
                 self.navigationController?.pushViewController(nextVC, animated: true)
             }
@@ -48,8 +58,20 @@ class BrowseViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         }
         
     }
+    @IBAction func tikunHaklaliAction(_ sender: Any) {
+        let tikunHaklali = tehilim.tikunHaklali()
+        let nextVC = TehilimViewController.viewController(with: tikunHaklali, andTitle: "Tikun Haklali")
+        self.navigationController?.pushViewController(nextVC, animated: true)
+    }
     
-    func choose(array: Array<Int>, white tag: Int, title: String, doneAction: @escaping ()->Void) {
+    @IBAction func randomPerekAction(_ sender: Any) {
+        let perek = tehilim.randomTehilim()
+        let nextVC = TehilimViewController.viewController(with: perek.values.first!, andTitle: "random_chapter".localizedString + " \(perek.keys.first!)")
+        self.navigationController?.pushViewController(nextVC, animated: true)
+    }
+    
+    
+    func choose(array: Array<String>, white tag: Int, title: String, doneAction: @escaping ()->Void) {
         let vc = UIViewController()
         vc.preferredContentSize = CGSize(width: 250,height: 200)
         
@@ -96,17 +118,6 @@ class BrowseViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
     // MARK: - UIPickerViewDataSource
     
     
@@ -132,7 +143,7 @@ class BrowseViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         return str
     }
     
-    func valueForRow(row: Int) -> Int {
+    func valueForRow(row: Int) -> String {
         return pickerViewData[row%pickerViewData.count]
     }
     

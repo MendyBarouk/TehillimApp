@@ -58,6 +58,15 @@
                                             <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="my_chapters"/>
                                         </userDefinedRuntimeAttributes>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DgH-xA-MPK">
+                                        <rect key="frame" x="290" y="134" width="41" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="41" id="k71-pD-W5a"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="1"/>
+                                        <state key="normal" image="icons8-edit_property_filled"/>
+                                    </button>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DbX-UM-cpo" customClass="MyButton" customModule="TehilimDemo" customModuleProvider="target">
                                         <rect key="frame" x="20" y="191" width="311" height="41"/>
                                         <color key="backgroundColor" red="0.18821030859999999" green="0.1882497072" blue="0.18820786480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -113,6 +122,7 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="viL-WY-wDd" secondAttribute="trailing" constant="20" id="5SF-PM-UGh"/>
+                                    <constraint firstItem="DgH-xA-MPK" firstAttribute="trailing" secondItem="K10-i0-bts" secondAttribute="trailing" id="5sE-hC-afy"/>
                                     <constraint firstItem="DbX-UM-cpo" firstAttribute="top" secondItem="K10-i0-bts" secondAttribute="bottom" constant="16" id="9Yc-tE-rDm"/>
                                     <constraint firstItem="DbX-UM-cpo" firstAttribute="leading" secondItem="ac4-Y1-hBX" secondAttribute="leading" constant="20" id="ABd-3W-jtl"/>
                                     <constraint firstItem="viL-WY-wDd" firstAttribute="centerX" secondItem="ac4-Y1-hBX" secondAttribute="centerX" id="AGR-NO-K2Z"/>
@@ -126,9 +136,13 @@
                                     <constraint firstItem="3fc-A9-ZzT" firstAttribute="leading" secondItem="ac4-Y1-hBX" secondAttribute="leading" constant="20" id="KZa-SA-iBr"/>
                                     <constraint firstItem="EC9-vp-Qn8" firstAttribute="leading" secondItem="ac4-Y1-hBX" secondAttribute="leading" constant="20" id="Mb6-nM-5fk"/>
                                     <constraint firstItem="EC9-vp-Qn8" firstAttribute="top" secondItem="U2Y-Is-2or" secondAttribute="bottom" constant="16" id="P5y-72-Dha"/>
+                                    <constraint firstItem="DgH-xA-MPK" firstAttribute="bottom" secondItem="K10-i0-bts" secondAttribute="bottom" id="Stq-eD-zfn"/>
                                     <constraint firstItem="qAt-QV-enB" firstAttribute="top" secondItem="DbX-UM-cpo" secondAttribute="bottom" constant="16" id="bv3-bW-gRU"/>
+                                    <constraint firstItem="DgH-xA-MPK" firstAttribute="baseline" secondItem="K10-i0-bts" secondAttribute="baseline" id="e2f-cr-oNa"/>
+                                    <constraint firstItem="DgH-xA-MPK" firstAttribute="top" secondItem="K10-i0-bts" secondAttribute="top" id="ecj-XY-uYM"/>
                                     <constraint firstItem="U2Y-Is-2or" firstAttribute="top" secondItem="qAt-QV-enB" secondAttribute="bottom" constant="16" id="f1y-PO-KDp"/>
                                     <constraint firstItem="3fc-A9-ZzT" firstAttribute="top" secondItem="viL-WY-wDd" secondAttribute="bottom" constant="16" id="fEb-AS-ZWV"/>
+                                    <constraint firstItem="DgH-xA-MPK" firstAttribute="centerY" secondItem="K10-i0-bts" secondAttribute="centerY" id="fc8-Xh-ddf"/>
                                     <constraint firstAttribute="trailing" secondItem="EC9-vp-Qn8" secondAttribute="trailing" constant="20" id="kuD-ZF-Nys"/>
                                     <constraint firstItem="qAt-QV-enB" firstAttribute="leading" secondItem="ac4-Y1-hBX" secondAttribute="leading" constant="20" id="s79-DQ-Hx8"/>
                                     <constraint firstAttribute="trailing" secondItem="U2Y-Is-2or" secondAttribute="trailing" constant="20" id="slr-Uc-pgG"/>
@@ -275,6 +289,9 @@
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="general_amendment"/>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tikunHaklaliAction:" destination="X3t-fu-CX1" eventType="touchUpInside" id="j6H-1M-AVE"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQn-rB-e9e" customClass="MyButton" customModule="TehilimDemo" customModuleProvider="target">
                                         <rect key="frame" x="20" y="70" width="311" height="41"/>
@@ -369,6 +386,9 @@
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="random_chapter"/>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="randomPerekAction:" destination="X3t-fu-CX1" eventType="touchUpInside" id="dbw-6n-auj"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -477,11 +497,10 @@
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-10"/>
                     </tabBarItem>
                     <toolbarItems/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="667"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="mFl-eU-jL4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.83527369279999997" green="0.96236947250000004" blue="0.63688470180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -526,6 +545,9 @@
             <point key="canvasLocation" x="3394" y="394"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icons8-edit_property_filled" width="25" height="25"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="5Ca-v0-5eq"/>
     </inferredMetricsTieBreakers>

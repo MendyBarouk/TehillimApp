@@ -21,8 +21,8 @@ class ViewController: UIViewController {
         var chapters: [String]
         var title: String
         switch sender.tag {
-        case 2: chapters = tehilim.getNamesTehilimBy(dayOfMonth: MyDate.dateManager.day); title = "yom \(MyDate.dateManager.day)"
-        case 4: chapters = tehilim.getNamesTehilimBy(weekday: MyDate.dateManager.weekday); title = "yom \(MyDate.dateManager.weekday)"
+        case 2: chapters = tehilim.getNamesTehilimBy(dayOfMonth: MyDate.dateManager.day); title = MyDate.dateManager.dayAndMonth()
+        case 4: chapters = tehilim.getNamesTehilimBy(weekday: MyDate.dateManager.weekday); title = MyDate.dateManager.dayOfWeek()
         case 5: chapters = tehilim.getAllNamesOfTehilim(); title = "All Tehilim"
         case 6: chapters = tehilim.perek20(); title = "Perek 20"
         case 7: chapters = tehilim.getNamesTehilimOfEllulMonthBy(dayOfMonth: MyDate.dateManager.day, month: MyDate.dateManager.month); title = "3 tehilim of ellul"

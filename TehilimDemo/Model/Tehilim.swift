@@ -16,11 +16,8 @@ class Tehilim: NSObject {
 
     
     private override init() {
-        
         chaptersArray = Tehilim.getNamesOfAllTehilim() ?? []
-        
         super.init()
-
     }
     
     private static func getNamesOfAllTehilim() -> [String]? {
@@ -32,16 +29,17 @@ class Tehilim: NSObject {
         do {
             let imageNames = try fileManager.contentsOfDirectory(atPath: tehilimPath)
             print(imageNames)
+            print(imageNames.count)
             return imageNames
             
         } catch {
-            print(error.localizedDescription)
+            debugPrint(error.localizedDescription)
             return nil
         }
     }
     
     func getAllNamesOfTehilim() -> [String]{
-        return chaptersArray
+        return getTehilim(from: 0, to: 173)
     }
     
     func getNamesTehilimBy(weekday: Int) -> [String] {
@@ -336,12 +334,32 @@ class Tehilim: NSObject {
     func perek20() -> [String] {
         return getNamesTehilimBy(perek: 20)
     }
+    
+    func randomTehilim() -> [Int:[String]] {
+        let r = Int(arc4random_uniform(UInt32(150)) + 1)
+        return [r:getNamesTehilimBy(perek: r)]
+    }
+    
+    func tikunHaklali() -> [String] {
+        let tikunHaklali = [16,32,41,42,77,90,105,137,150]
+
+        var prakim: [String] = []
+        for perek in tikunHaklali {
+            prakim += getNamesTehilimBy(perek: perek)
+        }
+        
+        prakim.remove(at: 6)
+        
+        return prakim
+    }
 
     private func getTehilim(from: Int, to: Int) -> [String] {
-        print(chaptersArray.count)
+        debugPrint(chaptersArray.count)
         return Array(chaptersArray[from...to])
     }
+    
 }
+
 
 
 

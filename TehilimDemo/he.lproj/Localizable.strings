@@ -6,7 +6,7 @@
   Copyright © 2017 Mendy Barouk. All rights reserved.
 */
 
-"tehilim_title" = "תהילים אריז״ל";
+"tehilim_title" = "תהילים";
 "yehi_ratzon" = "יהי רצון";
 "day_of_month" = "תהילים ל";
 "my_chapters" = "הפרקים שלי";
@@ -24,3 +24,16 @@
 "random_chapter" = "פרק אקראי";
 "daily" = "יומי";
 "everything" = "הכל";
+"choose_book" = "Choose a book";
+"choose_chapter" = "Choose a chapter";
+"choose_weekday" = "Choose a weekday";
+"choose_monthday" = "Choose a day of the month";
+"chapter" = "Chapter";
+"book" = "Book";
+"sunday" = "Sunday";
+"monday" = "Monday";
+"tuesday" = "Tuesday";
+"wednesday" = "Wednesday";
+"thursday" = "Thursday";
+"friday" = "Friday";
+"saturday" = "Saturday";

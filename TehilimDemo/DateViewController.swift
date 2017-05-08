@@ -14,7 +14,7 @@ class DateViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        label.text = MyDate.dateManager.dateNow
+        label.text = MyDate.dateManager.dateNow.capitalized
 
     }
 

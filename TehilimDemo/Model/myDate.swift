@@ -79,7 +79,7 @@ class MyDate: NSObject {
     }
     
     func dayOfWeek() -> String {
-        return dateArray[0]
+        return dateArray[0].capitalized
     }
     
     func twoDayOfRoshChodesh() -> Bool {

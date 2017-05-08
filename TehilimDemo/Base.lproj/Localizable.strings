@@ -6,7 +6,7 @@
   Copyright © 2017 Mendy Barouk. All rights reserved.
 */
 
-"tehilim_title" = "Tehilim Arizal";
+"tehilim_title" = "Tehilim";
 "yehi_ratzon" = "Yehi Rotzon";
 "day_of_month" = "Tehillim for ";
 "my_chapters" = "My Chapters";
@@ -24,3 +24,20 @@
 "random_chapter" = "Random Chapter";
 "daily" = "Daily";
 "everything" = "Browse";
+"choose_book" = "Choose a book";
+"choose_chapter" = "Choose a chapter";
+"choose_weekday" = "Choose a weekday";
+"choose_monthday" = "Choose a day of the month";
+"chapter" = "Chapter";
+"book" = "Book";
+"sunday" = "Sunday";
+"monday" = "Monday";
+"tuesday" = "Tuesday";
+"wednesday" = "Wednesday";
+"thursday" = "Thursday";
+"friday" = " Friday";
+"saturday" = "Saturday";
+
+
+
+

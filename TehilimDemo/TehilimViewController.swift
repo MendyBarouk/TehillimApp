@@ -29,12 +29,12 @@ class TehilimViewController: UIViewController, UICollectionViewDataSource, UICol
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //imageView.image = UIImage(named: "tehilim/" + chapters[0])
         
         collectionView.dataSource = self
         collectionView.delegate = self
         
         navigationItem.title = myTitle
+        collectionView.semanticContentAttribute = .forceRightToLeft
         
     }
     

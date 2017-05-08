@@ -6,7 +6,7 @@
   Copyright © 2017 Mendy Barouk. All rights reserved.
 */
 
-"tehilim_title" = "Téhilim Arizal";
+"tehilim_title" = "Téhilim";
 "yehi_ratzon" = "Yehi Ratson";
 "day_of_month" = "Téhilim du ";
 "my_chapters" = "Mes Chapitres";
@@ -24,3 +24,16 @@
 "random_chapter" = "Chapitre Aléatoir";
 "daily" = "Quotidien";
 "everything" = "Parcourir";
+"choose_book" = "Choisissez un livre";
+"choose_chapter" = "Choisissez un chapitre";
+"choose_weekday" = "Choisissez un jour de semaine";
+"choose_monthday" = "Choisissez un jour du mois";
+"chapter" = "Chapitre";
+"book" = "Book";
+"sunday" = "Dimanche";
+"monday" = "Lundi";
+"tuesday" = "Mardi";
+"wednesday" = "Mercredi";
+"thursday" = "Jeudi";
+"friday" = "Vendredi";
+"saturday" = "Samedi";
