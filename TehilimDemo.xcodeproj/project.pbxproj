@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		9609268D1EAFA4D200237DE3 /* TehilimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9609268C1EAFA4D200237DE3 /* TehilimViewController.swift */; };
 		96322D701EB5D7DB009C839C /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96322D6F1EB5D7DB009C839C /* BrowseViewController.swift */; };
+		963FA0521EC46220004CC696 /* MyNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963FA0511EC46220004CC696 /* MyNavigationItem.swift */; };
 		964178B21EB2227400ACEF04 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964178B11EB2227400ACEF04 /* DateViewController.swift */; };
 		964178B71EB223C900ACEF04 /* LocalizableUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964178B61EB223C900ACEF04 /* LocalizableUtils.swift */; };
 		964178B81EB2240A00ACEF04 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 964178BA1EB2240A00ACEF04 /* Localizable.strings */; };
 		96899C9F1E93BDF1003754CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96899C9E1E93BDF1003754CF /* AppDelegate.swift */; };
 		96899CA11E93BDF1003754CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96899CA01E93BDF1003754CF /* ViewController.swift */; };
 		96899CA41E93BDF1003754CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96899CA21E93BDF1003754CF /* Main.storyboard */; };
-		96899CA61E93BDF1003754CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96899CA51E93BDF1003754CF /* Assets.xcassets */; };
 		96899CA91E93BDF1003754CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96899CA71E93BDF1003754CF /* LaunchScreen.storyboard */; };
 		96BC8C0A1EBC529500E92DAB /* TehilimCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BC8C091EBC529500E92DAB /* TehilimCollectionViewCell.swift */; };
 		96C10D501EB09218005086DF /* Tehilim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C10D4F1EB09218005086DF /* Tehilim.swift */; };
@@ -23,11 +23,14 @@
 		96C10D551EB0A1C1005086DF /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C10D541EB0A1C1005086DF /* MyButton.swift */; };
 		96C10D571EB0A746005086DF /* tehilim.json in Resources */ = {isa = PBXBuildFile; fileRef = 96C10D561EB0A746005086DF /* tehilim.json */; };
 		96D2AC011EB237100013B621 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D2AC001EB237100013B621 /* MyTabBarController.swift */; };
+		96EEB2B71EC2DE25009D5BC2 /* Guematria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EEB2B61EC2DE25009D5BC2 /* Guematria.swift */; };
+		96FBFA591EC19F95003C3752 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96FBFA581EC19F95003C3752 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9609268C1EAFA4D200237DE3 /* TehilimViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TehilimViewController.swift; sourceTree = "<group>"; };
 		96322D6F1EB5D7DB009C839C /* BrowseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
+		963FA0511EC46220004CC696 /* MyNavigationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyNavigationItem.swift; path = View/MyNavigationItem.swift; sourceTree = "<group>"; };
 		964178B11EB2227400ACEF04 /* DateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
 		964178B61EB223C900ACEF04 /* LocalizableUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizableUtils.swift; sourceTree = "<group>"; };
 		964178B91EB2240A00ACEF04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -37,7 +40,6 @@
 		96899C9E1E93BDF1003754CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96899CA01E93BDF1003754CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		96899CA31E93BDF1003754CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		96899CA51E93BDF1003754CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96899CA81E93BDF1003754CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96899CAA1E93BDF1003754CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96BC8C091EBC529500E92DAB /* TehilimCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TehilimCollectionViewCell.swift; path = View/TehilimCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -46,6 +48,8 @@
 		96C10D541EB0A1C1005086DF /* MyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyButton.swift; path = View/MyButton.swift; sourceTree = "<group>"; };
 		96C10D561EB0A746005086DF /* tehilim.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tehilim.json; sourceTree = "<group>"; };
 		96D2AC001EB237100013B621 /* MyTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyTabBarController.swift; path = View/MyTabBarController.swift; sourceTree = "<group>"; };
+		96EEB2B61EC2DE25009D5BC2 /* Guematria.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Guematria.swift; path = Model/Utils/Guematria.swift; sourceTree = "<group>"; };
+		96FBFA581EC19F95003C3752 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,13 +110,13 @@
 		96899C9D1E93BDF1003754CF /* TehilimDemo */ = {
 			isa = PBXGroup;
 			children = (
+				96FBFA581EC19F95003C3752 /* Assets.xcassets */,
 				96899C9E1E93BDF1003754CF /* AppDelegate.swift */,
 				964178B31EB223A300ACEF04 /* strings */,
 				96C10D531EB0A19B005086DF /* View */,
 				96C10D4E1EB091F2005086DF /* Model */,
 				9609268B1EAFA4B300237DE3 /* Controller */,
 				96899CA21E93BDF1003754CF /* Main.storyboard */,
-				96899CA51E93BDF1003754CF /* Assets.xcassets */,
 				96899CA71E93BDF1003754CF /* LaunchScreen.storyboard */,
 				96C10D561EB0A746005086DF /* tehilim.json */,
 				96899CAA1E93BDF1003754CF /* Info.plist */,
@@ -123,6 +127,7 @@
 		96C10D4E1EB091F2005086DF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				96EEB2B51EC2DE0B009D5BC2 /* Utils */,
 				96C10D4F1EB09218005086DF /* Tehilim.swift */,
 				96C10D511EB09DF3005086DF /* myDate.swift */,
 			);
@@ -135,8 +140,17 @@
 				96C10D541EB0A1C1005086DF /* MyButton.swift */,
 				96D2AC001EB237100013B621 /* MyTabBarController.swift */,
 				96BC8C091EBC529500E92DAB /* TehilimCollectionViewCell.swift */,
+				963FA0511EC46220004CC696 /* MyNavigationItem.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		96EEB2B51EC2DE0B009D5BC2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				96EEB2B61EC2DE25009D5BC2 /* Guematria.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,8 +218,8 @@
 				964178B81EB2240A00ACEF04 /* Localizable.strings in Resources */,
 				96C10D571EB0A746005086DF /* tehilim.json in Resources */,
 				96899CA91E93BDF1003754CF /* LaunchScreen.storyboard in Resources */,
-				96899CA61E93BDF1003754CF /* Assets.xcassets in Resources */,
 				96899CA41E93BDF1003754CF /* Main.storyboard in Resources */,
+				96FBFA591EC19F95003C3752 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,9 +236,11 @@
 				96D2AC011EB237100013B621 /* MyTabBarController.swift in Sources */,
 				964178B21EB2227400ACEF04 /* DateViewController.swift in Sources */,
 				96322D701EB5D7DB009C839C /* BrowseViewController.swift in Sources */,
+				963FA0521EC46220004CC696 /* MyNavigationItem.swift in Sources */,
 				96899CA11E93BDF1003754CF /* ViewController.swift in Sources */,
 				964178B71EB223C900ACEF04 /* LocalizableUtils.swift in Sources */,
 				96899C9F1E93BDF1003754CF /* AppDelegate.swift in Sources */,
+				96EEB2B71EC2DE25009D5BC2 /* Guematria.swift in Sources */,
 				96C10D521EB09DF3005086DF /* myDate.swift in Sources */,
 				96C10D551EB0A1C1005086DF /* MyButton.swift in Sources */,
 			);

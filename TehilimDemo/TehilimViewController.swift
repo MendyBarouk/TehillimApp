@@ -15,6 +15,7 @@ class TehilimViewController: UIViewController, UICollectionViewDataSource, UICol
     
     var chapters: [String]!
     var myTitle: String!
+    var tapGesture : UITapGestureRecognizer!
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -35,7 +36,14 @@ class TehilimViewController: UIViewController, UICollectionViewDataSource, UICol
         
         navigationItem.title = myTitle
         collectionView.semanticContentAttribute = .forceRightToLeft
-        
+        navigationController?.interactivePopGestureRecognizer?.isEnabled = false
+
+        self.tapGesture = UITapGestureRecognizer(target: self, action: #selector(toggleHideBarAction))
+        self.view.addGestureRecognizer(tapGesture)
+    }
+    
+    func toggleHideBarAction() {
+        self.navigationController?.setNavigationBarHidden(!self.navigationController!.isNavigationBarHidden, animated: true)
     }
     
     // MARK: - UICollectionViewDataSource
@@ -46,7 +54,10 @@ class TehilimViewController: UIViewController, UICollectionViewDataSource, UICol
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! TehilimCollectionViewCell
         
-        cell.configure(with: UIImage(named: "tehilim/" + chapters[indexPath.row])!)
+        cell.configure(with: UIImage(named: chapters[indexPath.row])!)
+        if let gesture = cell.tapGesture{
+            self.tapGesture.require(toFail: gesture)
+        }
         
         return cell
     }

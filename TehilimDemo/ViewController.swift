@@ -66,6 +66,7 @@ class ViewController: UIViewController {
         tehilim = Tehilim.tehilimManager
         navigationItem.title = "tehilim_title".localizedString
         
+        
         // Do any additional setup after loading the view, typically from a nib.
         dayOfMonth.setTitle("day_of_month".localizedString + MyDate.dateManager.dayAndMonth(), for: .normal)
         dayOfWeek.setTitle("day_of_week".localizedString + MyDate.dateManager.dayOfWeek(), for: .normal)

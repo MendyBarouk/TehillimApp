@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="x28-tF-a2S">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gcH-Es-9DE">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--תהילים אריז״ל-->
+        <!--יומי-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController autoresizesArchivedViewToFullSize="NO" automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="TehilimDemo" customModuleProvider="target" sceneMemberID="viewController">
@@ -176,7 +176,10 @@
                             <constraint firstItem="ac4-Y1-hBX" firstAttribute="top" secondItem="ogP-6O-jJK" secondAttribute="bottom" id="jby-fL-3fx"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="תהילים אריז״ל" id="csh-Uv-pKX"/>
+                    <tabBarItem key="tabBarItem" title="יומי" id="bdJ-DU-tn3">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-10"/>
+                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="csh-Uv-pKX"/>
                     <connections>
                         <outlet property="dayOfMonth" destination="3fc-A9-ZzT" id="6wr-IH-fzX"/>
                         <outlet property="dayOfWeek" destination="DbX-UM-cpo" id="ma9-12-Tt3"/>
@@ -268,7 +271,7 @@
             </objects>
             <point key="canvasLocation" x="4101.6000000000004" y="393.55322338830587"/>
         </scene>
-        <!--תהילים אריז״ל-->
+        <!--הכל-->
         <scene sceneID="zTr-aq-Wdd">
             <objects>
                 <viewController id="X3t-fu-CX1" customClass="BrowseViewController" customModule="TehilimDemo" customModuleProvider="target" sceneMemberID="viewController">
@@ -337,6 +340,9 @@
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="lyartseyt"/>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="yahrtzeitAction:" destination="X3t-fu-CX1" eventType="touchUpInside" id="jFA-fs-KKl"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="anm-nq-xQo" customClass="MyButton" customModule="TehilimDemo" customModuleProvider="target">
                                         <rect key="frame" x="20" y="127" width="311" height="41"/>
@@ -447,39 +453,38 @@
                             <constraint firstItem="XEj-x4-aqQ" firstAttribute="top" secondItem="U9a-ua-f5e" secondAttribute="bottom" id="kiw-dK-ac6"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="תהילים אריז״ל" id="6dk-pN-rpP"/>
+                    <tabBarItem key="tabBarItem" title="הכל" id="Bmt-bB-TZp">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-10"/>
+                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="6dk-pN-rpP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zcs-Se-9Xb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2736.8000000000002" y="765.96701649175418"/>
         </scene>
-        <!--יומי-->
-        <scene sceneID="Pk4-eN-9tY">
+        <!--Main Navigation Controller-->
+        <scene sceneID="fHz-JX-4i2">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hbw-9z-WKd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="יומי" id="4fB-OE-Vsh">
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-10"/>
-                    </tabBarItem>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="zjZ-2T-MWr">
+                <navigationController id="gcH-Es-9DE" customClass="MainNavigationController" customModule="TehilimDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="LZt-ve-Iox">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="0.83527369279999997" green="0.96236947250000004" blue="0.63688470180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.83658725020000002" green="0.96187466379999997" blue="0.63617378469999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
-                    <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="A14-EF-TGX"/>
+                        <segue destination="x28-tF-a2S" kind="relationship" relationship="rootViewController" id="nOF-EE-iZx"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vo2-JN-gDD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Fi-5V-nls" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1896.8" y="37.331334332833585"/>
+            <point key="canvasLocation" x="761" y="394"/>
         </scene>
-        <!--My Tab Bar Controller-->
+        <!--תהילים-->
         <scene sceneID="dpx-kZ-T05">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="x28-tF-a2S" customClass="MyTabBarController" customModule="TehilimDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" title="תהילים" id="zUI-AZ-8XD" customClass="MyNavigationItem" customModule="TehilimDemo" customModuleProvider="target"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" id="WdS-eT-mGm">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -487,35 +492,13 @@
                         <color key="selectedImageTintColor" red="0.83527369279999997" green="0.96236947250000004" blue="0.63688470180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="hbw-9z-WKd" kind="relationship" relationship="viewControllers" id="jZ1-2V-bjt"/>
-                        <segue destination="wUk-bV-cP5" kind="relationship" relationship="viewControllers" id="7eC-dR-lNA"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Wub-AU-daf"/>
+                        <segue destination="X3t-fu-CX1" kind="relationship" relationship="viewControllers" id="IQk-cr-X2D"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MXQ-gz-sdI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="834" y="382"/>
-        </scene>
-        <!--הכל-->
-        <scene sceneID="kfD-GI-hFk">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wUk-bV-cP5" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="הכל" id="neW-8T-you">
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-10"/>
-                    </tabBarItem>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="mFl-eU-jL4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="0.83527369279999997" green="0.96236947250000004" blue="0.63688470180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="X3t-fu-CX1" kind="relationship" relationship="rootViewController" id="7XK-Kb-ZeV"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1ZG-4s-v5u" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1897" y="766"/>
+            <point key="canvasLocation" x="1682" y="394"/>
         </scene>
         <!--Date View Controller-->
         <scene sceneID="G1m-Mc-UgB">
@@ -555,6 +538,6 @@
         <image name="icons8-edit_property_filled" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="5Ca-v0-5eq"/>
+        <segue reference="i0u-fk-WmA"/>
     </inferredMetricsTieBreakers>
 </document>

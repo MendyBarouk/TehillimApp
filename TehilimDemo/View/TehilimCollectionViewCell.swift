@@ -13,6 +13,12 @@ class TehilimCollectionViewCell: UICollectionViewCell, UIScrollViewDelegate {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var imageView: UIImageView!
     
+    var tapGesture : UIGestureRecognizer?{
+        get{
+            return self.gestureRecognizers?.first
+        }
+    }
+    
     override func awakeFromNib() {
         scrollView.delegate = self
         let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(onDoubleTap(gestureRecognizer:)))
@@ -23,9 +29,6 @@ class TehilimCollectionViewCell: UICollectionViewCell, UIScrollViewDelegate {
     
     func configure(with image: UIImage) {
         imageView.image = image
-        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(onDoubleTap(gestureRecognizer:)))
-        tapRecognizer.numberOfTapsRequired = 2
-        self.addGestureRecognizer(tapRecognizer)
     }
     
     
