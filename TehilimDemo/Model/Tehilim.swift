@@ -34,7 +34,6 @@ class Tehilim: NSObject {
     }
     
     func getTehilimOfYortzeitWith(name: String) -> [String] {
-        //todo...
         var result: [String] = []
         let array = [33,16,17,72,91,104,130]
         result.append(chaptersArray[218])
@@ -50,12 +49,12 @@ class Tehilim: NSObject {
     func getTehilimForHealingWith(name: String) -> [String] {
         //todo...
         var result: [String] = []
-        let array = [1,2,3,4,5,6,7]
+        let array = [20,6,9,13,16,17,18,22,23,28,30,31,32,33,37,38,39,41,49,55,56,69,86,88,89,90,91,102,103,104,107,116,118,142,143,148]
         for i in 0..<array.count {
             result += getNamesTehilimBy(perek: array[i])
         }
         
-        result += get119By(name: name)
+        result += get119By(name: name+"קרעשטנ")
         
         
         result.append(chaptersArray[243])
@@ -309,7 +308,7 @@ class Tehilim: NSObject {
         case 120: start = 180; end = 180
         case 121: start = 181; end = 181
         case 122: start = 182; end = 182
-        case 123: start = 153; end = 183
+        case 123: start = 183; end = 183
         case 124: start = 184; end = 184
         case 125: start = 185; end = 185
         case 126: start = 186; end = 186
@@ -341,6 +340,17 @@ class Tehilim: NSObject {
             return []
         }
         return getTehilim(from: start, to: end)
+    }
+    
+    func getNamesTehilimBy(birthday: NSDate) -> [String] {
+        let now = Date()
+        let birthday: Date = birthday as Date
+        let calendar = Calendar(identifier: .hebrew)
+        
+        let ageComponents = calendar.dateComponents([.year], from: birthday, to: now)
+        let age = ageComponents.year!
+                
+        return getNamesTehilimBy(perek: age + 1)
     }
     
     func getNamesTehilimOfEllulMonthBy(dayOfMonth: Int, month: Int) -> [String] {
@@ -387,12 +397,16 @@ extension Tehilim{
     func getTehilimFor(segulot: Segulot) -> [String] {
         let tehilimArr: [Int]!
         switch segulot {
-        case .LIVELIHOOD: tehilimArr = [1,2,3,4,5]
-        case .SHALOM_BAYIT: tehilimArr = [1,2,3,4,5]
-        case .AT_BIRTH: tehilimArr = [1,2,3,4,5]
-        case .CHILDREN: tehilimArr = [1,2,3,4,5]
-        case .SHIDDUCH: tehilimArr = [1,2,3,4,5]
-        case .PREGNANCY: tehilimArr = [1,2,3,4,5]
+        case .LIVELIHOOD: tehilimArr = [23,24]
+        case .SHALOM_BAYIT: tehilimArr = [45,46]
+        case .AT_BIRTH:
+            tehilimArr = [1,2,3,4,20,21,22,23,24,33,47,72,86,90,91,92,93,104]
+            for i in 112...150 {
+                tehilimArr.append(i)
+            }
+        case .CHILDREN: tehilimArr = [102,103]
+        case .SHIDDUCH: tehilimArr = [32,33,70,71,72,82,121,124]
+        case .PREGNANCY: tehilimArr = [128]
         }
         
         var prakim: [String] = []
@@ -400,6 +414,18 @@ extension Tehilim{
             prakim += getNamesTehilimBy(perek: perek)
         }
         return prakim
+    }
+    
+    func getMyChaptersBy(tehilimCore: [TehilimCore]) -> [String] {
+        var result: [String] = []
+        for t in tehilimCore {
+            if t.perek != 0 {
+                result += getNamesTehilimBy(perek: Int(t.perek))
+            } else if let d = t.date {
+                result += getNamesTehilimBy(birthday: d)
+            }
+        }
+        return result
     }
 }
 

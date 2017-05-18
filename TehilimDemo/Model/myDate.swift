@@ -21,7 +21,7 @@ class MyDate: NSObject {
     let weekday: Int
     
     override init() {
-        let dateStrDemo = "2017-09-12"
+        let dateStrDemo = "2017-08-24"
         let dateFormaterDemo = DateFormatter()
         dateFormaterDemo.dateFormat = "yyyy-MM-dd"
         let date = dateFormaterDemo.date(from: dateStrDemo)! //Date()

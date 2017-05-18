@@ -61,6 +61,19 @@ class ViewController: UIViewController {
         
     }
     
+    
+    @IBAction func myChaptersAction(_ sender: UIButton) {
+        if TehilimCore.fetchedAllObject().isEmpty {
+            let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "MyChaptersTableViewController")
+            self.navigationController?.pushViewController(nextVC!, animated: true)
+        } else {
+            let myChapters = tehilim.getMyChaptersBy(tehilimCore: TehilimCore.fetchedAllObject())
+            let nextVC = TehilimViewController.viewController(with: myChapters, andTitle: "My Chapters")
+            self.navigationController?.pushViewController(nextVC, animated: true)
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tehilim = Tehilim.tehilimManager
@@ -73,9 +86,19 @@ class ViewController: UIViewController {
         if !MyDate.dateManager.ellul {
             ellulButton.isHidden = true
         }
+        if MyDate.dateManager.tahanoun && MyDate.dateManager.ellul {
+            // explication.
+            
+            //ellulButton.frame.origin.y = tahanouneButton.frame.origin.y
+            let oldFrame = ellulButton.frame
+            self.ellulButton.layer.anchorPoint = CGPoint(x: 0.5, y: 2)
+            self.ellulButton.frame = oldFrame
+            
+        }
         if MyDate.dateManager.tahanoun {
             tahanouneButton.isHidden = true
         }
+
         
     }
     

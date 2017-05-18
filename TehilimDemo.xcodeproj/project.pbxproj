@@ -7,12 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9602FD3D1ECACB8B004BD063 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9602FD3C1ECACB8B004BD063 /* GoogleService-Info.plist */; };
+		9602FD3F1ECAEA16004BD063 /* DedicationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9602FD3E1ECAEA16004BD063 /* DedicationsViewController.swift */; };
+		9602FD411ECAEE86004BD063 /* FBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9602FD401ECAEE86004BD063 /* FBManager.swift */; };
+		9602FD431ECAF208004BD063 /* Dedication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9602FD421ECAF208004BD063 /* Dedication.swift */; };
 		9609268D1EAFA4D200237DE3 /* TehilimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9609268C1EAFA4D200237DE3 /* TehilimViewController.swift */; };
+		960C932E1EC9A4B900513FA1 /* LocalDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960C932D1EC9A4B900513FA1 /* LocalDBManager.swift */; };
+		962F01CB1EC852D5009158BE /* TehilimCore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 962F01C91EC852D5009158BE /* TehilimCore.xcdatamodeld */; };
+		962F01EE1EC859CC009158BE /* MyChaptersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962F01ED1EC859CC009158BE /* MyChaptersCell.swift */; };
+		962F01F21EC85B0E009158BE /* MyChaptersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962F01F11EC85B0E009158BE /* MyChaptersTableViewController.swift */; };
+		962F01F41EC862E7009158BE /* MyAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962F01F31EC862E7009158BE /* MyAlertViewController.swift */; };
 		96322D701EB5D7DB009C839C /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96322D6F1EB5D7DB009C839C /* BrowseViewController.swift */; };
 		963FA0521EC46220004CC696 /* MyNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963FA0511EC46220004CC696 /* MyNavigationItem.swift */; };
 		964178B21EB2227400ACEF04 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964178B11EB2227400ACEF04 /* DateViewController.swift */; };
 		964178B71EB223C900ACEF04 /* LocalizableUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964178B61EB223C900ACEF04 /* LocalizableUtils.swift */; };
 		964178B81EB2240A00ACEF04 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 964178BA1EB2240A00ACEF04 /* Localizable.strings */; };
+		96710E601ECB12F2009B8412 /* AddDedicaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96710E5F1ECB12F2009B8412 /* AddDedicaceViewController.swift */; };
 		96899C9F1E93BDF1003754CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96899C9E1E93BDF1003754CF /* AppDelegate.swift */; };
 		96899CA11E93BDF1003754CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96899CA01E93BDF1003754CF /* ViewController.swift */; };
 		96899CA41E93BDF1003754CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96899CA21E93BDF1003754CF /* Main.storyboard */; };
@@ -21,14 +31,27 @@
 		96C10D501EB09218005086DF /* Tehilim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C10D4F1EB09218005086DF /* Tehilim.swift */; };
 		96C10D521EB09DF3005086DF /* myDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C10D511EB09DF3005086DF /* myDate.swift */; };
 		96C10D551EB0A1C1005086DF /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C10D541EB0A1C1005086DF /* MyButton.swift */; };
-		96C10D571EB0A746005086DF /* tehilim.json in Resources */ = {isa = PBXBuildFile; fileRef = 96C10D561EB0A746005086DF /* tehilim.json */; };
+		96C3A93B1EC9771C00AF372F /* ConvertTypeDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C3A93A1EC9771C00AF372F /* ConvertTypeDatePicker.swift */; };
 		96D2AC011EB237100013B621 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D2AC001EB237100013B621 /* MyTabBarController.swift */; };
 		96EEB2B71EC2DE25009D5BC2 /* Guematria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EEB2B61EC2DE25009D5BC2 /* Guematria.swift */; };
 		96FBFA591EC19F95003C3752 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96FBFA581EC19F95003C3752 /* Assets.xcassets */; };
+		96FEB8A31ECC4BCC00F2B4DA /* DonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FEB8A21ECC4BCC00F2B4DA /* DonationViewController.swift */; };
+		C373435FC9BECB6BE140E838 /* Pods_TehilimDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77F83B3D0DECF257BA4FDE91 /* Pods_TehilimDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C470A10D1F4BF1FFEDC0723 /* Pods-TehilimDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TehilimDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TehilimDemo/Pods-TehilimDemo.release.xcconfig"; sourceTree = "<group>"; };
+		77F83B3D0DECF257BA4FDE91 /* Pods_TehilimDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TehilimDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9602FD3C1ECACB8B004BD063 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9602FD3E1ECAEA16004BD063 /* DedicationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DedicationsViewController.swift; sourceTree = "<group>"; };
+		9602FD401ECAEE86004BD063 /* FBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FBManager.swift; path = Model/FBManager.swift; sourceTree = "<group>"; };
+		9602FD421ECAF208004BD063 /* Dedication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dedication.swift; path = Model/Dedication.swift; sourceTree = "<group>"; };
 		9609268C1EAFA4D200237DE3 /* TehilimViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TehilimViewController.swift; sourceTree = "<group>"; };
+		960C932D1EC9A4B900513FA1 /* LocalDBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalDBManager.swift; sourceTree = "<group>"; };
+		962F01CA1EC852D5009158BE /* TehilimCore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TehilimCore.xcdatamodel; sourceTree = "<group>"; };
+		962F01ED1EC859CC009158BE /* MyChaptersCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyChaptersCell.swift; path = View/MyChaptersCell.swift; sourceTree = "<group>"; };
+		962F01F11EC85B0E009158BE /* MyChaptersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyChaptersTableViewController.swift; sourceTree = "<group>"; };
+		962F01F31EC862E7009158BE /* MyAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAlertViewController.swift; sourceTree = "<group>"; };
 		96322D6F1EB5D7DB009C839C /* BrowseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
 		963FA0511EC46220004CC696 /* MyNavigationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyNavigationItem.swift; path = View/MyNavigationItem.swift; sourceTree = "<group>"; };
 		964178B11EB2227400ACEF04 /* DateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +59,7 @@
 		964178B91EB2240A00ACEF04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		964178BB1EB2241700ACEF04 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
 		964178BC1EB2241F00ACEF04 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		96710E5F1ECB12F2009B8412 /* AddDedicaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDedicaceViewController.swift; sourceTree = "<group>"; };
 		96899C9B1E93BDF1003754CF /* TehilimDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TehilimDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96899C9E1E93BDF1003754CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96899CA01E93BDF1003754CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,10 +70,12 @@
 		96C10D4F1EB09218005086DF /* Tehilim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Tehilim.swift; path = Model/Tehilim.swift; sourceTree = "<group>"; };
 		96C10D511EB09DF3005086DF /* myDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = myDate.swift; path = Model/myDate.swift; sourceTree = "<group>"; };
 		96C10D541EB0A1C1005086DF /* MyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyButton.swift; path = View/MyButton.swift; sourceTree = "<group>"; };
-		96C10D561EB0A746005086DF /* tehilim.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tehilim.json; sourceTree = "<group>"; };
+		96C3A93A1EC9771C00AF372F /* ConvertTypeDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConvertTypeDatePicker.swift; path = Model/Utils/ConvertTypeDatePicker.swift; sourceTree = "<group>"; };
 		96D2AC001EB237100013B621 /* MyTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyTabBarController.swift; path = View/MyTabBarController.swift; sourceTree = "<group>"; };
 		96EEB2B61EC2DE25009D5BC2 /* Guematria.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Guematria.swift; path = Model/Utils/Guematria.swift; sourceTree = "<group>"; };
 		96FBFA581EC19F95003C3752 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		96FEB8A21ECC4BCC00F2B4DA /* DonationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonationViewController.swift; sourceTree = "<group>"; };
+		B73AFF752A80A13320828E72 /* Pods-TehilimDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TehilimDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TehilimDemo/Pods-TehilimDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,18 +83,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C373435FC9BECB6BE140E838 /* Pods_TehilimDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1794159B0BECE3B46E295263 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77F83B3D0DECF257BA4FDE91 /* Pods_TehilimDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76AF23FDB88EE9184E4456EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B73AFF752A80A13320828E72 /* Pods-TehilimDemo.debug.xcconfig */,
+				1C470A10D1F4BF1FFEDC0723 /* Pods-TehilimDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9609268B1EAFA4B300237DE3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				96899CA01E93BDF1003754CF /* ViewController.swift */,
 				96322D6F1EB5D7DB009C839C /* BrowseViewController.swift */,
 				9609268C1EAFA4D200237DE3 /* TehilimViewController.swift */,
+				962F01F11EC85B0E009158BE /* MyChaptersTableViewController.swift */,
+				962F01F31EC862E7009158BE /* MyAlertViewController.swift */,
+				96710E5F1ECB12F2009B8412 /* AddDedicaceViewController.swift */,
+				96FEB8A21ECC4BCC00F2B4DA /* DonationViewController.swift */,
 				964178B01EB2226500ACEF04 /* children */,
 			);
 			name = Controller;
@@ -78,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				964178B11EB2227400ACEF04 /* DateViewController.swift */,
+				9602FD3E1ECAEA16004BD063 /* DedicationsViewController.swift */,
 			);
 			name = children;
 			sourceTree = "<group>";
@@ -96,6 +145,8 @@
 			children = (
 				96899C9D1E93BDF1003754CF /* TehilimDemo */,
 				96899C9C1E93BDF1003754CF /* Products */,
+				76AF23FDB88EE9184E4456EB /* Pods */,
+				1794159B0BECE3B46E295263 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,8 +169,9 @@
 				9609268B1EAFA4B300237DE3 /* Controller */,
 				96899CA21E93BDF1003754CF /* Main.storyboard */,
 				96899CA71E93BDF1003754CF /* LaunchScreen.storyboard */,
-				96C10D561EB0A746005086DF /* tehilim.json */,
+				962F01C91EC852D5009158BE /* TehilimCore.xcdatamodeld */,
 				96899CAA1E93BDF1003754CF /* Info.plist */,
+				9602FD3C1ECACB8B004BD063 /* GoogleService-Info.plist */,
 			);
 			path = TehilimDemo;
 			sourceTree = "<group>";
@@ -130,6 +182,9 @@
 				96EEB2B51EC2DE0B009D5BC2 /* Utils */,
 				96C10D4F1EB09218005086DF /* Tehilim.swift */,
 				96C10D511EB09DF3005086DF /* myDate.swift */,
+				960C932D1EC9A4B900513FA1 /* LocalDBManager.swift */,
+				9602FD401ECAEE86004BD063 /* FBManager.swift */,
+				9602FD421ECAF208004BD063 /* Dedication.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -141,6 +196,7 @@
 				96D2AC001EB237100013B621 /* MyTabBarController.swift */,
 				96BC8C091EBC529500E92DAB /* TehilimCollectionViewCell.swift */,
 				963FA0511EC46220004CC696 /* MyNavigationItem.swift */,
+				962F01ED1EC859CC009158BE /* MyChaptersCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -149,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				96EEB2B61EC2DE25009D5BC2 /* Guematria.swift */,
+				96C3A93A1EC9771C00AF372F /* ConvertTypeDatePicker.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -160,9 +217,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 96899CAD1E93BDF1003754CF /* Build configuration list for PBXNativeTarget "TehilimDemo" */;
 			buildPhases = (
+				546BE8B9FD0C1127DF78FC9E /* [CP] Check Pods Manifest.lock */,
 				96899C971E93BDF1003754CF /* Sources */,
 				96899C981E93BDF1003754CF /* Frameworks */,
 				96899C991E93BDF1003754CF /* Resources */,
+				FB4A752EA9BF2CB619A81522 /* [CP] Embed Pods Frameworks */,
+				3FFB89DFC22525606593D11E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -216,8 +276,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				964178B81EB2240A00ACEF04 /* Localizable.strings in Resources */,
-				96C10D571EB0A746005086DF /* tehilim.json in Resources */,
 				96899CA91E93BDF1003754CF /* LaunchScreen.storyboard in Resources */,
+				9602FD3D1ECACB8B004BD063 /* GoogleService-Info.plist in Resources */,
 				96899CA41E93BDF1003754CF /* Main.storyboard in Resources */,
 				96FBFA591EC19F95003C3752 /* Assets.xcassets in Resources */,
 			);
@@ -225,22 +285,81 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3FFB89DFC22525606593D11E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TehilimDemo/Pods-TehilimDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		546BE8B9FD0C1127DF78FC9E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FB4A752EA9BF2CB619A81522 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TehilimDemo/Pods-TehilimDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		96899C971E93BDF1003754CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96710E601ECB12F2009B8412 /* AddDedicaceViewController.swift in Sources */,
 				96C10D501EB09218005086DF /* Tehilim.swift in Sources */,
 				96BC8C0A1EBC529500E92DAB /* TehilimCollectionViewCell.swift in Sources */,
 				9609268D1EAFA4D200237DE3 /* TehilimViewController.swift in Sources */,
 				96D2AC011EB237100013B621 /* MyTabBarController.swift in Sources */,
+				9602FD3F1ECAEA16004BD063 /* DedicationsViewController.swift in Sources */,
 				964178B21EB2227400ACEF04 /* DateViewController.swift in Sources */,
+				962F01F41EC862E7009158BE /* MyAlertViewController.swift in Sources */,
 				96322D701EB5D7DB009C839C /* BrowseViewController.swift in Sources */,
 				963FA0521EC46220004CC696 /* MyNavigationItem.swift in Sources */,
+				962F01CB1EC852D5009158BE /* TehilimCore.xcdatamodeld in Sources */,
 				96899CA11E93BDF1003754CF /* ViewController.swift in Sources */,
+				962F01EE1EC859CC009158BE /* MyChaptersCell.swift in Sources */,
+				96C3A93B1EC9771C00AF372F /* ConvertTypeDatePicker.swift in Sources */,
+				9602FD411ECAEE86004BD063 /* FBManager.swift in Sources */,
 				964178B71EB223C900ACEF04 /* LocalizableUtils.swift in Sources */,
 				96899C9F1E93BDF1003754CF /* AppDelegate.swift in Sources */,
+				960C932E1EC9A4B900513FA1 /* LocalDBManager.swift in Sources */,
+				96FEB8A31ECC4BCC00F2B4DA /* DonationViewController.swift in Sources */,
 				96EEB2B71EC2DE25009D5BC2 /* Guematria.swift in Sources */,
+				962F01F21EC85B0E009158BE /* MyChaptersTableViewController.swift in Sources */,
+				9602FD431ECAF208004BD063 /* Dedication.swift in Sources */,
 				96C10D521EB09DF3005086DF /* myDate.swift in Sources */,
 				96C10D551EB0A1C1005086DF /* MyButton.swift in Sources */,
 			);
@@ -377,6 +496,7 @@
 		};
 		96899CAE1E93BDF1003754CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B73AFF752A80A13320828E72 /* Pods-TehilimDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -392,6 +512,7 @@
 		};
 		96899CAF1E93BDF1003754CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C470A10D1F4BF1FFEDC0723 /* Pods-TehilimDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -427,6 +548,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		962F01C91EC852D5009158BE /* TehilimCore.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				962F01CA1EC852D5009158BE /* TehilimCore.xcdatamodel */,
+			);
+			currentVersion = 962F01CA1EC852D5009158BE /* TehilimCore.xcdatamodel */;
+			path = TehilimCore.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 96899C931E93BDF1003754CF /* Project object */;
 }

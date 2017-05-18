@@ -42,6 +42,11 @@ class TehilimViewController: UIViewController, UICollectionViewDataSource, UICol
         self.view.addGestureRecognizer(tapGesture)
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        navigationController?.interactivePopGestureRecognizer?.isEnabled = true
+        super.viewWillDisappear(animated)
+    }
+    
     func toggleHideBarAction() {
         self.navigationController?.setNavigationBarHidden(!self.navigationController!.isNavigationBarHidden, animated: true)
     }
