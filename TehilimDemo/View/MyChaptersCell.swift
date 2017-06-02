@@ -25,12 +25,12 @@ class MyChaptersCell: UITableViewCell {
             formatter.locale = Locale(identifier: "en")
             formatter.dateStyle = .long
             formatter.calendar = Calendar(identifier: .hebrew)
-            birthdayLabel.text = "Birthday : " + formatter.string(from: date as Date)
+            birthdayLabel.text = "birthday".localizedString + formatter.string(from: date as Date)
         } else {
-            birthdayLabel.text = "Perek : \(tehilimCore.perek)"
+            birthdayLabel.text = "chapter".localizedString + "\(tehilimCore.perek)"
         }
         if let name = tehilimCore.name {
-            nameLabel.text = "Name : \(name)"
+            nameLabel.text = "name".localizedString + name
         }
     }
 

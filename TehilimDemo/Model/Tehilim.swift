@@ -136,7 +136,7 @@ class Tehilim: NSObject {
         case 4: start = 28; end = 35
         case 5: start = 36; end = 44
         case 6: start = 45; end = 52
-        case 7: start = 53; end = 48
+        case 7: start = 53; end = 58
         case 8: start = 59; end = 65
         case 9: start = 66; end = 74
         case 10: start = 75; end = 81

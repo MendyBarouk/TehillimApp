@@ -10,25 +10,32 @@ import UIKit
 
 class Dedication: NSObject {
     
-    let firstDedi: String
-    let secondDedi: String
-    let thirdDedi: String
+    let startDate : TimeInterval
+    let endDate : TimeInterval
+    let text : String
+    let longText: String
     
-    enum key: String {
-        case fromDate = "from_date"
-        case toDate = "to_date"
+    enum Key: String {
+        case startDate = "start_date"
+        case endDate = "end_date"
         case text = "text"
         case longText = "long_text"
     }
-    
 
-    
-    init(firstDedi: String, secondDedi: String, thirdDedi: String) {
-        self.firstDedi = firstDedi
-        self.secondDedi = secondDedi
-        self.thirdDedi = thirdDedi
-        super.init()
+    init(_ dict : [String:Any]) {
+        self.startDate = dict[Key.startDate.rawValue] as! TimeInterval
+        self.endDate = dict[Key.endDate.rawValue] as! TimeInterval
+        
+        self.text = dict[Key.text.rawValue] as! String
+        self.longText = dict[Key.longText.rawValue] as! String
     }
+    
+    func isValid() -> Bool{
+        let now = Date().timeIntervalSince1970
+        return now > startDate && now < endDate
+        
+    }
+
     
     
 }

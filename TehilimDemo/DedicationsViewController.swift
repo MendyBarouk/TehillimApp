@@ -11,12 +11,22 @@ import FirebaseCore
 
 class DedicationsViewController: UIViewController {
 
-    @IBOutlet weak var firstLabel: UILabel!
-    @IBOutlet weak var secondLabel: UILabel!
-    @IBOutlet weak var thirdLabel: UILabel!
-    @IBOutlet weak var mainView: UIView!
+
+    @IBOutlet weak var tapGesture: UITapGestureRecognizer!
     
-    var textMyDedication: [String] = []
+    @IBOutlet weak var dediLabel: UILabel!
+
+    @IBOutlet weak var notDediButton: UIButton!
+
+    @IBAction func notDediButtonAction(_ sender: Any) {
+        let nextVC = storyboard?.instantiateViewController(withIdentifier: "DonationViewController") as! DonationViewController
+        
+        self.navigationController?.pushViewController(nextVC, animated: true)
+    }
+    
+    var arrDedication: [Dedication]? = []
+    
+    let transition = BubbleTransition()
     
     
     override func viewDidLoad() {
@@ -24,35 +34,56 @@ class DedicationsViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        mainView.layer.cornerRadius = 5.0
-        mainView.layer.shadowColor = UIColor.init(red: 40/255, green: 40/255, blue: 40/255, alpha: 1).cgColor
-        mainView.layer.shadowOffset = CGSize(width: 0, height: 3.0)
-        mainView.layer.shadowOpacity = 1.0
+        dediLabel.layer.cornerRadius = 5.0
+        dediLabel.clipsToBounds = true
         
-        
-        mainView.isHidden = true
-        FBManager.manager.readMyDedication { (array) in
-            guard let array = array else {
-                return
-            }
-            self.textMyDedication = array
-            self.firstLabel.text = self.textMyDedication[0]
-            self.secondLabel.text = self.textMyDedication[1]
-            self.thirdLabel.text = self.textMyDedication[2]
-            self.mainView.isHidden = false
-        }
+        NotificationCenter.default.addObserver(self, selector: #selector(refreshUI), name: .dedicationFetched, object: nil)
+        refreshUI()
+
     }
     
+
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "dedicationSegue",
-            let nvc = segue.destination as? UINavigationController,
-            let nextVC = nvc.topViewController as? AddDedicaceViewController {
-            
-            nextVC.dedications = textMyDedication
-            
+        if segue.identifier == "dedi" {
+            let controller = segue.destination
+            controller.transitioningDelegate = self
+            controller.modalPresentationStyle = .custom
+        }
+   
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
+    func refreshUI(){
+        dediLabel.isHidden = true
+        notDediButton.isHidden = true
+        arrDedication = FBManager.manager.fetchedDedications
+        if arrDedication != nil && !arrDedication!.isEmpty {
+            dediLabel.text = arrDedication![0].text
+            dediLabel.isHidden = false
+        } else {
+            notDediButton.isHidden = false
         }
     }
+}
 
+extension DedicationsViewController: UIViewControllerTransitioningDelegate {
+    
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.transitionMode = .present
+        transition.startingPoint = tapGesture.location(in: self.view.superview?.superview)
+        transition.bubbleColor = dediLabel.backgroundColor!
+        return transition
+    }
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.transitionMode = .dismiss
+        transition.bubbleColor = dediLabel.backgroundColor!
+        return transition
+    }
 }
 
 

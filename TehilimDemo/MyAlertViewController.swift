@@ -21,6 +21,7 @@ class MyAlertViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var dateOrPerekTextField: UITextField!
     @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var saveButton: UIButton!
     
     // MARK: - Actions
     @IBAction func cancelAction(_ sender: UIButton) {
@@ -31,7 +32,7 @@ class MyAlertViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         guard dateOrPerekTextField.text != nil, !dateOrPerekTextField.text!.isEmpty else {
             
             let label = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 8))
-            label.text = "Add a date or chapter"
+            label.text = "add_date_or_chapter".localizedString
             label.textColor = .red
             label.font = UIFont.systemFont(ofSize: 8)
             
@@ -74,15 +75,18 @@ class MyAlertViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         view.insertSubview(blurEffectView, at: 0)
     }
     
+    var keyboardIsAppear = false
     func keyboardWillAppear(notification: Notification) {
-        if self.view.frame.origin.y == 0 {
+        if !keyboardIsAppear {
             self.view.frame.origin.y -= 110
+            keyboardIsAppear = true
         }
     }
     
     func keyboardWillDisappear(notification: Notification) {
-        if self.view.frame.origin.y != 0 {
+        if keyboardIsAppear {
             self.view.frame.origin.y += 110
+            keyboardIsAppear = false
         }
     }
     
@@ -95,9 +99,9 @@ class MyAlertViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         let toolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: width, height: 40))
         
         let spaceItem = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
-        let hebrewItem = UIBarButtonItem(title: "Hebrew", style: .plain, target: self, action: #selector(hebrewOrGregItemAction(_:)))
-        let gregItem = UIBarButtonItem(title: "Grégorian", style: .plain, target: self, action: #selector(hebrewOrGregItemAction(_:)))
-        let perekItem = UIBarButtonItem(title: "Perek", style: .plain, target: self, action: #selector(perekItemAction))
+        let hebrewItem = UIBarButtonItem(title: "jewish_cal".localizedString, style: .plain, target: self, action: #selector(hebrewOrGregItemAction(_:)))
+        let gregItem = UIBarButtonItem(title: "gregorian_cal".localizedString, style: .plain, target: self, action: #selector(hebrewOrGregItemAction(_:)))
+        let perekItem = UIBarButtonItem(title: "chapter".localizedString, style: .plain, target: self, action: #selector(perekItemAction))
         let doneItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(doneItemAction))
         
         hebrewItem.tag = 0
@@ -192,7 +196,10 @@ class MyAlertViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         
         mainView.layer.cornerRadius = 5.0
         dateOrPerekTextField.delegate = self
-        nameTextField.keyboardAppearance = .dark
+
+        dateOrPerekTextField.placeholder = "date_or_chapter".localizedString
+        nameTextField.placeholder = "name2".localizedString
+        saveButton.setTitle("save".localizedString, for: .normal)
         
         configureToolbar()
         configureDateInput()

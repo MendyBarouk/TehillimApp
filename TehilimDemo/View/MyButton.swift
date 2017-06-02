@@ -37,10 +37,7 @@ class MyButton: UIButton {
         self.addTarget(self, action: #selector(myButtonSelected), for: UIControlEvents.touchDown)
         self.addTarget(self, action: #selector(myButtonNoSelected), for: UIControlEvents.touchUpInside)
         self.addTarget(self, action: #selector(myButtonNoSelected), for: UIControlEvents.touchDragExit)
-        
-        if let localizedKey = localizedKey{
-            self.setTitle(localizedKey.localizedString, for: .normal)
-        }
+
 
     }
     

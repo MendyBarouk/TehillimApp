@@ -14,28 +14,94 @@
 "all_psalm" = "כל התהילים";
 "no_tachanun" = "פרק כ׳";
 "elul" = "ג׳ תהילים אלול";
-"choose_chapter" = "בחר פרק";
-"choose_book" = "בחר ספר-תהילים";
-"choose_day_of_week" = "בחר יום בשבוע";
-"choose_day_of_month" = "בחר יום בחודש";
-"general_amendment" = "התיקון הכללי";
+"by_chapter" = "תהילים לפי פרק";
+"by_book" = "תהילים לפי ספר";
+"by_day_of_week" = "תהילים לפי יום בשבוע";
+"by_day_of_month" = "תהילים לפי יום בחודש";
 "lyartseyt" = "תהילים ליארצייט";
 "virtues" = "סגולות";
 "random_chapter" = "פרק אקראי";
 "daily" = "יומי";
 "everything" = "הכל";
-"choose_book" = "Choose a book";
-"choose_chapter" = "Choose a chapter";
-"choose_weekday" = "Choose a weekday";
-"choose_monthday" = "Choose a day of the month";
-"chapter" = "Chapter";
-"book" = "Book";
-"sunday" = "Sunday";
-"monday" = "Monday";
-"tuesday" = "Tuesday";
-"wednesday" = "Wednesday";
-"thursday" = "Thursday";
-"friday" = "Friday";
-"saturday" = "Saturday";
-"yehi_ratzon_befor" = "Yehi Ratzon befor tehilim";
-"yehi_ratzon_after" = "Yehi Ratzon after tehilim";
+"select_book" = "בחר ספר";
+"select_chapter" = "בחר פרק";
+"select_weekday" = "בחר יום בשבוע";
+"select_monthday" = "בחר יום בחודש";
+"chapter" = "פרק";
+"book" = "ספר";
+"sunday" = "יום ראשון";
+"monday" = "יום שני";
+"tuesday" = "יום שלישי";
+"wednesday" = "יום רביעי";
+"thursday" = "יום חמישי";
+"friday" = "יום שישי";
+"saturday" = "שבת";
+"yehi_ratzon_befor" = "יהי רצון לפני תהילים";
+"yehi_ratzon_after" = "יהי רצון אחרי תהילים";
+"yehi_ratzon_choose" = "נא לבחור יהי רצון";
+"birthday" = "תאריך לידה: ";
+"chapter" = "פרק";
+"name" = " שם :";
+"dedications" = "הקדשות";
+"day" = " יום";
+"tikun_haklali" = "תיקון הכללי";
+"healthy" = "בריאות";
+"livelihood" = "פרנסה";
+"shalom_bayit" = "שלום בית";
+"at_birth" = "בזמן הלידה";
+"to_children" = "להביא ילדים לעולם";
+"to_shiduch" = "לשידוך";
+"pregnancy" = "במהלך ההריון";
+"for_a_complete_healing" = "לרפואה שלמה";
+"for_a_yortzeit" = "ליארצייט";
+"message_alert_yortzeit" = "הזן שם באמצעות המקלדת העברית או באמצעות הערך המספרי של האותיות (יש להפריד בין הערכים באמצעות פסיק, למשל משה = 40,300,5)";
+"enter_name" = "הזן שם";
+"continue" = "המשך";
+"complete_healing_for" = "רפואה שלמה ל";
+"to_the_memorial" = "לזכר";
+"only_heb_or_num" = "עברית או מספרים בלבד";
+"donation_to_dedication" = "תרומה להקדשה";
+"required_field" = "שדה חובה";
+"jewish_cal" = "יהודי";
+"gregorian_cal" = "גרגוריאני";
+"text_dedication_screen" = "(אופציונלי) טקסט שיוצג במסך ההקדשה";
+"information_ask_here" = "(אופציונלי) לקבלת מידע נוסף, שאל את השאלות שלך כאן";
+"add_date_or_chapter" = "הוסף תאריך או פרק";
+"bad_data" = "נתונים שגועים";
+"ellul_chapters" = "פרקי אלול";
+"add_dedication" = "הוסף הקדשה משלך";
+"add_entry" = "הוסף רשומה";
+"explanation_of_the_entry" = "בחר תאריך לידה לפי לוח שנה יהודי או גרגוריאני או לפי פרק";
+"date_or_chapter" = "תאריך או פרק";
+"name2" = "שם (אופציונלי)";
+"save" = "שמור";
+"explanation_of_donations" = "כדי להקדיש ברכה ליקירכם עבור בריאות, פרנסה, לעילוי נשמת וכו׳, אנא מלאו את השדות הבאים";
+"text_of_the_dedication" = "טקסט של הקדשה";
+"details_of_the_dedication" = "פרטי ההקדשה";
+"date_of_dedication" = "תאריך ההקדשה";
+"other" = "אחר";
+"price" = "מחיר של ההקדשה 50 ₪ ליום";
+"text_of_dedication_placeholder" = "טקסט שיוצג על המסך הראשי";
+"date_of_dedication_placeholder" = "יום בו ההקדשה תפורסם ב-TehilimApp";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

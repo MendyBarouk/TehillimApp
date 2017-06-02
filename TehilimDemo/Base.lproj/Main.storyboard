@@ -7,14 +7,13 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--יומי-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController autoresizesArchivedViewToFullSize="NO" automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="TehilimDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController autoresizesArchivedViewToFullSize="NO" automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="TehillimApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -23,12 +22,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ac4-Y1-hBX">
-                                <rect key="frame" x="16" y="112" width="343" height="386"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" tag="100" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ac4-Y1-hBX">
+                                <rect key="frame" x="16" y="116" width="343" height="382"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="viL-WY-wDd" customClass="MyButton" customModule="TehilimDemo" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="20" width="303" height="41"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="viL-WY-wDd" customClass="MyButton" customModule="TehillimApp" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="20" width="303" height="44"/>
                                         <color key="backgroundColor" red="0.18821030859999999" green="0.1882497072" blue="0.18820786480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="DSN-lJ-aWN"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="יהי רצון"/>
@@ -39,9 +41,12 @@
                                             <action selector="yehiRatzonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5sG-ux-ybH"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fc-A9-ZzT" customClass="MyButton" customModule="TehilimDemo" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="77" width="303" height="41"/>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fc-A9-ZzT" customClass="MyButton" customModule="TehillimApp" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="80" width="303" height="44"/>
                                         <color key="backgroundColor" red="0.18821030859999999" green="0.1882497072" blue="0.18820786480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="2aT-8s-D0m"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="תהילים ליום בחודש"/>
@@ -52,9 +57,12 @@
                                             <action selector="choiceOfButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w6n-kB-gtN"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K10-i0-bts" customClass="MyButton" customModule="TehilimDemo" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="134" width="303" height="41"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K10-i0-bts" customClass="MyButton" customModule="TehillimApp" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="140" width="251" height="44"/>
                                         <color key="backgroundColor" red="0.18821030859999999" green="0.1882497072" blue="0.18820786480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="ZwG-sP-eNj"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <state key="normal" title="הפרקים שלי"/>
@@ -65,10 +73,10 @@
                                             <action selector="myChaptersAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s48-Ub-xao"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DgH-xA-MPK">
-                                        <rect key="frame" x="282" y="134" width="41" height="41"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DgH-xA-MPK" customClass="MyButton" customModule="TehillimApp" customModuleProvider="target">
+                                        <rect key="frame" x="279" y="140" width="44" height="44"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="41" id="k71-pD-W5a"/>
+                                            <constraint firstAttribute="width" constant="44" id="BiG-Fl-yzY"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <inset key="contentEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="1"/>
@@ -77,9 +85,12 @@
                                             <segue destination="Nao-S5-MZp" kind="show" id="G2m-0D-cyN"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DbX-UM-cpo" customClass="MyButton" customModule="TehilimDemo" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="191" width="303" height="41"/>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DbX-UM-cpo" customClass="MyButton" customModule="TehillimApp" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="200" width="303" height="44"/>
                                         <color key="backgroundColor" red="0.18821030859999999" green="0.1882497072" blue="0.18820786480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="fYd-dg-laf"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <state key="normal" title="תהילים ליום בשבוע"/>
@@ -90,9 +101,12 @@
                                             <action selector="choiceOfButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TIv-0M-46W"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAt-QV-enB" customClass="MyButton" customModule="TehilimDemo" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="248" width="303" height="41"/>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAt-QV-enB" customClass="MyButton" customModule="TehillimApp" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="260" width="303" height="44"/>
                                         <color key="backgroundColor" red="0.18821030859999999" green="0.1882497072" blue="0.18820786480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="Ct2-Ee-xpR"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <state key="normal" title="כל התהילים"/>
@@ -103,9 +117,12 @@
                                             <action selector="choiceOfButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J7p-2Z-GM8"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U2Y-Is-2or" customClass="MyButton" customModule="TehilimDemo" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="305" width="303" height="41"/>
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U2Y-Is-2or" customClass="MyButton" customModule="TehillimApp" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="320" width="303" height="44"/>
                                         <color key="backgroundColor" red="0.18821030859999999" green="0.1882497072" blue="0.18820786480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="OAg-gg-3Dz"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <state key="normal" title="תהילים ליום ללא תחנון"/>
@@ -116,9 +133,12 @@
                                             <action selector="choiceOfButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BKa-HL-UN9"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EC9-vp-Qn8" customClass="MyButton" customModule="TehilimDemo" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="362" width="303" height="41"/>
+                                    <button opaque="NO" clipsSubviews="YES" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EC9-vp-Qn8" customClass="MyButton" customModule="TehillimApp" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="380" width="303" height="44"/>
                                         <color key="backgroundColor" red="0.18821030859999999" green="0.1882497072" blue="0.18820786480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="CGq-lm-O4w"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <state key="normal" title="ג׳ תהילים אלול"/>
@@ -132,7 +152,6 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="viL-WY-wDd" secondAttribute="trailing" constant="20" id="5SF-PM-UGh"/>
-                                    <constraint firstItem="DgH-xA-MPK" firstAttribute="trailing" secondItem="K10-i0-bts" secondAttribute="trailing" id="5sE-hC-afy"/>
                                     <constraint firstItem="DbX-UM-cpo" firstAttribute="top" secondItem="K10-i0-bts" secondAttribute="bottom" constant="16" id="9Yc-tE-rDm"/>
                                     <constraint firstItem="DbX-UM-cpo" firstAttribute="leading" secondItem="ac4-Y1-hBX" secondAttribute="leading" constant="20" id="ABd-3W-jtl"/>
                                     <constraint firstItem="viL-WY-wDd" firstAttribute="centerX" secondItem="ac4-Y1-hBX" secondAttribute="centerX" id="AGR-NO-K2Z"/>
@@ -140,19 +159,18 @@
                                     <constraint firstAttribute="trailing" secondItem="3fc-A9-ZzT" secondAttribute="trailing" constant="20" id="DD8-IY-Pey"/>
                                     <constraint firstItem="K10-i0-bts" firstAttribute="leading" secondItem="ac4-Y1-hBX" secondAttribute="leading" constant="20" id="DPt-Vo-c4L"/>
                                     <constraint firstItem="U2Y-Is-2or" firstAttribute="leading" secondItem="ac4-Y1-hBX" secondAttribute="leading" constant="20" id="EXL-W4-Gpl"/>
-                                    <constraint firstAttribute="trailing" secondItem="K10-i0-bts" secondAttribute="trailing" constant="20" id="Gar-aZ-mDh"/>
                                     <constraint firstAttribute="trailing" secondItem="DbX-UM-cpo" secondAttribute="trailing" constant="20" id="IHw-SM-Y5q"/>
                                     <constraint firstAttribute="trailing" secondItem="qAt-QV-enB" secondAttribute="trailing" constant="20" id="IpS-Od-Tt5"/>
                                     <constraint firstItem="3fc-A9-ZzT" firstAttribute="leading" secondItem="ac4-Y1-hBX" secondAttribute="leading" constant="20" id="KZa-SA-iBr"/>
                                     <constraint firstItem="EC9-vp-Qn8" firstAttribute="leading" secondItem="ac4-Y1-hBX" secondAttribute="leading" constant="20" id="Mb6-nM-5fk"/>
                                     <constraint firstItem="EC9-vp-Qn8" firstAttribute="top" secondItem="U2Y-Is-2or" secondAttribute="bottom" constant="16" id="P5y-72-Dha"/>
-                                    <constraint firstItem="DgH-xA-MPK" firstAttribute="bottom" secondItem="K10-i0-bts" secondAttribute="bottom" id="Stq-eD-zfn"/>
+                                    <constraint firstItem="DgH-xA-MPK" firstAttribute="bottom" secondItem="K10-i0-bts" secondAttribute="bottom" id="T3x-jS-9nx"/>
                                     <constraint firstItem="qAt-QV-enB" firstAttribute="top" secondItem="DbX-UM-cpo" secondAttribute="bottom" constant="16" id="bv3-bW-gRU"/>
-                                    <constraint firstItem="DgH-xA-MPK" firstAttribute="baseline" secondItem="K10-i0-bts" secondAttribute="baseline" id="e2f-cr-oNa"/>
-                                    <constraint firstItem="DgH-xA-MPK" firstAttribute="top" secondItem="K10-i0-bts" secondAttribute="top" id="ecj-XY-uYM"/>
+                                    <constraint firstItem="DgH-xA-MPK" firstAttribute="leading" secondItem="K10-i0-bts" secondAttribute="trailing" constant="8" id="cTT-TL-qep"/>
                                     <constraint firstItem="U2Y-Is-2or" firstAttribute="top" secondItem="qAt-QV-enB" secondAttribute="bottom" constant="16" id="f1y-PO-KDp"/>
                                     <constraint firstItem="3fc-A9-ZzT" firstAttribute="top" secondItem="viL-WY-wDd" secondAttribute="bottom" constant="16" id="fEb-AS-ZWV"/>
-                                    <constraint firstItem="DgH-xA-MPK" firstAttribute="centerY" secondItem="K10-i0-bts" secondAttribute="centerY" id="fc8-Xh-ddf"/>
+                                    <constraint firstItem="DgH-xA-MPK" firstAttribute="top" secondItem="K10-i0-bts" secondAttribute="top" id="imp-6K-HcP"/>
+                                    <constraint firstAttribute="trailing" secondItem="DgH-xA-MPK" secondAttribute="trailing" constant="20" id="jlg-hi-l3f"/>
                                     <constraint firstAttribute="trailing" secondItem="EC9-vp-Qn8" secondAttribute="trailing" constant="20" id="kuD-ZF-Nys"/>
                                     <constraint firstItem="qAt-QV-enB" firstAttribute="leading" secondItem="ac4-Y1-hBX" secondAttribute="leading" constant="20" id="s79-DQ-Hx8"/>
                                     <constraint firstAttribute="trailing" secondItem="U2Y-Is-2or" secondAttribute="trailing" constant="20" id="slr-Uc-pgG"/>
@@ -161,36 +179,39 @@
                                     <constraint firstItem="viL-WY-wDd" firstAttribute="leading" secondItem="ac4-Y1-hBX" secondAttribute="leading" constant="20" id="ttG-VZ-8EJ"/>
                                 </constraints>
                             </scrollView>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ogP-6O-jJK">
-                                <rect key="frame" x="16" y="72" width="343" height="40"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="CTn-4a-pv6"/>
-                                </constraints>
-                                <connections>
-                                    <segue destination="qCL-2z-Dm9" kind="embed" id="i0u-fk-WmA"/>
-                                </connections>
-                            </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JMa-xt-1bD">
                                 <rect key="frame" x="0.0" y="514" width="375" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="SHo-ri-43D"/>
+                                </constraints>
                                 <connections>
                                     <segue destination="nZS-hd-SDb" kind="embed" id="3lx-pd-Ton"/>
                                 </connections>
                             </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6L-y0-w5k" customClass="MyDateLabel" customModule="TehillimApp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="72" width="343" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="tPR-M6-07m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.83529411760000005" green="0.96078431369999995" blue="0.63529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="ogP-6O-jJK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="6DW-m1-pwf"/>
-                            <constraint firstItem="ogP-6O-jJK" firstAttribute="leading" secondItem="ac4-Y1-hBX" secondAttribute="leading" id="HUI-ba-5LZ"/>
                             <constraint firstItem="JMa-xt-1bD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NgA-Kl-cee"/>
-                            <constraint firstItem="ogP-6O-jJK" firstAttribute="trailing" secondItem="ac4-Y1-hBX" secondAttribute="trailing" id="PF7-BF-HL1"/>
-                            <constraint firstItem="ac4-Y1-hBX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fpi-uH-ebc"/>
-                            <constraint firstItem="ac4-Y1-hBX" firstAttribute="top" secondItem="ogP-6O-jJK" secondAttribute="bottom" id="jby-fL-3fx"/>
+                            <constraint firstItem="ac4-Y1-hBX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="Vih-IL-qyF"/>
+                            <constraint firstItem="s6L-y0-w5k" firstAttribute="trailing" secondItem="ac4-Y1-hBX" secondAttribute="trailing" id="WS0-b5-Qi7"/>
+                            <constraint firstItem="s6L-y0-w5k" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="i8B-Ud-wA1"/>
+                            <constraint firstItem="s6L-y0-w5k" firstAttribute="leading" secondItem="ac4-Y1-hBX" secondAttribute="leading" id="jor-jC-evf"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JMa-xt-1bD" secondAttribute="bottom" constant="16" id="k9b-kx-LuG"/>
+                            <constraint firstItem="ac4-Y1-hBX" firstAttribute="top" secondItem="s6L-y0-w5k" secondAttribute="bottom" id="npn-cu-21z"/>
                             <constraint firstAttribute="trailing" secondItem="JMa-xt-1bD" secondAttribute="trailing" id="sK5-fX-kqn"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ac4-Y1-hBX" secondAttribute="bottom" constant="120" id="stn-P3-gIv"/>
-                            <constraint firstItem="JMa-xt-1bD" firstAttribute="top" secondItem="ac4-Y1-hBX" secondAttribute="bottom" constant="16" id="x2F-RO-pIL"/>
-                            <constraint firstItem="ac4-Y1-hBX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="zSZ-Cr-Clq"/>
+                            <constraint firstItem="ac4-Y1-hBX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sM6-Uh-tFc"/>
+                            <constraint firstItem="JMa-xt-1bD" firstAttribute="top" secondItem="ac4-Y1-hBX" secondAttribute="bottom" constant="16" id="sw3-C8-jA6"/>
+                            <constraint firstAttribute="trailing" secondItem="ac4-Y1-hBX" secondAttribute="trailing" constant="16" id="vx8-Cs-SeX"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="יומי" id="bdJ-DU-tn3">
@@ -198,10 +219,17 @@
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="csh-Uv-pKX"/>
                     <connections>
+                        <outlet property="allTehilimButton" destination="qAt-QV-enB" id="hFJ-Js-nHN"/>
                         <outlet property="dayOfMonth" destination="3fc-A9-ZzT" id="6wr-IH-fzX"/>
                         <outlet property="dayOfWeek" destination="DbX-UM-cpo" id="ma9-12-Tt3"/>
+                        <outlet property="editChapterButton" destination="DgH-xA-MPK" id="6Fh-xI-7aG"/>
                         <outlet property="ellulButton" destination="EC9-vp-Qn8" id="SLd-eX-jmP"/>
+                        <outlet property="ellulButtonContraint" destination="CGq-lm-O4w" id="jqH-cZ-Cs8"/>
+                        <outlet property="ellulButtonTopConstraint" destination="P5y-72-Dha" id="sRm-hf-RAP"/>
+                        <outlet property="myChapterButton" destination="K10-i0-bts" id="Ou0-fd-czp"/>
                         <outlet property="tahanouneButton" destination="U2Y-Is-2or" id="uDV-Jd-QEM"/>
+                        <outlet property="tahanouneButtonConstraint" destination="OAg-gg-3Dz" id="vbV-i8-vnW"/>
+                        <outlet property="yehiRazonButton" destination="viL-WY-wDd" id="ssF-BE-cHl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -211,7 +239,7 @@
         <!--Mes Chapitres-->
         <scene sceneID="UxX-ZC-6Ok">
             <objects>
-                <tableViewController storyboardIdentifier="MyChaptersTableViewController" title="Mes Chapitres" hidesBottomBarWhenPushed="YES" id="Nao-S5-MZp" customClass="MyChaptersTableViewController" customModule="TehilimDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="MyChaptersTableViewController" title="Mes Chapitres" hidesBottomBarWhenPushed="YES" id="Nao-S5-MZp" customClass="MyChaptersTableViewController" customModule="TehillimApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="62" sectionHeaderHeight="28" sectionFooterHeight="28" id="v5t-Lj-Axl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -221,7 +249,7 @@
                         <color key="sectionIndexBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="sectionIndexTrackingBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" reuseIdentifier="Cell" id="PN6-ys-Q8T" customClass="MyChaptersCell" customModule="TehilimDemo" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" reuseIdentifier="Cell" id="PN6-ys-Q8T" customClass="MyChaptersCell" customModule="TehillimApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="62"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PN6-ys-Q8T" id="elF-TQ-y6j">
@@ -286,7 +314,7 @@
         <!--My Alert View Controller-->
         <scene sceneID="vCT-ft-9YD">
             <objects>
-                <viewController storyboardIdentifier="alert" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="FDb-2g-A6Y" customClass="MyAlertViewController" customModule="TehilimDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="alert" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="FDb-2g-A6Y" customClass="MyAlertViewController" customModule="TehillimApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NXj-7U-vJz"/>
                         <viewControllerLayoutGuide type="bottom" id="3ea-V6-3oe"/>
@@ -296,41 +324,48 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yPn-bo-Qn5">
-                                <rect key="frame" x="16" y="199.5" width="343" height="268"/>
+                                <rect key="frame" x="27.5" y="199.5" width="320" height="268"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ajouter une entrée" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RyJ-nv-ysq">
-                                        <rect key="frame" x="78" y="16" width="187" height="25.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ajouter une entrée" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RyJ-nv-ysq" customClass="MyLabel" customModule="TehillimApp" customModuleProvider="target">
+                                        <rect key="frame" x="66.5" y="16" width="187" height="25.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="add_entry"/>
+                                        </userDefinedRuntimeAttributes>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choisissez une date de naissance du calendrier hébraïque ou grégorien ou par chapitre" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBa-Fe-GhX">
-                                        <rect key="frame" x="16" y="57.5" width="311" height="61"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choisissez une date de naissance du calendrier hébraïque ou grégorien ou par chapitre" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBa-Fe-GhX" customClass="MyLabel" customModule="TehillimApp" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="57.5" width="288" height="61"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="explanation_of_the_entry"/>
+                                        </userDefinedRuntimeAttributes>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date ou Perek" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W5A-Ca-edU">
-                                        <rect key="frame" x="64" y="134.5" width="215" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date ou Perek" textAlignment="center" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="W5A-Ca-edU">
+                                        <rect key="frame" x="16" y="134.5" width="288" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JRX-oY-7yN">
-                                        <rect key="frame" x="64" y="180.5" width="215" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="JRX-oY-7yN">
+                                        <rect key="frame" x="16" y="180.5" width="288" height="30"/>
+                                        <color key="tintColor" red="0.83529411760000005" green="0.96078431369999995" blue="0.63529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" keyboardAppearance="alert"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cgr-hC-Khe">
-                                        <rect key="frame" x="0.0" y="226.5" width="343" height="1"/>
+                                        <rect key="frame" x="0.0" y="226.5" width="320" height="1"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="tKm-Ei-vWP"/>
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBO-tk-zan">
-                                        <rect key="frame" x="260" y="227.5" width="51" height="40"/>
+                                        <rect key="frame" x="253" y="227.5" width="51" height="40"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <state key="normal" title="Save">
                                             <color key="titleColor" red="0.83527369279999997" green="0.96236947250000004" blue="0.63688470180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -340,7 +375,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCX-kM-8sO">
-                                        <rect key="frame" x="32" y="227.5" width="72" height="40"/>
+                                        <rect key="frame" x="16" y="227.5" width="72" height="40"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <state key="normal" title="Cancel">
                                             <color key="titleColor" red="0.83527369279999997" green="0.96236947250000004" blue="0.63688470180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -353,21 +388,22 @@
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="MBO-tk-zan" secondAttribute="trailing" constant="32" id="12S-yG-ypY"/>
-                                    <constraint firstAttribute="trailing" secondItem="JRX-oY-7yN" secondAttribute="trailing" constant="64" id="19q-KQ-Euv"/>
+                                    <constraint firstItem="W5A-Ca-edU" firstAttribute="leading" secondItem="sBa-Fe-GhX" secondAttribute="leading" id="5cG-io-NpQ"/>
+                                    <constraint firstItem="JRX-oY-7yN" firstAttribute="trailing" secondItem="sBa-Fe-GhX" secondAttribute="trailing" id="6ny-bL-Ge8"/>
+                                    <constraint firstItem="JRX-oY-7yN" firstAttribute="leading" secondItem="sBa-Fe-GhX" secondAttribute="leading" id="7UU-JR-orR"/>
+                                    <constraint firstItem="qCX-kM-8sO" firstAttribute="leading" secondItem="JRX-oY-7yN" secondAttribute="leading" id="CKH-VZ-Mx2"/>
                                     <constraint firstItem="W5A-Ca-edU" firstAttribute="top" secondItem="sBa-Fe-GhX" secondAttribute="bottom" constant="16" id="GPK-eF-slw"/>
                                     <constraint firstItem="RyJ-nv-ysq" firstAttribute="centerX" secondItem="yPn-bo-Qn5" secondAttribute="centerX" id="Gs6-Gu-zih"/>
                                     <constraint firstItem="RyJ-nv-ysq" firstAttribute="top" secondItem="yPn-bo-Qn5" secondAttribute="top" constant="16" id="HCQ-3C-vWw"/>
-                                    <constraint firstItem="qCX-kM-8sO" firstAttribute="top" secondItem="Cgr-hC-Khe" secondAttribute="bottom" id="HQv-x5-eU5"/>
                                     <constraint firstAttribute="height" constant="268" id="IKT-jV-Mn3"/>
                                     <constraint firstItem="sBa-Fe-GhX" firstAttribute="leading" secondItem="yPn-bo-Qn5" secondAttribute="leading" constant="16" id="KhY-wb-nbV"/>
-                                    <constraint firstItem="W5A-Ca-edU" firstAttribute="leading" secondItem="yPn-bo-Qn5" secondAttribute="leading" constant="64" id="Ytu-kG-o5A"/>
-                                    <constraint firstItem="qCX-kM-8sO" firstAttribute="leading" secondItem="yPn-bo-Qn5" secondAttribute="leading" constant="32" id="g9J-dU-uvV"/>
+                                    <constraint firstItem="W5A-Ca-edU" firstAttribute="trailing" secondItem="sBa-Fe-GhX" secondAttribute="trailing" id="Td6-Uo-q8u"/>
+                                    <constraint firstItem="MBO-tk-zan" firstAttribute="trailing" secondItem="JRX-oY-7yN" secondAttribute="trailing" id="act-9Q-hdD"/>
                                     <constraint firstItem="Cgr-hC-Khe" firstAttribute="top" secondItem="JRX-oY-7yN" secondAttribute="bottom" constant="16" id="gPH-RR-aiB"/>
                                     <constraint firstAttribute="trailing" secondItem="sBa-Fe-GhX" secondAttribute="trailing" constant="16" id="h5Y-9s-lQm"/>
-                                    <constraint firstItem="JRX-oY-7yN" firstAttribute="leading" secondItem="yPn-bo-Qn5" secondAttribute="leading" constant="64" id="kHL-ww-7O1"/>
                                     <constraint firstItem="sBa-Fe-GhX" firstAttribute="top" secondItem="RyJ-nv-ysq" secondAttribute="bottom" constant="16" id="lfG-KI-ygr"/>
-                                    <constraint firstAttribute="trailing" secondItem="W5A-Ca-edU" secondAttribute="trailing" constant="64" id="uTm-6y-9z0"/>
+                                    <constraint firstItem="qCX-kM-8sO" firstAttribute="top" secondItem="Cgr-hC-Khe" secondAttribute="bottom" id="nuM-tx-fbd"/>
+                                    <constraint firstAttribute="width" constant="320" id="q5q-dd-xUi"/>
                                     <constraint firstAttribute="trailing" secondItem="Cgr-hC-Khe" secondAttribute="trailing" id="vwU-Tl-IaF"/>
                                     <constraint firstItem="Cgr-hC-Khe" firstAttribute="leading" secondItem="yPn-bo-Qn5" secondAttribute="leading" id="x1c-A1-LaO"/>
                                     <constraint firstItem="MBO-tk-zan" firstAttribute="top" secondItem="Cgr-hC-Khe" secondAttribute="bottom" id="xEj-79-dTa"/>
@@ -379,9 +415,7 @@
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="yPn-bo-Qn5" firstAttribute="centerX" secondItem="ypw-cT-w7A" secondAttribute="centerX" id="21P-JN-EcZ"/>
-                            <constraint firstItem="yPn-bo-Qn5" firstAttribute="leading" secondItem="ypw-cT-w7A" secondAttribute="leading" constant="16" id="2vx-Hp-kEK"/>
                             <constraint firstItem="yPn-bo-Qn5" firstAttribute="centerY" secondItem="ypw-cT-w7A" secondAttribute="centerY" id="4K4-SZ-0vW"/>
-                            <constraint firstAttribute="trailing" secondItem="yPn-bo-Qn5" secondAttribute="trailing" constant="16" id="xwN-Rf-pwI"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="9dT-1w-b2F" appends="YES" id="H1S-e7-bKY"/>
@@ -391,6 +425,7 @@
                         <outlet property="dateOrPerekTextField" destination="W5A-Ca-edU" id="zGw-Ta-ki3"/>
                         <outlet property="mainView" destination="yPn-bo-Qn5" id="h9h-Yo-oTN"/>
                         <outlet property="nameTextField" destination="JRX-oY-7yN" id="Ta5-q6-ieI"/>
+                        <outlet property="saveButton" destination="MBO-tk-zan" id="xzx-iI-opL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UhV-jd-SCJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -405,7 +440,7 @@
         <!--Tehilim View Controller-->
         <scene sceneID="mzb-uN-OMW">
             <objects>
-                <viewController storyboardIdentifier="TehilimViewController" automaticallyAdjustsScrollViewInsets="NO" hidesBottomBarWhenPushed="YES" id="dIo-fn-5PG" customClass="TehilimViewController" customModule="TehilimDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TehilimViewController" automaticallyAdjustsScrollViewInsets="NO" hidesBottomBarWhenPushed="YES" id="dIo-fn-5PG" customClass="TehilimViewController" customModule="TehillimApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="N8O-Fw-NNX"/>
                         <viewControllerLayoutGuide type="bottom" id="FKO-ff-lL6"/>
@@ -424,7 +459,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="BUf-mC-trI" customClass="TehilimCollectionViewCell" customModule="TehilimDemo" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="BUf-mC-trI" customClass="TehilimCollectionViewCell" customModule="TehillimApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -485,7 +520,7 @@
         <!--הכל-->
         <scene sceneID="zTr-aq-Wdd">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="X3t-fu-CX1" customClass="BrowseViewController" customModule="TehilimDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="X3t-fu-CX1" customClass="BrowseViewController" customModule="TehillimApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pQQ-wV-NAq"/>
                         <viewControllerLayoutGuide type="bottom" id="aUY-Pv-Vhc"/>
@@ -494,17 +529,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XEj-x4-aqQ">
-                                <rect key="frame" x="16" y="112" width="343" height="386"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" tag="100" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XEj-x4-aqQ">
+                                <rect key="frame" x="16" y="116" width="343" height="382"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quR-K4-8of" customClass="MyButton" customModule="TehilimDemo" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="20" width="303" height="41"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quR-K4-8of" customClass="MyButton" customModule="TehillimApp" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="20" width="303" height="44"/>
                                         <color key="backgroundColor" red="0.18821030859999999" green="0.1882497072" blue="0.18820786480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="wPg-WK-R7a"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="בחר פרק"/>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="choose_chapter"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="by_chapter"/>
                                             <userDefinedRuntimeAttribute type="number" keyPath="tag">
                                                 <integer key="value" value="1"/>
                                             </userDefinedRuntimeAttribute>
@@ -513,14 +551,17 @@
                                             <action selector="chooseChapter:" destination="X3t-fu-CX1" eventType="touchUpInside" id="Z6U-UF-Rk7"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJV-IT-efa" customClass="MyButton" customModule="TehilimDemo" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="77" width="303" height="41"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJV-IT-efa" customClass="MyButton" customModule="TehillimApp" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="80" width="303" height="44"/>
                                         <color key="backgroundColor" red="0.18821030859999999" green="0.1882497072" blue="0.18820786480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="rhs-21-i27"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="בחר ספר-תהילים"/>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="choose_book"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="by_book"/>
                                             <userDefinedRuntimeAttribute type="number" keyPath="tag">
                                                 <integer key="value" value="2"/>
                                             </userDefinedRuntimeAttribute>
@@ -529,14 +570,17 @@
                                             <action selector="chooseChapter:" destination="X3t-fu-CX1" eventType="touchUpInside" id="JGT-Ih-ru4"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQn-rB-e9e" customClass="MyButton" customModule="TehilimDemo" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="134" width="303" height="41"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQn-rB-e9e" customClass="MyButton" customModule="TehillimApp" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="140" width="303" height="44"/>
                                         <color key="backgroundColor" red="0.18821030859999999" green="0.1882497072" blue="0.18820786480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="oGB-mw-4Tz"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="בחר יום בשבוע"/>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="choose_day_of_week"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="by_day_of_week"/>
                                             <userDefinedRuntimeAttribute type="number" keyPath="tag">
                                                 <integer key="value" value="3"/>
                                             </userDefinedRuntimeAttribute>
@@ -545,14 +589,17 @@
                                             <action selector="chooseChapter:" destination="X3t-fu-CX1" eventType="touchUpInside" id="tHM-9V-4dP"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="anm-nq-xQo" customClass="MyButton" customModule="TehilimDemo" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="191" width="303" height="41"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="anm-nq-xQo" customClass="MyButton" customModule="TehillimApp" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="200" width="303" height="44"/>
                                         <color key="backgroundColor" red="0.18821030859999999" green="0.1882497072" blue="0.18820786480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="GnS-UB-4bg"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="בחר יום בחודש"/>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="choose_day_of_month"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="by_day_of_month"/>
                                             <userDefinedRuntimeAttribute type="number" keyPath="tag">
                                                 <integer key="value" value="4"/>
                                             </userDefinedRuntimeAttribute>
@@ -561,22 +608,28 @@
                                             <action selector="chooseChapter:" destination="X3t-fu-CX1" eventType="touchUpInside" id="7qK-bX-WDR"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQG-Hw-mg4" customClass="MyButton" customModule="TehilimDemo" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="248" width="303" height="41"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQG-Hw-mg4" customClass="MyButton" customModule="TehillimApp" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="260" width="303" height="44"/>
                                         <color key="backgroundColor" red="0.18821030859999999" green="0.1882497072" blue="0.18820786480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="ubS-rg-Xjv"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="התיקון הכללי"/>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="general_amendment"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="tikun_haklali"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="tikunHaklaliAction:" destination="X3t-fu-CX1" eventType="touchUpInside" id="j6H-1M-AVE"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="084-9D-BhG" customClass="MyButton" customModule="TehilimDemo" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="305" width="303" height="41"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="084-9D-BhG" customClass="MyButton" customModule="TehillimApp" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="320" width="303" height="44"/>
                                         <color key="backgroundColor" red="0.18821030859999999" green="0.1882497072" blue="0.18820786480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="LMt-E5-IPV"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="תהילים ליארצייט"/>
@@ -587,9 +640,12 @@
                                             <action selector="yahrtzeitAction:" destination="X3t-fu-CX1" eventType="touchUpInside" id="jFA-fs-KKl"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jab-lt-OrM" customClass="MyButton" customModule="TehilimDemo" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="362" width="303" height="41"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jab-lt-OrM" customClass="MyButton" customModule="TehillimApp" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="380" width="303" height="44"/>
                                         <color key="backgroundColor" red="0.18821030859999999" green="0.1882497072" blue="0.18820786480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="RVb-Vu-L1I"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="סגולות"/>
@@ -600,9 +656,12 @@
                                             <action selector="segulotAction:" destination="X3t-fu-CX1" eventType="touchUpInside" id="wiH-k2-BuU"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52e-Wc-M2y" customClass="MyButton" customModule="TehilimDemo" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="419" width="303" height="41"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52e-Wc-M2y" customClass="MyButton" customModule="TehillimApp" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="440" width="303" height="44"/>
                                         <color key="backgroundColor" red="0.18821030859999999" green="0.1882497072" blue="0.18820786480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="Cnw-bT-MSr"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="פרק אקראי"/>
@@ -615,63 +674,67 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="084-9D-BhG" firstAttribute="top" secondItem="HQG-Hw-mg4" secondAttribute="bottom" constant="16" id="1jx-GE-opB"/>
-                                    <constraint firstAttribute="bottom" secondItem="52e-Wc-M2y" secondAttribute="bottom" constant="16" id="1uM-Qb-3sw"/>
-                                    <constraint firstItem="KJV-IT-efa" firstAttribute="leading" secondItem="XEj-x4-aqQ" secondAttribute="leading" constant="20" id="2If-w3-e8z"/>
-                                    <constraint firstItem="quR-K4-8of" firstAttribute="centerX" secondItem="XEj-x4-aqQ" secondAttribute="centerX" id="52s-Km-AZZ"/>
-                                    <constraint firstItem="084-9D-BhG" firstAttribute="leading" secondItem="XEj-x4-aqQ" secondAttribute="leading" constant="20" id="5Nc-LH-DXj"/>
-                                    <constraint firstItem="Jab-lt-OrM" firstAttribute="top" secondItem="084-9D-BhG" secondAttribute="bottom" constant="16" id="Afj-oO-m2p"/>
-                                    <constraint firstAttribute="trailing" secondItem="GQn-rB-e9e" secondAttribute="trailing" constant="20" id="Gjf-kS-NKB"/>
-                                    <constraint firstItem="anm-nq-xQo" firstAttribute="leading" secondItem="XEj-x4-aqQ" secondAttribute="leading" constant="20" id="H6i-Ae-4eE"/>
-                                    <constraint firstAttribute="trailing" secondItem="HQG-Hw-mg4" secondAttribute="trailing" constant="20" id="JDp-ba-wie"/>
-                                    <constraint firstAttribute="trailing" secondItem="Jab-lt-OrM" secondAttribute="trailing" constant="20" id="NOa-Xk-ci6"/>
-                                    <constraint firstItem="52e-Wc-M2y" firstAttribute="leading" secondItem="XEj-x4-aqQ" secondAttribute="leading" constant="20" id="OfM-cs-5Mn"/>
-                                    <constraint firstAttribute="trailing" secondItem="anm-nq-xQo" secondAttribute="trailing" constant="20" id="Re4-RJ-2Oh"/>
-                                    <constraint firstItem="GQn-rB-e9e" firstAttribute="leading" secondItem="XEj-x4-aqQ" secondAttribute="leading" constant="20" id="TFm-Qs-nWp"/>
-                                    <constraint firstAttribute="trailing" secondItem="52e-Wc-M2y" secondAttribute="trailing" constant="20" id="Tro-Jq-01f"/>
-                                    <constraint firstItem="Jab-lt-OrM" firstAttribute="leading" secondItem="XEj-x4-aqQ" secondAttribute="leading" constant="20" id="Wpv-wS-9x9"/>
-                                    <constraint firstItem="KJV-IT-efa" firstAttribute="top" secondItem="quR-K4-8of" secondAttribute="bottom" constant="16" id="aAb-2P-fvV"/>
-                                    <constraint firstItem="quR-K4-8of" firstAttribute="top" secondItem="XEj-x4-aqQ" secondAttribute="top" constant="20" id="aHL-3r-GHh"/>
-                                    <constraint firstAttribute="trailing" secondItem="084-9D-BhG" secondAttribute="trailing" constant="20" id="bkV-Py-YVg"/>
-                                    <constraint firstItem="HQG-Hw-mg4" firstAttribute="top" secondItem="anm-nq-xQo" secondAttribute="bottom" constant="16" id="cjA-iS-x8I"/>
+                                    <constraint firstItem="084-9D-BhG" firstAttribute="leading" secondItem="XEj-x4-aqQ" secondAttribute="leading" constant="20" id="009-Pa-hSy"/>
+                                    <constraint firstAttribute="trailing" secondItem="GQn-rB-e9e" secondAttribute="trailing" constant="20" id="1hS-Tx-FGn"/>
+                                    <constraint firstItem="anm-nq-xQo" firstAttribute="leading" secondItem="XEj-x4-aqQ" secondAttribute="leading" constant="20" id="1qi-u2-IMo"/>
+                                    <constraint firstItem="anm-nq-xQo" firstAttribute="top" secondItem="GQn-rB-e9e" secondAttribute="bottom" constant="16" id="2Y3-Md-JNi"/>
+                                    <constraint firstItem="HQG-Hw-mg4" firstAttribute="top" secondItem="anm-nq-xQo" secondAttribute="bottom" constant="16" id="5Ev-z8-xMH"/>
+                                    <constraint firstItem="52e-Wc-M2y" firstAttribute="leading" secondItem="XEj-x4-aqQ" secondAttribute="leading" constant="20" id="698-Bj-gE4"/>
+                                    <constraint firstItem="KJV-IT-efa" firstAttribute="top" secondItem="quR-K4-8of" secondAttribute="bottom" constant="16" id="7T5-nt-0F1"/>
+                                    <constraint firstAttribute="trailing" secondItem="KJV-IT-efa" secondAttribute="trailing" constant="20" id="9JF-Ls-ahk"/>
+                                    <constraint firstItem="084-9D-BhG" firstAttribute="top" secondItem="HQG-Hw-mg4" secondAttribute="bottom" constant="16" id="Aub-Bo-j64"/>
+                                    <constraint firstAttribute="bottom" secondItem="52e-Wc-M2y" secondAttribute="bottom" constant="16" id="Ct1-zZ-eea"/>
+                                    <constraint firstItem="HQG-Hw-mg4" firstAttribute="leading" secondItem="XEj-x4-aqQ" secondAttribute="leading" constant="20" id="FPf-56-SgX"/>
+                                    <constraint firstAttribute="trailing" secondItem="anm-nq-xQo" secondAttribute="trailing" constant="20" id="Hmw-jw-ZeE"/>
+                                    <constraint firstItem="quR-K4-8of" firstAttribute="centerX" secondItem="XEj-x4-aqQ" secondAttribute="centerX" id="Olj-eA-q4t"/>
+                                    <constraint firstAttribute="trailing" secondItem="HQG-Hw-mg4" secondAttribute="trailing" constant="20" id="VNp-l9-5jg"/>
+                                    <constraint firstAttribute="trailing" secondItem="084-9D-BhG" secondAttribute="trailing" constant="20" id="WKK-zf-6Bp"/>
+                                    <constraint firstAttribute="trailing" secondItem="52e-Wc-M2y" secondAttribute="trailing" constant="20" id="bJM-6q-8LI"/>
                                     <constraint firstItem="quR-K4-8of" firstAttribute="leading" secondItem="XEj-x4-aqQ" secondAttribute="leading" constant="20" id="ekh-vb-jeb"/>
-                                    <constraint firstItem="anm-nq-xQo" firstAttribute="top" secondItem="GQn-rB-e9e" secondAttribute="bottom" constant="16" id="jZT-oh-TT7"/>
-                                    <constraint firstItem="52e-Wc-M2y" firstAttribute="top" secondItem="Jab-lt-OrM" secondAttribute="bottom" constant="16" id="kfD-nD-Hzr"/>
-                                    <constraint firstAttribute="trailing" secondItem="KJV-IT-efa" secondAttribute="trailing" constant="20" id="lPX-9j-FZ0"/>
-                                    <constraint firstItem="HQG-Hw-mg4" firstAttribute="leading" secondItem="XEj-x4-aqQ" secondAttribute="leading" constant="20" id="lmo-5c-mKe"/>
-                                    <constraint firstItem="GQn-rB-e9e" firstAttribute="top" secondItem="KJV-IT-efa" secondAttribute="bottom" constant="16" id="mg8-Ln-Rdy"/>
+                                    <constraint firstItem="KJV-IT-efa" firstAttribute="leading" secondItem="XEj-x4-aqQ" secondAttribute="leading" constant="20" id="jW5-qX-kQX"/>
+                                    <constraint firstAttribute="trailing" secondItem="Jab-lt-OrM" secondAttribute="trailing" constant="20" id="jrN-aR-yy9"/>
+                                    <constraint firstItem="52e-Wc-M2y" firstAttribute="top" secondItem="Jab-lt-OrM" secondAttribute="bottom" constant="16" id="n4b-pg-qRv"/>
+                                    <constraint firstItem="Jab-lt-OrM" firstAttribute="top" secondItem="084-9D-BhG" secondAttribute="bottom" constant="16" id="nIR-tK-Qjc"/>
+                                    <constraint firstItem="GQn-rB-e9e" firstAttribute="leading" secondItem="XEj-x4-aqQ" secondAttribute="leading" constant="20" id="ohZ-Vi-yYP"/>
+                                    <constraint firstItem="Jab-lt-OrM" firstAttribute="leading" secondItem="XEj-x4-aqQ" secondAttribute="leading" constant="20" id="q75-SX-FUx"/>
+                                    <constraint firstItem="quR-K4-8of" firstAttribute="top" secondItem="XEj-x4-aqQ" secondAttribute="top" constant="20" id="qk2-nQ-Kaf"/>
+                                    <constraint firstItem="GQn-rB-e9e" firstAttribute="top" secondItem="KJV-IT-efa" secondAttribute="bottom" constant="16" id="rb7-w2-RZf"/>
                                     <constraint firstAttribute="trailing" secondItem="quR-K4-8of" secondAttribute="trailing" constant="20" id="xgZ-ei-YoT"/>
                                 </constraints>
                             </scrollView>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U9a-ua-f5e">
-                                <rect key="frame" x="16" y="72" width="343" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="dEu-lc-WfU"/>
-                                </constraints>
-                                <connections>
-                                    <segue destination="qCL-2z-Dm9" kind="embed" id="5Ca-v0-5eq"/>
-                                </connections>
-                            </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RtN-hQ-XTe">
                                 <rect key="frame" x="0.0" y="514" width="375" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="hCh-pF-wPw"/>
+                                </constraints>
                                 <connections>
                                     <segue destination="nZS-hd-SDb" kind="embed" id="Svi-PQ-eZh"/>
                                 </connections>
                             </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Hy-Pl-jTK" customClass="MyDateLabel" customModule="TehillimApp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="72" width="343" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="URg-d0-pc5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.83529411760000005" green="0.96078431369999995" blue="0.63529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="RtN-hQ-XTe" secondAttribute="trailing" id="0Zj-47-qwW"/>
-                            <constraint firstItem="XEj-x4-aqQ" firstAttribute="leading" secondItem="Abm-6E-aae" secondAttribute="leadingMargin" id="27f-cR-ZcV"/>
                             <constraint firstItem="RtN-hQ-XTe" firstAttribute="leading" secondItem="Abm-6E-aae" secondAttribute="leading" id="4Kv-qL-3ma"/>
-                            <constraint firstItem="XEj-x4-aqQ" firstAttribute="leading" secondItem="U9a-ua-f5e" secondAttribute="leading" id="7cD-ZO-rEl"/>
-                            <constraint firstItem="XEj-x4-aqQ" firstAttribute="centerX" secondItem="Abm-6E-aae" secondAttribute="centerX" id="Hmn-El-VYf"/>
-                            <constraint firstItem="RtN-hQ-XTe" firstAttribute="top" secondItem="XEj-x4-aqQ" secondAttribute="bottom" constant="16" id="XrN-B9-Rdj"/>
-                            <constraint firstItem="aUY-Pv-Vhc" firstAttribute="top" secondItem="XEj-x4-aqQ" secondAttribute="bottom" constant="120" id="dD6-Ar-hUq"/>
-                            <constraint firstItem="U9a-ua-f5e" firstAttribute="trailing" secondItem="XEj-x4-aqQ" secondAttribute="trailing" id="dt9-xi-kD9"/>
-                            <constraint firstItem="U9a-ua-f5e" firstAttribute="top" secondItem="pQQ-wV-NAq" secondAttribute="bottom" constant="8" id="eJe-hr-33a"/>
-                            <constraint firstItem="XEj-x4-aqQ" firstAttribute="top" secondItem="U9a-ua-f5e" secondAttribute="bottom" id="kiw-dK-ac6"/>
+                            <constraint firstItem="XEj-x4-aqQ" firstAttribute="centerX" secondItem="Abm-6E-aae" secondAttribute="centerX" id="Aek-En-fwc"/>
+                            <constraint firstItem="XEj-x4-aqQ" firstAttribute="leading" secondItem="Abm-6E-aae" secondAttribute="leading" constant="16" id="Dru-rY-6kB"/>
+                            <constraint firstItem="XEj-x4-aqQ" firstAttribute="top" secondItem="2Hy-Pl-jTK" secondAttribute="bottom" id="JfL-Xt-X0L"/>
+                            <constraint firstItem="RtN-hQ-XTe" firstAttribute="top" secondItem="XEj-x4-aqQ" secondAttribute="bottom" constant="16" id="fbT-6d-O13"/>
+                            <constraint firstItem="2Hy-Pl-jTK" firstAttribute="top" secondItem="pQQ-wV-NAq" secondAttribute="bottom" constant="8" id="nRa-ye-XT7"/>
+                            <constraint firstItem="2Hy-Pl-jTK" firstAttribute="leading" secondItem="XEj-x4-aqQ" secondAttribute="leading" id="sre-xK-hEQ"/>
                             <constraint firstItem="aUY-Pv-Vhc" firstAttribute="top" secondItem="RtN-hQ-XTe" secondAttribute="bottom" constant="16" id="tAy-tX-h0J"/>
+                            <constraint firstAttribute="trailing" secondItem="XEj-x4-aqQ" secondAttribute="trailing" constant="16" id="wLU-VB-gG9"/>
+                            <constraint firstItem="2Hy-Pl-jTK" firstAttribute="trailing" secondItem="XEj-x4-aqQ" secondAttribute="trailing" id="yec-fv-Qnl"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="הכל" id="Bmt-bB-TZp">
@@ -686,7 +749,7 @@
         <!--Main Navigation Controller-->
         <scene sceneID="fHz-JX-4i2">
             <objects>
-                <navigationController id="gcH-Es-9DE" customClass="MainNavigationController" customModule="TehilimDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="gcH-Es-9DE" customClass="MainNavigationController" customModule="TehillimApp" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="LZt-ve-Iox">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -703,9 +766,9 @@
         <!--תהילים-->
         <scene sceneID="dpx-kZ-T05">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="x28-tF-a2S" customClass="MyTabBarController" customModule="TehilimDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="x28-tF-a2S" customClass="MyTabBarController" customModule="TehillimApp" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="תהילים" id="zUI-AZ-8XD" customClass="MyNavigationItem" customModule="TehilimDemo" customModuleProvider="target"/>
+                    <navigationItem key="navigationItem" title="תהילים" id="zUI-AZ-8XD" customClass="MyNavigationItem" customModule="TehillimApp" customModuleProvider="target"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" id="WdS-eT-mGm">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -721,43 +784,10 @@
             </objects>
             <point key="canvasLocation" x="1682" y="394"/>
         </scene>
-        <!--Date View Controller-->
-        <scene sceneID="G1m-Mc-UgB">
-            <objects>
-                <viewController id="qCL-2z-Dm9" customClass="DateViewController" customModule="TehilimDemo" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="JPx-Lc-hpV"/>
-                        <viewControllerLayoutGuide type="bottom" id="Ksh-ba-1ql"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="R4z-1w-18w">
-                        <rect key="frame" x="0.0" y="0.0" width="343" height="40"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3R-yz-JuC">
-                                <rect key="frame" x="154.5" y="10.5" width="34.5" height="19.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <color key="textColor" red="0.83529411764705885" green="0.96078431372549022" blue="0.63529411764705879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="d3R-yz-JuC" firstAttribute="centerY" secondItem="R4z-1w-18w" secondAttribute="centerY" id="ccE-4L-OVK"/>
-                            <constraint firstItem="d3R-yz-JuC" firstAttribute="centerX" secondItem="R4z-1w-18w" secondAttribute="centerX" id="gMU-ft-0u8"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="label" destination="d3R-yz-JuC" id="X36-vV-cZX"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7tL-oz-tQK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2737" y="-428"/>
-        </scene>
         <!--Dedications View Controller-->
         <scene sceneID="XsX-rw-Oe4">
             <objects>
-                <viewController id="nZS-hd-SDb" customClass="DedicationsViewController" customModule="TehilimDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="nZS-hd-SDb" customClass="DedicationsViewController" customModule="TehillimApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VdZ-1x-uKk"/>
                         <viewControllerLayoutGuide type="bottom" id="xmJ-EY-edA"/>
@@ -766,78 +796,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Wc-Ex-EgB">
-                                <rect key="frame" x="0.0" y="5" width="375" height="78"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bmw-bS-rQV">
-                                        <rect key="frame" x="0.0" y="8" width="375" height="19.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <color key="textColor" red="0.83527369279999997" green="0.96236947250000004" blue="0.63688470180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nK-DL-IbY">
-                                        <rect key="frame" x="0.0" y="29.5" width="375" height="19.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <color key="textColor" red="0.83527369279999997" green="0.96236947250000004" blue="0.63688470180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w3u-Xt-zvB">
-                                        <rect key="frame" x="0.0" y="50.5" width="375" height="19.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <color key="textColor" red="0.83658725020000002" green="0.96187466379999997" blue="0.63617378469999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.18823529411764706" green="0.18824970722198486" blue="0.18820786476135254" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bmw-bS-rQV">
+                                <rect key="frame" x="16" y="44.5" width="343" height="0.0"/>
+                                <color key="backgroundColor" red="0.33329343795776367" green="0.33335629105567932" blue="0.33328947424888611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="w3u-Xt-zvB" secondAttribute="bottom" constant="8" id="0ty-ts-kKX"/>
-                                    <constraint firstItem="3nK-DL-IbY" firstAttribute="leading" secondItem="6Wc-Ex-EgB" secondAttribute="leading" id="BvA-RD-g0p"/>
-                                    <constraint firstItem="Bmw-bS-rQV" firstAttribute="top" secondItem="6Wc-Ex-EgB" secondAttribute="top" constant="8" id="EJh-a9-e9e"/>
-                                    <constraint firstAttribute="trailing" secondItem="Bmw-bS-rQV" secondAttribute="trailing" id="Ey3-k0-Mc3"/>
-                                    <constraint firstItem="w3u-Xt-zvB" firstAttribute="height" secondItem="6Wc-Ex-EgB" secondAttribute="height" multiplier="1:4" id="KzV-lr-Gmh"/>
-                                    <constraint firstItem="3nK-DL-IbY" firstAttribute="centerY" secondItem="6Wc-Ex-EgB" secondAttribute="centerY" id="LQn-T5-7pB"/>
-                                    <constraint firstAttribute="trailing" secondItem="w3u-Xt-zvB" secondAttribute="trailing" id="LY9-rL-Tj0"/>
-                                    <constraint firstItem="Bmw-bS-rQV" firstAttribute="height" secondItem="6Wc-Ex-EgB" secondAttribute="height" multiplier="1:4" id="WOH-hn-Vxo"/>
-                                    <constraint firstItem="w3u-Xt-zvB" firstAttribute="leading" secondItem="6Wc-Ex-EgB" secondAttribute="leading" id="ewu-Sr-o27"/>
-                                    <constraint firstAttribute="trailing" secondItem="3nK-DL-IbY" secondAttribute="trailing" id="kc4-lw-T9B"/>
-                                    <constraint firstItem="3nK-DL-IbY" firstAttribute="height" secondItem="6Wc-Ex-EgB" secondAttribute="height" multiplier="1:4" id="nAj-Y8-hpr"/>
-                                    <constraint firstItem="Bmw-bS-rQV" firstAttribute="leading" secondItem="6Wc-Ex-EgB" secondAttribute="leading" id="zHT-Ln-GWq"/>
-                                </constraints>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="20"/>
+                                <color key="textColor" red="0.83527369279999997" green="0.96236947250000004" blue="0.63688470180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="cql-3p-UJb" appends="YES" id="TOF-h8-qiQ"/>
+                                    <outletCollection property="gestureRecognizers" destination="JW0-OZ-bAE" appends="YES" id="vrn-Ol-I3F"/>
                                 </connections>
-                            </view>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdk-WT-bEc" customClass="MyButton" customModule="TehillimApp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="26.5" width="343" height="36"/>
+                                <color key="backgroundColor" red="0.18821030859999999" green="0.1882497072" blue="0.18820786480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Ajouter Votre Dedicace">
+                                    <color key="titleColor" red="0.83529411760000005" green="0.96078431369999995" blue="0.63529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="notDediButtonAction:" destination="nZS-hd-SDb" eventType="touchUpInside" id="fnE-mf-Liz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="6Wc-Ex-EgB" firstAttribute="centerY" secondItem="1Xw-LZ-oaw" secondAttribute="centerY" id="1bA-rQ-mME"/>
-                            <constraint firstItem="6Wc-Ex-EgB" firstAttribute="leading" secondItem="1Xw-LZ-oaw" secondAttribute="leading" id="Fk2-g0-0Gb"/>
-                            <constraint firstItem="6Wc-Ex-EgB" firstAttribute="centerX" secondItem="1Xw-LZ-oaw" secondAttribute="centerX" id="fI2-1V-XMg"/>
-                            <constraint firstAttribute="trailing" secondItem="6Wc-Ex-EgB" secondAttribute="trailing" id="vfT-sw-BCL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pdk-WT-bEc" secondAttribute="trailing" id="1B0-8u-Gcg"/>
+                            <constraint firstItem="pdk-WT-bEc" firstAttribute="centerY" secondItem="1Xw-LZ-oaw" secondAttribute="centerY" id="73N-zv-etI"/>
+                            <constraint firstItem="Bmw-bS-rQV" firstAttribute="centerX" secondItem="1Xw-LZ-oaw" secondAttribute="centerX" id="Lz8-AB-xuy"/>
+                            <constraint firstItem="pdk-WT-bEc" firstAttribute="centerX" secondItem="1Xw-LZ-oaw" secondAttribute="centerX" id="QSm-yO-cQQ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Bmw-bS-rQV" secondAttribute="leading" id="Umd-85-GAi"/>
+                            <constraint firstItem="pdk-WT-bEc" firstAttribute="leading" secondItem="1Xw-LZ-oaw" secondAttribute="leadingMargin" id="crN-W1-77Z"/>
+                            <constraint firstItem="Bmw-bS-rQV" firstAttribute="centerY" secondItem="1Xw-LZ-oaw" secondAttribute="centerY" id="dL0-O9-bXZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Bmw-bS-rQV" secondAttribute="trailing" id="nvd-2d-vrH"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="firstLabel" destination="Bmw-bS-rQV" id="cHs-ON-VCu"/>
-                        <outlet property="mainView" destination="6Wc-Ex-EgB" id="K1S-CO-4nV"/>
-                        <outlet property="secondLabel" destination="3nK-DL-IbY" id="adt-ma-gCo"/>
-                        <outlet property="thirdLabel" destination="w3u-Xt-zvB" id="khG-CM-s8d"/>
+                        <outlet property="dediLabel" destination="Bmw-bS-rQV" id="bbc-7q-pIx"/>
+                        <outlet property="notDediButton" destination="pdk-WT-bEc" id="SGq-hG-iPz"/>
+                        <outlet property="tapGesture" destination="JW0-OZ-bAE" id="Ny0-ZE-PFr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pao-h1-QeM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="cql-3p-UJb">
+                <tapGestureRecognizer id="JW0-OZ-bAE">
                     <connections>
-                        <segue destination="1VN-h1-gsY" kind="presentation" identifier="dedicationSegue" id="CyS-K5-Xdm"/>
+                        <segue destination="1VN-h1-gsY" kind="show" identifier="dedi" id="qqZ-zn-VBo"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2737" y="1344"/>
+            <point key="canvasLocation" x="2640" y="1343"/>
         </scene>
         <!--Dedications-->
         <scene sceneID="FE0-g4-fu6">
             <objects>
-                <viewController id="5dh-Gx-mRx" customClass="AddDedicaceViewController" customModule="TehilimDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5dh-Gx-mRx" customClass="AddDedicaceViewController" customModule="TehillimApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="itb-Ia-Nby"/>
                         <viewControllerLayoutGuide type="bottom" id="oLN-sQ-GEc"/>
@@ -846,26 +859,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="u7R-Vn-4hs">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="Dedication" id="M1t-74-U5b">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="bOb-yn-THc">
-                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEq-Ik-2gI">
-                                <rect key="frame" x="0.0" y="607" width="375" height="52"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEq-Ik-2gI" customClass="MyButton" customModule="TehillimApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="607" width="375" height="44"/>
                                 <color key="backgroundColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="XEW-QL-VQ4"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <state key="normal" title="Ajouter votre dedicace">
                                     <color key="titleColor" red="0.83527369279999997" green="0.96236947250000004" blue="0.63688470180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="add_dedication"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="ZPV-bu-V7q" kind="show" id="ei1-PJ-ou1"/>
                                 </connections>
@@ -874,17 +880,17 @@
                                 <rect key="frame" x="8" y="64" width="359" height="527"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NSS-Bi-Nri">
-                                        <rect key="frame" x="8" y="8" width="343" height="176"/>
+                                        <rect key="frame" x="8" y="8" width="343" height="480"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3No-WF-fvQ">
-                                                <rect key="frame" x="0.0" y="0.0" width="343" height="27"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3No-WF-fvQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="24"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ubv-mw-I9H">
-                                                <rect key="frame" x="0.0" y="27" width="343" height="149"/>
+                                                <rect key="frame" x="0.0" y="24" width="343" height="456"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -898,99 +904,34 @@
                                             <constraint firstItem="Ubv-mw-I9H" firstAttribute="leading" secondItem="NSS-Bi-Nri" secondAttribute="leading" id="2Hr-Uy-kBx"/>
                                             <constraint firstAttribute="bottom" secondItem="Ubv-mw-I9H" secondAttribute="bottom" id="2j6-y8-DsN"/>
                                             <constraint firstItem="3No-WF-fvQ" firstAttribute="leading" secondItem="NSS-Bi-Nri" secondAttribute="leading" id="DP1-oa-NTn"/>
-                                            <constraint firstAttribute="height" constant="176" id="S96-tl-bj9"/>
                                             <constraint firstItem="3No-WF-fvQ" firstAttribute="top" secondItem="NSS-Bi-Nri" secondAttribute="top" id="XPW-4U-nkI"/>
+                                            <constraint firstAttribute="height" constant="480" id="p2G-kp-ugG"/>
                                             <constraint firstAttribute="trailing" secondItem="3No-WF-fvQ" secondAttribute="trailing" id="ux0-sS-Ecg"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xw3-E3-5my">
-                                        <rect key="frame" x="8" y="192" width="343" height="176"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sLq-dC-Tlt">
-                                                <rect key="frame" x="0.0" y="0.0" width="343" height="27"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uj1-zD-Gmw">
-                                                <rect key="frame" x="0.0" y="27" width="343" height="149"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.18821030855178833" green="0.18824970722198486" blue="0.18820786476135254" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="176" id="0Na-qb-irb"/>
-                                            <constraint firstItem="sLq-dC-Tlt" firstAttribute="top" secondItem="xw3-E3-5my" secondAttribute="top" id="8RN-c0-RxB"/>
-                                            <constraint firstAttribute="trailing" secondItem="uj1-zD-Gmw" secondAttribute="trailing" id="Izp-VA-qkX"/>
-                                            <constraint firstItem="uj1-zD-Gmw" firstAttribute="leading" secondItem="xw3-E3-5my" secondAttribute="leading" id="NgH-2Z-eJ5"/>
-                                            <constraint firstItem="sLq-dC-Tlt" firstAttribute="leading" secondItem="xw3-E3-5my" secondAttribute="leading" id="NqE-0m-P3i"/>
-                                            <constraint firstItem="uj1-zD-Gmw" firstAttribute="top" secondItem="sLq-dC-Tlt" secondAttribute="bottom" id="QoS-LW-ajO"/>
-                                            <constraint firstAttribute="bottom" secondItem="uj1-zD-Gmw" secondAttribute="bottom" id="gcY-uI-Mme"/>
-                                            <constraint firstAttribute="trailing" secondItem="sLq-dC-Tlt" secondAttribute="trailing" id="mlE-Qs-xNi"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u6O-al-nYt">
-                                        <rect key="frame" x="8" y="376" width="343" height="176"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FS9-kA-Gqe">
-                                                <rect key="frame" x="0.0" y="0.0" width="343" height="27"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJC-UD-UIW">
-                                                <rect key="frame" x="0.0" y="27" width="343" height="149"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.18821030855178833" green="0.18824970722198486" blue="0.18820786476135254" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="176" id="8c9-hw-KcJ"/>
-                                            <constraint firstItem="FS9-kA-Gqe" firstAttribute="top" secondItem="u6O-al-nYt" secondAttribute="top" id="IiI-kd-O5h"/>
-                                            <constraint firstAttribute="trailing" secondItem="FS9-kA-Gqe" secondAttribute="trailing" id="XJ8-Lc-1gp"/>
-                                            <constraint firstItem="vJC-UD-UIW" firstAttribute="leading" secondItem="u6O-al-nYt" secondAttribute="leading" id="Z28-Tg-cnp"/>
-                                            <constraint firstItem="vJC-UD-UIW" firstAttribute="top" secondItem="FS9-kA-Gqe" secondAttribute="bottom" id="bYH-4X-YAY"/>
-                                            <constraint firstAttribute="trailing" secondItem="vJC-UD-UIW" secondAttribute="trailing" id="j2J-Ax-Ahr"/>
-                                            <constraint firstItem="FS9-kA-Gqe" firstAttribute="leading" secondItem="u6O-al-nYt" secondAttribute="leading" id="oO3-Sd-Mh9"/>
-                                            <constraint firstAttribute="bottom" secondItem="vJC-UD-UIW" secondAttribute="bottom" id="ssu-wQ-aHo"/>
-                                        </constraints>
-                                    </view>
                                 </subviews>
+                                <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="u6O-al-nYt" secondAttribute="trailing" constant="8" id="AKG-Tk-hK5"/>
                                     <constraint firstItem="NSS-Bi-Nri" firstAttribute="centerX" secondItem="zjw-VB-x4q" secondAttribute="centerX" id="De3-JE-fSY"/>
                                     <constraint firstItem="NSS-Bi-Nri" firstAttribute="top" secondItem="zjw-VB-x4q" secondAttribute="top" constant="8" id="Dn7-8a-Zzg"/>
                                     <constraint firstItem="NSS-Bi-Nri" firstAttribute="leading" secondItem="zjw-VB-x4q" secondAttribute="leading" constant="8" id="HKg-Py-cld"/>
-                                    <constraint firstItem="xw3-E3-5my" firstAttribute="top" secondItem="NSS-Bi-Nri" secondAttribute="bottom" constant="8" id="HaX-bw-PFS"/>
-                                    <constraint firstAttribute="trailing" secondItem="xw3-E3-5my" secondAttribute="trailing" constant="8" id="Kev-oQ-Lem"/>
                                     <constraint firstAttribute="trailing" secondItem="NSS-Bi-Nri" secondAttribute="trailing" constant="8" id="LaY-pP-ReM"/>
-                                    <constraint firstItem="u6O-al-nYt" firstAttribute="leading" secondItem="zjw-VB-x4q" secondAttribute="leading" constant="8" id="SW5-j4-Jvi"/>
-                                    <constraint firstItem="u6O-al-nYt" firstAttribute="centerX" secondItem="zjw-VB-x4q" secondAttribute="centerX" id="WQc-h7-sjh"/>
-                                    <constraint firstItem="xw3-E3-5my" firstAttribute="leading" secondItem="zjw-VB-x4q" secondAttribute="leading" constant="8" id="ZiF-uq-qQc"/>
-                                    <constraint firstItem="xw3-E3-5my" firstAttribute="centerX" secondItem="zjw-VB-x4q" secondAttribute="centerX" id="ece-Cg-Nj4"/>
-                                    <constraint firstAttribute="bottom" secondItem="u6O-al-nYt" secondAttribute="bottom" constant="16" id="g1I-fK-eNe"/>
-                                    <constraint firstItem="u6O-al-nYt" firstAttribute="top" secondItem="xw3-E3-5my" secondAttribute="bottom" constant="8" id="jeO-xL-H3k"/>
+                                    <constraint firstAttribute="bottom" secondItem="NSS-Bi-Nri" secondAttribute="bottom" constant="39" id="Qoa-Y0-Zkd"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="vGZ-5x-fPh" appends="YES" id="PUb-st-J8u"/>
+                                </connections>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="LEq-Ik-2gI" firstAttribute="top" secondItem="zjw-VB-x4q" secondAttribute="bottom" constant="16" id="1py-ED-r1l"/>
-                            <constraint firstAttribute="trailing" secondItem="u7R-Vn-4hs" secondAttribute="trailing" id="9ZL-yz-ieq"/>
-                            <constraint firstItem="u7R-Vn-4hs" firstAttribute="top" secondItem="PR7-QN-Ak1" secondAttribute="top" id="DCd-tU-dxw"/>
                             <constraint firstAttribute="trailing" secondItem="zjw-VB-x4q" secondAttribute="trailing" constant="8" id="Zql-1e-nc4"/>
                             <constraint firstItem="zjw-VB-x4q" firstAttribute="top" secondItem="itb-Ia-Nby" secondAttribute="bottom" id="b1t-3d-K1n"/>
                             <constraint firstItem="zjw-VB-x4q" firstAttribute="leading" secondItem="PR7-QN-Ak1" secondAttribute="leading" constant="8" id="bIk-bD-eWK"/>
                             <constraint firstItem="zjw-VB-x4q" firstAttribute="centerX" secondItem="PR7-QN-Ak1" secondAttribute="centerX" id="cDm-vY-amK"/>
                             <constraint firstAttribute="trailing" secondItem="LEq-Ik-2gI" secondAttribute="trailing" id="kQU-uC-0SS"/>
-                            <constraint firstItem="u7R-Vn-4hs" firstAttribute="leading" secondItem="PR7-QN-Ak1" secondAttribute="leading" id="kg5-Qy-t1K"/>
-                            <constraint firstItem="oLN-sQ-GEc" firstAttribute="top" secondItem="LEq-Ik-2gI" secondAttribute="bottom" constant="8" id="nnv-KC-fPV"/>
+                            <constraint firstItem="oLN-sQ-GEc" firstAttribute="top" secondItem="LEq-Ik-2gI" secondAttribute="bottom" constant="16" id="nnv-KC-fPV"/>
                             <constraint firstItem="LEq-Ik-2gI" firstAttribute="leading" secondItem="PR7-QN-Ak1" secondAttribute="leading" id="wJ9-Gp-jht"/>
                         </constraints>
                     </view>
@@ -1002,26 +943,23 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="firstLabel" destination="3No-WF-fvQ" id="WuV-5J-Lyl"/>
-                        <outlet property="firstTextView" destination="Ubv-mw-I9H" id="GzB-vs-Y7G"/>
+                        <outlet property="myView" destination="NSS-Bi-Nri" id="oSj-vp-J5U"/>
                         <outlet property="scrollview" destination="zjw-VB-x4q" id="t2B-oO-Jbt"/>
-                        <outlet property="secondLabel" destination="sLq-dC-Tlt" id="DH7-Bi-uOE"/>
-                        <outlet property="secondTextView" destination="uj1-zD-Gmw" id="o0o-vG-YH6"/>
-                        <outlet property="thirdLabel" destination="FS9-kA-Gqe" id="5Kq-pA-X1F"/>
-                        <outlet property="thirdTextView" destination="vJC-UD-UIW" id="Zao-Nn-5NN"/>
-                        <outletCollection property="views" destination="NSS-Bi-Nri" collectionClass="NSMutableArray" id="ntg-fZ-BRR"/>
-                        <outletCollection property="views" destination="xw3-E3-5my" collectionClass="NSMutableArray" id="OBs-mK-uAu"/>
-                        <outletCollection property="views" destination="u6O-al-nYt" collectionClass="NSMutableArray" id="GPx-L2-Ueb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qgw-Q9-wvN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="down" id="vGZ-5x-fPh">
+                    <connections>
+                        <action selector="cancelAction:" destination="5dh-Gx-mRx" id="tsn-Cp-9q8"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="4189.6000000000004" y="1343.4782608695652"/>
         </scene>
         <!--Donation View Controller-->
         <scene sceneID="26n-ha-YlN">
             <objects>
-                <viewController id="ZPV-bu-V7q" customClass="DonationViewController" customModule="TehilimDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DonationViewController" automaticallyAdjustsScrollViewInsets="NO" id="ZPV-bu-V7q" customClass="DonationViewController" customModule="TehillimApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="P2k-pH-Dvb"/>
                         <viewControllerLayoutGuide type="bottom" id="Ave-rL-o8o"/>
@@ -1029,12 +967,219 @@
                     <view key="view" contentMode="scaleToFill" id="GsN-Fm-nyp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fyk-tS-PBV" customClass="MyLabel" customModule="TehillimApp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="80" width="343" height="142.5"/>
+                                <string key="text">Des dizaines de milliers de juifs dan le monde utilisent les l'app Tehilim quotidiennement. Vous avez aujourd'hui la possibilité de reeserver une dédicace pour le mérite, la guérison lélevation de l'âme etc... de vos proches et de soutenir les années de développement continu de cette App</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="explanation_of_donations"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uSq-8H-EFg">
+                                <rect key="frame" x="0.0" y="230.5" width="375" height="383.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u7j-fI-6OG">
+                                        <rect key="frame" x="0.0" y="16" width="375" height="48"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text de la Dédicace" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHc-SB-HZj" customClass="MyLabel" customModule="TehillimApp" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="0.0" width="150" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="text_of_the_dedication"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="text à afficher sur l'ecran pricipal" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ozd-0I-Mja">
+                                                <rect key="frame" x="8" y="21" width="359" height="27"/>
+                                                <color key="tintColor" red="0.83529411760000005" green="0.96078431369999995" blue="0.63529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardAppearance="alert" returnKeyType="next"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="66" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coc-Kc-XmL">
+                                                <rect key="frame" x="346" y="0.0" width="21" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="Ozd-0I-Mja" firstAttribute="leading" secondItem="u7j-fI-6OG" secondAttribute="leading" constant="8" id="IGy-S8-NgQ"/>
+                                            <constraint firstItem="OHc-SB-HZj" firstAttribute="top" secondItem="u7j-fI-6OG" secondAttribute="top" id="IgY-Cd-jnX"/>
+                                            <constraint firstAttribute="trailing" secondItem="coc-Kc-XmL" secondAttribute="trailing" constant="8" id="LxC-N5-AF2"/>
+                                            <constraint firstItem="coc-Kc-XmL" firstAttribute="top" secondItem="u7j-fI-6OG" secondAttribute="top" id="MUJ-Wh-HQ2"/>
+                                            <constraint firstItem="Ozd-0I-Mja" firstAttribute="top" secondItem="OHc-SB-HZj" secondAttribute="bottom" id="PJN-rK-UHy"/>
+                                            <constraint firstAttribute="bottom" secondItem="Ozd-0I-Mja" secondAttribute="bottom" id="Sc8-ef-EVA"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ozd-0I-Mja" secondAttribute="trailing" constant="8" id="X9L-V0-Lhv"/>
+                                            <constraint firstItem="OHc-SB-HZj" firstAttribute="leading" secondItem="u7j-fI-6OG" secondAttribute="leading" constant="8" id="lLh-do-EyS"/>
+                                            <constraint firstAttribute="height" constant="48" id="mzy-rI-5Qc"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j12-vp-mXs">
+                                        <rect key="frame" x="0.0" y="80" width="375" height="80"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Détails de la dédicace" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsO-RT-d2u" customClass="MyLabel" customModule="TehillimApp" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="0.0" width="367" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="details_of_the_dedication"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9uu-35-VgQ">
+                                                <rect key="frame" x="8" y="21" width="359" height="59"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="tintColor" red="0.83529411760000005" green="0.96078431369999995" blue="0.63529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardAppearance="alert"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="bsO-RT-d2u" firstAttribute="leading" secondItem="j12-vp-mXs" secondAttribute="leading" constant="8" id="3al-8b-IhT"/>
+                                            <constraint firstAttribute="bottom" secondItem="9uu-35-VgQ" secondAttribute="bottom" id="Ena-iM-mZh"/>
+                                            <constraint firstItem="9uu-35-VgQ" firstAttribute="top" secondItem="bsO-RT-d2u" secondAttribute="bottom" id="NkV-nP-8lX"/>
+                                            <constraint firstAttribute="trailing" secondItem="bsO-RT-d2u" secondAttribute="trailing" id="Php-aX-b9X"/>
+                                            <constraint firstAttribute="height" constant="80" id="a7K-yB-UqM"/>
+                                            <constraint firstItem="9uu-35-VgQ" firstAttribute="leading" secondItem="j12-vp-mXs" secondAttribute="leading" constant="8" id="lT6-A9-vLz"/>
+                                            <constraint firstAttribute="trailing" secondItem="9uu-35-VgQ" secondAttribute="trailing" constant="8" id="sRU-Sy-JI8"/>
+                                            <constraint firstItem="bsO-RT-d2u" firstAttribute="top" secondItem="j12-vp-mXs" secondAttribute="top" id="zN2-lb-QTy"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gMP-Ej-h5R">
+                                        <rect key="frame" x="0.0" y="176" width="375" height="48"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date de la dédicace" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RVv-WV-LdS" customClass="MyLabel" customModule="TehillimApp" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="0.0" width="359" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="date_of_dedication"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Jour ou la dedicace sera afficher dan TehillimApp" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Okg-C8-cqu">
+                                                <rect key="frame" x="8" y="21" width="359" height="27"/>
+                                                <color key="tintColor" red="0.83529411760000005" green="0.96078431369999995" blue="0.63529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="RVv-WV-LdS" firstAttribute="top" secondItem="gMP-Ej-h5R" secondAttribute="top" id="0Qe-K1-DuE"/>
+                                            <constraint firstAttribute="bottom" secondItem="Okg-C8-cqu" secondAttribute="bottom" id="9ZP-Qs-C9a"/>
+                                            <constraint firstAttribute="trailing" secondItem="Okg-C8-cqu" secondAttribute="trailing" constant="8" id="Asn-Qy-SJz"/>
+                                            <constraint firstAttribute="trailing" secondItem="RVv-WV-LdS" secondAttribute="trailing" constant="8" id="D3k-e8-dWa"/>
+                                            <constraint firstItem="Okg-C8-cqu" firstAttribute="leading" secondItem="gMP-Ej-h5R" secondAttribute="leading" constant="8" id="M6h-Fq-Yak"/>
+                                            <constraint firstItem="Okg-C8-cqu" firstAttribute="top" secondItem="RVv-WV-LdS" secondAttribute="bottom" id="OIB-ZM-yeU"/>
+                                            <constraint firstAttribute="height" constant="48" id="Xch-6T-tfv"/>
+                                            <constraint firstItem="RVv-WV-LdS" firstAttribute="leading" secondItem="gMP-Ej-h5R" secondAttribute="leading" constant="8" id="k21-Yr-1wu"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z22-Lt-efn">
+                                        <rect key="frame" x="0.0" y="240" width="375" height="80"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Autre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4lF-vO-LXo" customClass="MyLabel" customModule="TehillimApp" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="0.0" width="367" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="other"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2wA-BX-ocI">
+                                                <rect key="frame" x="8" y="21" width="359" height="59"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="tintColor" red="0.83529411760000005" green="0.96078431369999995" blue="0.63529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardAppearance="alert"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="4lF-vO-LXo" secondAttribute="trailing" id="2Sx-gR-bg6"/>
+                                            <constraint firstAttribute="trailing" secondItem="2wA-BX-ocI" secondAttribute="trailing" constant="8" id="6Hg-Hj-Z7S"/>
+                                            <constraint firstItem="2wA-BX-ocI" firstAttribute="top" secondItem="4lF-vO-LXo" secondAttribute="bottom" id="7o2-WP-mLm"/>
+                                            <constraint firstItem="4lF-vO-LXo" firstAttribute="leading" secondItem="Z22-Lt-efn" secondAttribute="leading" constant="8" id="M5U-DR-oCn"/>
+                                            <constraint firstItem="4lF-vO-LXo" firstAttribute="top" secondItem="Z22-Lt-efn" secondAttribute="top" id="YPx-7D-Ovs"/>
+                                            <constraint firstAttribute="bottom" secondItem="2wA-BX-ocI" secondAttribute="bottom" id="ejm-fZ-u0e"/>
+                                            <constraint firstAttribute="height" constant="80" id="gG4-Ag-i1v"/>
+                                            <constraint firstItem="2wA-BX-ocI" firstAttribute="leading" secondItem="Z22-Lt-efn" secondAttribute="leading" constant="8" id="hZQ-Tm-KH8"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="gMP-Ej-h5R" secondAttribute="trailing" id="ASP-bk-8TJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="Z22-Lt-efn" secondAttribute="bottom" constant="16" id="D7X-mI-Uiv"/>
+                                    <constraint firstItem="gMP-Ej-h5R" firstAttribute="top" secondItem="j12-vp-mXs" secondAttribute="bottom" constant="16" id="DYd-bz-fSI"/>
+                                    <constraint firstAttribute="trailing" secondItem="j12-vp-mXs" secondAttribute="trailing" id="KXb-ET-2rh"/>
+                                    <constraint firstItem="j12-vp-mXs" firstAttribute="leading" secondItem="uSq-8H-EFg" secondAttribute="leading" id="LAT-82-cU2"/>
+                                    <constraint firstItem="u7j-fI-6OG" firstAttribute="leading" secondItem="uSq-8H-EFg" secondAttribute="leading" id="f9L-Ps-VqO"/>
+                                    <constraint firstItem="gMP-Ej-h5R" firstAttribute="leading" secondItem="uSq-8H-EFg" secondAttribute="leading" id="gxG-1N-D2W"/>
+                                    <constraint firstAttribute="trailing" secondItem="u7j-fI-6OG" secondAttribute="trailing" id="jLd-jo-C5R"/>
+                                    <constraint firstItem="j12-vp-mXs" firstAttribute="top" secondItem="u7j-fI-6OG" secondAttribute="bottom" constant="16" id="kri-1C-fBU"/>
+                                    <constraint firstItem="u7j-fI-6OG" firstAttribute="top" secondItem="uSq-8H-EFg" secondAttribute="top" constant="16" id="oEG-dh-ESD"/>
+                                    <constraint firstAttribute="trailing" secondItem="Z22-Lt-efn" secondAttribute="trailing" id="oOH-7a-T5D"/>
+                                    <constraint firstItem="Z22-Lt-efn" firstAttribute="leading" secondItem="uSq-8H-EFg" secondAttribute="leading" id="sYn-lZ-SwT"/>
+                                    <constraint firstItem="Z22-Lt-efn" firstAttribute="top" secondItem="gMP-Ej-h5R" secondAttribute="bottom" constant="16" id="weC-Uv-1LN"/>
+                                    <constraint firstItem="u7j-fI-6OG" firstAttribute="centerX" secondItem="uSq-8H-EFg" secondAttribute="centerX" id="ytG-zv-rep"/>
+                                </constraints>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jour de la dédicace 25 euro" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AAS-vq-SGA" customClass="MyLabel" customModule="TehillimApp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="630" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="price"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Fyk-tS-PBV" firstAttribute="top" secondItem="P2k-pH-Dvb" secondAttribute="bottom" constant="16" id="4uS-YW-UAj"/>
+                            <constraint firstItem="Fyk-tS-PBV" firstAttribute="leading" secondItem="GsN-Fm-nyp" secondAttribute="leading" constant="16" id="6Dq-cf-qmv"/>
+                            <constraint firstItem="uSq-8H-EFg" firstAttribute="leading" secondItem="GsN-Fm-nyp" secondAttribute="leading" id="C9z-s8-n2b"/>
+                            <constraint firstAttribute="trailing" secondItem="AAS-vq-SGA" secondAttribute="trailing" constant="16" id="Hit-PF-sJt"/>
+                            <constraint firstItem="AAS-vq-SGA" firstAttribute="leading" secondItem="GsN-Fm-nyp" secondAttribute="leading" constant="16" id="IME-F8-ehA"/>
+                            <constraint firstItem="uSq-8H-EFg" firstAttribute="centerX" secondItem="GsN-Fm-nyp" secondAttribute="centerX" id="IjZ-B8-BKE"/>
+                            <constraint firstItem="AAS-vq-SGA" firstAttribute="top" secondItem="uSq-8H-EFg" secondAttribute="bottom" constant="16" id="Ko0-bw-PN2"/>
+                            <constraint firstAttribute="trailing" secondItem="Fyk-tS-PBV" secondAttribute="trailing" constant="16" id="Nr8-MH-pQL"/>
+                            <constraint firstItem="uSq-8H-EFg" firstAttribute="top" secondItem="Fyk-tS-PBV" secondAttribute="bottom" constant="8" id="czP-16-ybx"/>
+                            <constraint firstAttribute="trailing" secondItem="uSq-8H-EFg" secondAttribute="trailing" id="kWY-nS-lbU"/>
+                            <constraint firstItem="Ave-rL-o8o" firstAttribute="top" secondItem="uSq-8H-EFg" secondAttribute="bottom" constant="53" id="y8r-LP-H5k"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="k5Q-0c-jSM" appends="YES" id="wLl-l2-4Ie"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="cunterMainDediLabel" destination="coc-Kc-XmL" id="afS-Lb-9mT"/>
+                        <outlet property="dateDediTextField" destination="Okg-C8-cqu" id="XEc-Rn-1UR"/>
+                        <outlet property="detailDediTextView" destination="9uu-35-VgQ" id="tLQ-B5-KA5"/>
+                        <outlet property="maintDediTextField" destination="Ozd-0I-Mja" id="MOS-Lt-7yl"/>
+                        <outlet property="otherTextView" destination="2wA-BX-ocI" id="2sK-1m-IGE"/>
+                        <outlet property="topLabel" destination="Fyk-tS-PBV" id="hQC-PZ-QKL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G1j-W6-82p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="k5Q-0c-jSM">
+                    <connections>
+                        <action selector="tapGestureAction:" destination="ZPV-bu-V7q" id="3go-lW-KGb"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="5054" y="1344"/>
+            <point key="canvasLocation" x="5191" y="1343"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xAb-I3-DRz">
@@ -1064,7 +1209,6 @@
         <image name="icons8-edit_property_filled" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="5Ca-v0-5eq"/>
-        <segue reference="Svi-PQ-eZh"/>
+        <segue reference="3lx-pd-Ton"/>
     </inferredMetricsTieBreakers>
 </document>

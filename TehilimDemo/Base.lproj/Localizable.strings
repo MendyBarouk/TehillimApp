@@ -6,28 +6,27 @@
   Copyright © 2017 Mendy Barouk. All rights reserved.
 */
 
-"tehilim_title" = "Tehilim";
-"yehi_ratzon" = "Yehi Rotzon";
+"tehilim_title" = "Tehillim";
+"yehi_ratzon" = "Yehi Ratzon";
 "day_of_month" = "Tehillim for ";
 "my_chapters" = "My Chapters";
 "day_of_week" = "Tehillim for ";
 "all_psalm" = "All Tehillim";
-"no_tachanun" = "Tehilim 20";
-"elul" = "Elul";
-"choose_chapter" = "Select a Chapter";
-"choose_book" = "Select a Book";
-"choose_day_of_week" = "Select Day Of Week";
-"choose_day_of_month" = "Select Day Of Month";
-"general_amendment" = "Tikkun Haklali";
-"lyartseyt" = "Yahrtzeit Tehillim";
+"no_tachanun" = "Chapter 20";
+"elul" = "3 Tehillim of Elul";
+"by_chapter" = "Select a Chapter";
+"by_book" = "Select a Book";
+"by_day_of_week" = "Tehillim by weekday";
+"by_day_of_month" = "Tehillim by day of month";
+"lyartseyt" = "Yahrzeit Tehillim";
 "virtues" = "Segulot";
 "random_chapter" = "Random Chapter";
 "daily" = "Daily";
 "everything" = "Browse";
-"choose_book" = "Choose a book";
-"choose_chapter" = "Choose a chapter";
-"choose_weekday" = "Choose a weekday";
-"choose_monthday" = "Choose a day of the month";
+"select_book" = "Select a book";
+"select_chapter" = "Select a chapter";
+"select_weekday" = "Select a day of week";
+"select_monthday" = "Select a day of the month";
 "chapter" = "Chapter";
 "book" = "Book";
 "sunday" = "Sunday";
@@ -37,8 +36,82 @@
 "thursday" = "Thursday";
 "friday" = " Friday";
 "saturday" = "Saturday";
-"yehi_ratzon_befor" = "Yehi Ratzon befor tehilim";
-"yehi_ratzon_after" = "Yehi Ratzon after tehilim";
+"yehi_ratzon_befor" = "Yehi Ratzon before Tehillim";
+"yehi_ratzon_after" = "Yehi Ratzon after Tehillim";
+"yehi_ratzon_choose" = "Please choose the Yehi Ratzon";
+"birthday" = "Birth date: ";
+"chapter" = "Chapter";
+"name" = "Name : ";
+"dedications" = "Dedications";
+"day" = "day ";
+"tikun_haklali" = "Tikkun Haklali";
+"healthy" = "health";
+"livelihood" = "Parnassa";
+"shalom_bayit" = "Shalom Bayit";
+"at_birth" = "At birth";
+"to_children" = "To have children";
+"to_shiduch" = "During a shidduch";
+"pregnancy" = "During pregnancy";
+"for_a_complete_healing" = "For a complete healing";
+"for_a_yortzeit" = "For a Yahrzeit";
+"message_alert_yortzeit" = "Enter a name using the Hebrew keyboard or by using the numeric value of the letters (the values must be separated by a comma, eg משה = 40,300,5)";
+"enter_name" = "Enter a name";
+"continue" = "Continue";
+"complete_healing_for" = "complete healing to ";
+"to_the_memorial" = "To the memory of";
+"only_heb_or_num" = "hebrew or numbers only";
+"donation_to_dedication" = "Donation to the dedication";
+"required_field" = "Required Field";
+"jewish_cal" = "Jewish cal";
+"gregorian_cal" = "Gregorian cal";
+"text_dedication_screen" = "(Optional) text to display on the dedication screen";
+"information_ask_here" = "(Optional) For more information, Ask your questions here";
+"add_date_or_chapter" = "Add a date or chapter";
+"bad_data" = "Bad data";
+"ellul_chapters" = "Chapters of Elul";
+"add_dedication" = "Add your dedication";
+"add_entry" = "Add an entry";
+"explanation_of_the_entry" = "Select a date of birth in the jew or Gregorian calendar or a chapter";
+"date_or_chapter" = "Date or chapter";
+"name2" = "Name (optional)";
+"save" = "Save";
+"explanation_of_donations" = "To book a dedication to your loved ones for merit, healing, elevation of soul, parnassa etc..., please fill in the fields below";
+"text_of_the_dedication" = "Text of the Dedication";
+"details_of_the_dedication" = "Details of the dedication";
+"date_of_dedication" = "Date of the dedication";
+"other" = "Other";
+"price" = "Day of the dedication 50 ₪ or $ 15";
+"text_of_dedication_placeholder" = "Text to display on the main screen";
+"date_of_dedication_placeholder" = "Day when the dedication will be posted in TehilimApp";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -15,7 +15,36 @@ class BrowseViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     var pickerViewData: Array<String>!
     var pickerViewRows: Int!
     var pickerViewMiddle: Int!
-    
+
+//    @IBAction func swipeRightAction(_ sender: UISwipeGestureRecognizer) {
+//        guard let tabBarController = self.tabBarController else {
+//            return
+//        }
+//        
+//        let selectedIndex = tabBarController.selectedIndex
+//        let selectedController = tabBarController.selectedViewController
+//        let viewControllers = tabBarController.viewControllers!
+//        
+//        let nextIndex = selectedIndex - 1
+//        let fromView = selectedController?.view
+//        let toView = viewControllers[nextIndex].view
+//        
+//        UIView.animate(withDuration: 0.25, animations: {
+//            self.view.alpha = 0.2
+//            
+//        }) { (_) in
+//            self.view.alpha = 1
+//            UIView.transition(from: fromView!,
+//                              to: toView!,
+//                              duration: 0.25,
+//                              options: UIViewAnimationOptions.transitionCrossDissolve,
+//                              completion: {(finished : Bool) -> () in
+//                                if finished {
+//                                    tabBarController.selectedIndex = nextIndex
+//                                }
+//            })
+//        }
+//    }
     
     @IBAction func chooseChapter(_ sender: UIButton) {
         
@@ -23,7 +52,7 @@ class BrowseViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         case 1:
             choose(array: Array(1...150).map {
                 String($0)
-            }, white: 1, title: "choose_chapter".localizedString) {
+            }, white: 1, title: "select_chapter".localizedString) {
                 let selected = Int(self.valueForRow(row: self.pickerView.selectedRow(inComponent: 0)))!
                 let nextVC = TehilimViewController.viewController(with: self.tehilim.getNamesTehilimBy(perek: selected), andTitle: "chapter".localizedString + " \(selected)")
                 self.navigationController?.pushViewController(nextVC, animated: true)
@@ -31,14 +60,14 @@ class BrowseViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         case 2:
             choose(array: Array(1...5).map {
                 String($0)
-            }, white: 2, title: "choose_book".localizedString) {
+            }, white: 2, title: "select_book".localizedString) {
                 let selected = Int(self.valueForRow(row: self.pickerView.selectedRow(inComponent: 0)))!
                 let nextVC = TehilimViewController.viewController(with: self.tehilim.getNamesTehilimBy(sefer: selected), andTitle: "book".localizedString + " \(selected)")
                 self.navigationController?.pushViewController(nextVC, animated: true)
             }
         case 3:
             let array = ["sunday".localizedString, "monday".localizedString, "tuesday".localizedString, "wednesday".localizedString, "thursday".localizedString,"friday".localizedString,"saturday".localizedString]
-            choose(array: array, white: 3, title: "choose_weekday".localizedString) {
+            choose(array: array, white: 3, title: "select_weekday".localizedString) {
                 let selected = array.index(of: self.valueForRow(row: self.pickerView.selectedRow(inComponent: 0)))! + 1
                 
                 let nextVC = TehilimViewController.viewController(with: self.tehilim.getNamesTehilimBy(weekday: selected), andTitle: array[selected - 1])
@@ -47,9 +76,9 @@ class BrowseViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         case 4:
             choose(array: Array(1...30).map {
                 String($0)
-            }, white: 3, title: "choose_monthday".localizedString) {
+            }, white: 3, title: "select_monthday".localizedString) {
                 let selected = Int(self.valueForRow(row: self.pickerView.selectedRow(inComponent: 0)))!
-                let nextVC = TehilimViewController.viewController(with: self.tehilim.getNamesTehilimBy(dayOfMonth: selected), andTitle: "day \(selected)")
+                let nextVC = TehilimViewController.viewController(with: self.tehilim.getNamesTehilimBy(dayOfMonth: selected), andTitle: "day".localizedString + " \(selected)")
                 self.navigationController?.pushViewController(nextVC, animated: true)
             }
         default:
@@ -59,7 +88,7 @@ class BrowseViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     }
     @IBAction func tikunHaklaliAction(_ sender: Any) {
         let tikunHaklali = tehilim.tikunHaklali()
-        let nextVC = TehilimViewController.viewController(with: tikunHaklali, andTitle: "Tikun Haklali")
+        let nextVC = TehilimViewController.viewController(with: tikunHaklali, andTitle: "tikun_haklali".localizedString)
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
     
@@ -70,41 +99,41 @@ class BrowseViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     }
     
     @IBAction func segulotAction(_ sender: UIButton) {
-        let sheet = UIAlertController(title: "Segulot", message: nil, preferredStyle: .actionSheet)
+        let sheet = UIAlertController(title: "virtues".localizedString, message: nil, preferredStyle: .actionSheet)
         
         // todo...
         
-        let health = UIAlertAction(title: "Healthy", style: .default) { (action) in
+        let health = UIAlertAction(title: "healthy".localizedString, style: .default) { (action) in
             self.yahrtzeitAction(true)
         }
-        let livelihood = UIAlertAction(title: "livelihood", style: .default) { (action) in
+        let livelihood = UIAlertAction(title: "livelihood".localizedString, style: .default) { (action) in
             let perek = self.tehilim.getTehilimFor(segulot: Tehilim.Segulot.LIVELIHOOD)
-            let nextVC = TehilimViewController.viewController(with: perek, andTitle: "livelihood")
+            let nextVC = TehilimViewController.viewController(with: perek, andTitle: "livelihood".localizedString)
             self.navigationController?.pushViewController(nextVC, animated: true)
         }
-        let shalomBayt = UIAlertAction(title: "Shalom Bayit", style: .default) { (action) in
+        let shalomBayt = UIAlertAction(title: "shalom_bayit".localizedString, style: .default) { (action) in
             let perek = self.tehilim.getTehilimFor(segulot: Tehilim.Segulot.SHALOM_BAYIT)
-            let nextVC = TehilimViewController.viewController(with: perek, andTitle: "Shalom Bayit")
+            let nextVC = TehilimViewController.viewController(with: perek, andTitle: "shalom_bayit".localizedString)
             self.navigationController?.pushViewController(nextVC, animated: true)
         }
-        let atBirth = UIAlertAction(title: "At birth", style: .default) { (action) in
+        let atBirth = UIAlertAction(title: "at_birth".localizedString, style: .default) { (action) in
             let perek = self.tehilim.getTehilimFor(segulot: Tehilim.Segulot.AT_BIRTH)
-            let nextVC = TehilimViewController.viewController(with: perek, andTitle: "At birth")
+            let nextVC = TehilimViewController.viewController(with: perek, andTitle: "at_birth".localizedString)
             self.navigationController?.pushViewController(nextVC, animated: true)
         }
-        let children = UIAlertAction(title: "To have a Children", style: .default) { (action) in
+        let children = UIAlertAction(title: "to_children".localizedString, style: .default) { (action) in
             let perek = self.tehilim.getTehilimFor(segulot: Tehilim.Segulot.CHILDREN)
-            let nextVC = TehilimViewController.viewController(with: perek, andTitle: "To have a Children")
+            let nextVC = TehilimViewController.viewController(with: perek, andTitle: "to_children".localizedString)
             self.navigationController?.pushViewController(nextVC, animated: true)
         }
-        let shiduch = UIAlertAction(title: "During a shidduch", style: .default) { (action) in
+        let shiduch = UIAlertAction(title: "to_shiduch".localizedString, style: .default) { (action) in
             let perek = self.tehilim.getTehilimFor(segulot: Tehilim.Segulot.SHIDDUCH)
-            let nextVC = TehilimViewController.viewController(with: perek, andTitle: "During a shidduch")
+            let nextVC = TehilimViewController.viewController(with: perek, andTitle: "to_shiduch".localizedString)
             self.navigationController?.pushViewController(nextVC, animated: true)
         }
-        let pregnancy = UIAlertAction(title: "During pregnancy", style: .default) { (action) in
+        let pregnancy = UIAlertAction(title: "pregnancy".localizedString, style: .default) { (action) in
             let perek = self.tehilim.getTehilimFor(segulot: Tehilim.Segulot.PREGNANCY)
-            let nextVC = TehilimViewController.viewController(with: perek, andTitle: "During pregnancy")
+            let nextVC = TehilimViewController.viewController(with: perek, andTitle: "pregnancy".localizedString)
             self.navigationController?.pushViewController(nextVC, animated: true)
         }
         let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
@@ -124,10 +153,10 @@ class BrowseViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     
     @IBAction func yahrtzeitAction(_ forHealing: Bool) {
         
-        let alert = UIAlertController(title: forHealing ? "for a complete healing" : "for a Yortzeit", message: "Entrez un nom en utilisant le clavier hébreu ou en utilisant la valeur numerique des lettres (les valeur doivent etre separer d'une virgule, ex: משה = 40,300,5)", preferredStyle: .alert)
+        let alert = UIAlertController(title: forHealing ? "for_a_complete_healing".localizedString : "for_a_yortzeit".localizedString, message: "message_alert_yortzeit".localizedString, preferredStyle: .alert)
         
         alert.addTextField { (textField) in
-            textField.placeholder = "Saisissez un nom"
+            textField.placeholder = "enter_name".localizedString
             
             let label = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 8))
             label.textColor = .red
@@ -143,7 +172,7 @@ class BrowseViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         
         
         
-        alert.addAction(UIAlertAction(title: "Continuer", style: .default, handler: { (action) in
+        alert.addAction(UIAlertAction(title: "continue".localizedString, style: .default, handler: { (action) in
             
             guard let name = alert.textFields?.last?.text else {
                 return
@@ -152,11 +181,11 @@ class BrowseViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
             let perakim = forHealing ? self.tehilim.getTehilimForHealingWith(name: name) : self.tehilim.getTehilimOfYortzeitWith(name: name)
             
             
-            let title = forHealing ? "Complete healing for \(name)" : "Lyahrtzeit \(name)"
+            let title = forHealing ? "complete_healing_for".localizedString + " \(name)" : "to_the_memorial".localizedString + " \(name)"
             let nextVC = TehilimViewController.viewController(with: perakim, andTitle: title)
             self.navigationController?.pushViewController(nextVC, animated: true)
         }))
-        alert.addAction(UIAlertAction(title: "Annuler", style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         
         self.present(alert, animated: true, completion: nil)
         
@@ -187,7 +216,7 @@ class BrowseViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
             var str = strTemp
             str.remove(at: str.index(before: str.endIndex))
             textField.text = str
-            (textField.rightView as! UILabel).text = "only hebrew or number"
+            (textField.rightView as! UILabel).text = "only_heb_or_num".localizedString
             textField.rightViewMode = .always
         } else {
             textField.rightViewMode = .never
@@ -203,7 +232,7 @@ class BrowseViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
                             t.text = numToStr
                         } else {
                             t.textColor = UIColor.red
-                            t.text = "no good entry"
+                            t.text = "bad_data".localizedString
                             textField.text = String(textField.text!.characters.dropLast())
                         }
                     })

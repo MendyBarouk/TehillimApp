@@ -7,29 +7,28 @@
 */
 
 "tehilim_title" = "Téhilim";
-"yehi_ratzon" = "Yehi Ratson";
+"yehi_ratzon" = "Yehi Ratzon";
 "day_of_month" = "Téhilim du ";
 "my_chapters" = "Mes Chapitres";
 "day_of_week" = "Téhilim du ";
 "all_psalm" = "Tous les Téhilim";
 "no_tachanun" = "Téhilim 20";
-"elul" = "Téhilim du mois d'Élul";
-"choose_chapter" = "Choisir un Chapitre";
-"choose_book" = "Choisir un Livre";
-"choose_day_of_week" = "Choisir un jour de la semaine";
-"choose_day_of_month" = "Choisir un jour du mois";
-"general_amendment" = "Tikoun Haklali";
-"lyartseyt" = "Téhilim du Yahrtzeit";
+"elul" = "3 Téhilim d'Élul";
+"by_chapter" = "Téhilim par chapitre";
+"by_book" = "Téhilim par livre";
+"by_day_of_week" = "Téhilim par jour de la semaine";
+"by_day_of_month" = "Téhilim par jour du mois";
+"lyartseyt" = "Téhilim du Yahrzeit";
 "virtues" = "Segoulot";
 "random_chapter" = "Chapitre Aléatoir";
 "daily" = "Quotidien";
 "everything" = "Parcourir";
-"choose_book" = "Choisissez un livre";
-"choose_chapter" = "Choisissez un chapitre";
-"choose_weekday" = "Choisissez un jour de semaine";
-"choose_monthday" = "Choisissez un jour du mois";
+"select_book" = "Sélectionnez un livre";
+"select_chapter" = "Sélectionnez un chapitre";
+"select_weekday" = "Sélectionnez un jour de semaine";
+"select_monthday" = "Sélectionnez un jour du mois";
 "chapter" = "Chapitre";
-"book" = "Book";
+"book" = "Livre";
 "sunday" = "Dimanche";
 "monday" = "Lundi";
 "tuesday" = "Mardi";
@@ -37,5 +36,69 @@
 "thursday" = "Jeudi";
 "friday" = "Vendredi";
 "saturday" = "Samedi";
-"yehi_ratzon_befor" = "Yehi Ratzon befor tehilim";
-"yehi_ratzon_after" = "Yehi Ratzon after tehilim";
+"yehi_ratzon_befor" = "Yehi Ratzon avant Téhilim";
+"yehi_ratzon_after" = "Yehi Ratzon après Téhilim";
+"yehi_ratzon_choose" = "Veuillez choisir le Yehi Ratzon";
+"birthday" = "Date: ";
+"chapter" = "Chapitre";
+"name" = "Nom : ";
+"dedications" = "Dédications";
+"day" = "jour ";
+"tikun_haklali" = "Tikoun Haklali";
+"healthy" = "santé";
+"livelihood" = "Parnassa";
+"shalom_bayit" = "Shalom Bayit";
+"at_birth" = "Pendant la naissance";
+"to_children" = "Pour avoir des enfants";
+"to_shiduch" = "Pendant un shidduch";
+"pregnancy" = "Pendant la grossesse";
+"for_a_complete_healing" = "Pour une guérison complète";
+"for_a_yortzeit" = "Pour un Yahrzeit";
+"message_alert_yortzeit" = "Entrez un nom en utilisant le clavier hébreu ou en utilisant la valeur numerique des lettres (les valeur doivent etre separer d'une virgule, ex: משה = 40,300,5)";
+"enter_name" = "Entrez un nom";
+"continue" = "Continuer";
+"complete_healing_for" = "guerison complète à ";
+"to_the_memorial" = "À la mémoire de";
+"only_heb_or_num" = "Hébreu ou chiffres seulement";
+"donation_to_dedication" = "Dons à la dédicace";
+"required_field" = "Champs requis";
+"jewish_cal" = "Juif";
+"gregorian_cal" = "Grégorien";
+"text_dedication_screen" = "(facultatif) Texte à afficher sur l'écran de dédicace";
+"information_ask_here" = "(facultatif) Pour plus d'informations, posez votre questions ici";
+"add_date_or_chapter" = "Ajouter une date ou un chapitre";
+"bad_data" = "Mauvaises données";
+"ellul_chapters" = "chapitres d'Elul";
+"add_dedication" = "Ajoutez votre dédicace";
+"add_entry" = "Ajouter une entrée";
+"explanation_of_the_entry" = "Sélectionnez une date de naissance dans le calendrier juif ou grégorien ou un chapitre";
+"date_or_chapter" = "Date ou chapitre";
+"name2" = "Nom (facultatif)";
+"save" = "Sauvegarder";
+"explanation_of_donations" = "Pour réserver une dédicace à vos proches pour le mérite, la guérison, l'élévation de l'âme, parnassa etc..., veuillez remplir les champs ci-dessous";
+"text_of_the_dedication" = "Texte de la Dédicace";
+"details_of_the_dedication" = "Détails de la dédicace";
+"date_of_dedication" = "Date de la dédicace";
+"other" = "Autre";
+"price" = "Jour de la dédicace 50₪ soit 13€";
+"text_of_dedication_placeholder" = "Texte à afficher sur l'ecran principal";
+"date_of_dedication_placeholder" = "Jour où la dédicace sera affichée dans TehilimApp";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

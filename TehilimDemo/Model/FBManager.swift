@@ -9,6 +9,14 @@
 import UIKit
 import FirebaseDatabase
 
+extension Notification.Name{
+    static var dedicationFetched : Notification.Name{
+        get{
+            return Notification.Name(rawValue: "dedications_fetched_notification")
+        }
+    }
+}
+
 class FBManager: NSObject {
     static let manager = FBManager()
     
@@ -22,34 +30,35 @@ class FBManager: NSObject {
         dedicationsRef = rootRef.child(FBManager.DEDICATION)
         
         super.init()
+        
+        readMyDedication()
     }
     
+    var fetchedDedications : [Dedication]? = []{
+        didSet{
+            NotificationCenter.default.post(name: .dedicationFetched, object: self)
+        }
+    }
     
-    func readMyDedication(with completion : @escaping ([String]?)->Void){
+    func readMyDedication(){
         
-        //myDedicationsRef.removeAllObservers()
-        
-        var text1 = ""
-        var text2 = ""
-        var text3 = ""
-        var text4 = ""
-        var text5 = ""
-        var text6 = ""
         self.myDedicationsRef.observeSingleEvent(of: .value, with: { (snapshot) in
             
-            guard let val = snapshot.value as? NSDictionary else{
+            guard let val = snapshot.value as? [String:[String:Any]] else {
                 return
             }
             
-            text1 = val["1"] as? String ?? ""
-            text2 = val["2"] as? String ?? ""
-            text3 = val["3"] as? String ?? ""
-            text4 = val["4"] as? String ?? ""
-            text5 = val["5"] as? String ?? ""
-            text6 = val["6"] as? String ?? ""
+            var arr : [Dedication] = []
+            let values = Array(val.values)
+            for dict in values{
+                let d = Dedication(dict)
+                if d.isValid(){
+                    arr.append(d)
+                }
+            }
             
+            self.fetchedDedications = arr
             
-            completion([text1,text2,text3,text4,text5,text6])
             
         })
     }

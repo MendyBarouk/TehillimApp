@@ -9,11 +9,28 @@
 import UIKit
 
 class MyTabBarController: UITabBarController {
-
+    
+    fileprivate let swipeInteractionController = HorizontalSwipeInteraction()
+    fileprivate let switchAnimation: SwitchAnimation = SwitchAnimation()
+    
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        if (keyPath == "selectedViewController") {
+            // wire the interaction controller to the view controller
+            swipeInteractionController.wire(to: selectedViewController!)
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.delegate = self
+        
+        // observe changes in the currently presented view controller
+        UITabBarItem.appearance().setTitleTextAttributes([NSFontAttributeName:UIFont.systemFont(ofSize: 16)], for: .normal)
+        addObserver(self, forKeyPath: "selectedViewController", options: NSKeyValueObservingOptions.new, context: nil)
+        
         if let item1 = self.tabBar.items?[0], let item2 = self.tabBar.items?[1] {
             item1.title = "daily".localizedString
             item2.title = "everything".localizedString
@@ -22,21 +39,28 @@ class MyTabBarController: UITabBarController {
         self.tabBarItem.setTitleTextAttributes([NSFontAttributeName:UIFont.systemFont(ofSize: 16)], for: .normal)
         
     }
+}
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
+extension MyTabBarController: UITabBarControllerDelegate {
+    
+    public func tabBarController(_ tabBarController: UITabBarController, interactionControllerFor animationController: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+        
+        return swipeInteractionController.isInteractionInProgress ? swipeInteractionController : nil
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    public func tabBarController(_ tabBarController: UITabBarController, animationControllerForTransitionFrom fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        
+        let fromVCIndex = tabBarController.viewControllers?.index(of: fromVC)
+        let toVCIndex = tabBarController.viewControllers?.index(of: toVC)
+        
+        self.switchAnimation.isReverse = fromVCIndex! < toVCIndex!
+        
+        return switchAnimation
+        
     }
-    */
-
 }
+
+
+
