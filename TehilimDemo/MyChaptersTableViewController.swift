@@ -43,6 +43,8 @@ class MyChaptersTableViewController: UITableViewController, NSFetchedResultsCont
         navigationItem.rightBarButtonItems = [addButton,self.editButtonItem]
         
         controller.delegate = self
+        
+        navigationItem.title = "my_chapters".localizedString
     }
 
     

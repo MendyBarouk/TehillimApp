@@ -204,6 +204,7 @@ class MyAlertViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         configureToolbar()
         configureDateInput()
         configurePerekInput()
+        dateOrPerekTextField.becomeFirstResponder()
     }
     
     // MARK: - UIPickerViewDataSource
