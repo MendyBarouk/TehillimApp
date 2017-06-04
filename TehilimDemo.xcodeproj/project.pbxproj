@@ -64,6 +64,7 @@
 		964178B91EB2240A00ACEF04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		964178BB1EB2241700ACEF04 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
 		964178BC1EB2241F00ACEF04 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		964AC1E91EE195310096A288 /* TehillimApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TehillimApp.entitlements; sourceTree = "<group>"; };
 		96710E5F1ECB12F2009B8412 /* AddDedicaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDedicaceViewController.swift; sourceTree = "<group>"; };
 		96899C9B1E93BDF1003754CF /* TehillimApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TehillimApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96899C9E1E93BDF1003754CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -179,6 +180,7 @@
 		96899C9D1E93BDF1003754CF /* TehilimDemo */ = {
 			isa = PBXGroup;
 			children = (
+				964AC1E91EE195310096A288 /* TehillimApp.entitlements */,
 				96FBFA581EC19F95003C3752 /* Assets.xcassets */,
 				96899C9E1E93BDF1003754CF /* AppDelegate.swift */,
 				964178B31EB223A300ACEF04 /* strings */,
@@ -267,6 +269,11 @@
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = 4WDRL2HN7M;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
