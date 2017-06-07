@@ -1,0 +1,6 @@
+framework module Pods_TehilimDemo {
+  umbrella header "Pods-TehilimDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
