@@ -20,12 +20,12 @@ extension Notification.Name{
 class FBManager: NSObject {
     static let manager = FBManager()
     
-    var rootRef: FIRDatabaseReference!
-    var myDedicationsRef: FIRDatabaseReference!
-    var dedicationsRef: FIRDatabaseReference!
+    var rootRef: DatabaseReference!
+    var myDedicationsRef: DatabaseReference!
+    var dedicationsRef: DatabaseReference!
     
     override init() {
-        rootRef = FIRDatabase.database().reference()
+        rootRef = Database.database().reference()
         myDedicationsRef = rootRef.child(FBManager.MY_DEDICATIONS)
         dedicationsRef = rootRef.child(FBManager.DEDICATION)
         

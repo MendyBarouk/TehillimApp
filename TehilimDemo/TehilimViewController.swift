@@ -8,6 +8,7 @@
 
 import UIKit
 import Foundation
+import GoogleMobileAds
 
 private let reuseIdentifier = "Cell"
 
@@ -16,6 +17,8 @@ class TehilimViewController: UIViewController, UICollectionViewDataSource, UICol
     var chapters: [String]!
     var myTitle: String!
     var tapGesture : UITapGestureRecognizer!
+    
+    var interstitial: GADInterstitial!
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -40,10 +43,33 @@ class TehilimViewController: UIViewController, UICollectionViewDataSource, UICol
 
         self.tapGesture = UITapGestureRecognizer(target: self, action: #selector(toggleHideBarAction))
         self.view.addGestureRecognizer(tapGesture)
+        
+        
+        interstitial = createAndLoadInterstitial()
     }
+    
+    fileprivate func createAndLoadInterstitial() -> GADInterstitial? {
+        interstitial = GADInterstitial(adUnitID: "ca-app-pub-4211930885076947/1675194518")
+        
+        guard let interstitial = interstitial else {
+            return nil
+        }
+        
+        let request = GADRequest()
+        // Remove the following line before you upload the app
+        request.testDevices = [ kGADSimulatorID ]
+        interstitial.load(request)
+        interstitial.delegate = self
+        
+        return interstitial
+    }
+    
     
     override func viewWillDisappear(_ animated: Bool) {
         navigationController?.interactivePopGestureRecognizer?.isEnabled = true
+        if let parent = parent, interstitial.isReady {
+            interstitial.present(fromRootViewController: parent)
+        }
         super.viewWillDisappear(animated)
     }
     
@@ -82,10 +108,17 @@ class TehilimViewController: UIViewController, UICollectionViewDataSource, UICol
             layout.invalidateLayout()
         }
     }
+    
+
 }
 
 
-
+extension TehilimViewController: GADInterstitialDelegate {
+    
+    func interstitialDidDismissScreen(_ ad: GADInterstitial) {
+        interstitial = createAndLoadInterstitial()
+    }
+}
 
 
 

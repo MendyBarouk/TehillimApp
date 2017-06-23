@@ -151,7 +151,7 @@ class Tehilim: NSObject {
         case 19: start = 130; end = 137
         case 20: start = 138; end = 146
         case 21: start = 147; end = 151
-        case 22: start = 151; end = 157
+        case 22: start = 152; end = 157
         case 23: start = 158; end = 163
         case 24: start = 164; end = 170
         case 25: start = 171; end = 175

@@ -14,7 +14,7 @@ class MyTabBarController: UITabBarController {
     fileprivate let switchAnimation: SwitchAnimation = SwitchAnimation()
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-        if (keyPath == "selectedViewController") {
+        if keyPath == "selectedViewController" {
             // wire the interaction controller to the view controller
             swipeInteractionController.wire(to: selectedViewController!)
         }
@@ -52,10 +52,12 @@ extension MyTabBarController: UITabBarControllerDelegate {
     
     public func tabBarController(_ tabBarController: UITabBarController, animationControllerForTransitionFrom fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         
-        let fromVCIndex = tabBarController.viewControllers?.index(of: fromVC)
-        let toVCIndex = tabBarController.viewControllers?.index(of: toVC)
+        guard let fromVCIndex = tabBarController.viewControllers?.index(of: fromVC),
+            let toVCIndex = tabBarController.viewControllers?.index(of: toVC) else {
+                return nil
+        }
         
-        self.switchAnimation.isReverse = fromVCIndex! < toVCIndex!
+        self.switchAnimation.isReverse = fromVCIndex < toVCIndex
         
         return switchAnimation
         
